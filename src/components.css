@@ -1,6 +1,11 @@
 /* flexbox */
-.horizontal {
+.horizontal-box {
     display: flex;
+}
+
+.vertical-box {
+    display: flex;
+    flex-direction: column;
 }
 
 /* navbar */
@@ -8,12 +13,21 @@
 .navbar {
     font-weight: 700;
     width: 100%;
-    color: var(--color-white);
-    font-family: "Montserrat", sans-serif;
     position: relative;
 }
 
 .close-out {
-    padding-top: 2%;
-    padding-left: 95%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 3% 3% 3% 0px;
+}
+
+.navbar-options {
+    display: flex;
+    margin-right: 10%;
+    justify-content: flex-end;
+    color: var(--color-white); 
+    font-family: "Montserrat", sans-serif;
+    font-size: 90px;
+    font-weight: 800;
 }
