@@ -1,68 +1,69 @@
 /* flexbox */
 
 .horizontal-box {
-    display: flex;
+  display: flex;
 }
 
 .vertical-box {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /* navbar */
 
 .navbar {
-    font-weight: 700;
-    width: 100%;
-    height: 100%;
-    position: relative;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .close-out {
-    display: flex;
-    justify-content: flex-end;
-    margin: 3% 3% 3% 0px;
-    z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  border: none;
+  margin: 3% 3% 3% 0px;
+  z-index: 2;
 }
 
 .navbar-options {
-    display: flex;
-    margin-right: 10%;
-    justify-content: flex-end;
-    color: var(--color-white); 
-    font-family: "Montserrat", sans-serif;
-    font-size: 100px;
-    font-weight: 800;
-    z-index: 2;
+  display: flex;
+  margin-right: 10%;
+  justify-content: flex-end;
+  color: var(--color-cream);
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+  font-weight: 800;
+  z-index: 2;
 }
 
 .boots-background {
-    position: absolute;
-    z-index: 1;
+  position: absolute;
+  z-index: 1;
 }
 
 .boot-short-left {
-    left: 0%;
+  left: 0%;
 }
 
 .boot-left {
-    left: 32%;
+  left: 32%;
 }
 
 .boot-far-left {
-    left: 40%;
+  left: 40%;
 }
 
 .boot-right {
-    right: 7%;
+  right: 7%;
 }
 
 /* margins and constraints */
 .top {
-    top: 0;
+  top: 0;
 }
 
 .bottom {
-    bottom: 0;
+  bottom: 0;
 }
-

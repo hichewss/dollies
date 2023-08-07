@@ -4,6 +4,7 @@ import "./index.css";
 import "./components.css";
 import Navbar from "./navbar";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,6 +12,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <div className="background">
     <Navbar />
+    <Router>
+      <Routes>
+        <Route path="/slay" element={<h1>Slay</h1>} />
+      </Routes>
+    </Router>
   </div>
 );
 

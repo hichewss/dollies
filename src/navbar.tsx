@@ -24,7 +24,7 @@ function Navbar() {
         className="boots-background about-logos bottom boot-right"
         src={BootFour}
       />
-      <div className="close-out">{CloseOutIcon()}</div>
+      <button className="close-out">{CloseOutIcon()}</button>
       <div className="navbar-options">HOME</div>
       <div className="navbar-options">ARCHIVE</div>
       <div className="navbar-options">AUDITION</div>
