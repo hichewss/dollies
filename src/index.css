@@ -1,5 +1,6 @@
 :root {
-  --color-red: #B90329; 
+  --color-light-red: #CB1D39;
+  --color-dark-red: #B90329; 
   --color-white: #FFFFFF; 
   --color-cream: #FFFBF7;
 }
@@ -7,11 +8,11 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  background-color: var(--color-light-red);
 }
 
-/* */
-
-navbar {
-  font-family: "Montserrat", sans-serif;
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
 }
-
