@@ -1,9 +1,9 @@
 import React from "react";
-import { CloseOutIcon } from "./components/images";
-import BootOne from "./images/boot_one.png";
-import BootTwo from "./images/boot_two.png";
-import BootThree from "./images/boot_three.png";
-import BootFour from "./images/boot_four.png";
+import { CloseOutIcon } from "./images";
+import BootOne from "../images/navbar/boot_one.png";
+import BootTwo from "../images/navbar/boot_two.png";
+import BootThree from "../images/navbar/boot_three.png";
+import BootFour from "../images/navbar/boot_four.png";
 
 function Navbar() {
   return (
