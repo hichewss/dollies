@@ -2,8 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./components.css";
-import Navbar from "./components/navbar";
-import HomePage from "./HomePage";
+import NavBar from "./components/NavBar";
+import MenuBar from "./components/MenuBar";
+import HomePage from "./pages/HomePage";
+import ArchivePage from "./pages/ArchivePage";
 import reportWebVitals from "./reportWebVitals";
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -13,9 +15,11 @@ function App() {
   return (
     <div className="main">
       <div className="background">
-        <Navbar />
+        <NavBar />
+        {/* <MenuBar /> */}
         <div className="vertical-box">
-          <HomePage />
+          {/* <HomePage /> */}
+          <ArchivePage />
         </div>
         <Router>
           <Routes>
