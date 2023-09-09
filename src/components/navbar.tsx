@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import MenuBar from "./MenuBar";
 
 function NavBar() {
   const YEARS = [
@@ -11,17 +12,27 @@ function NavBar() {
     "2010s",
     "Reunions",
   ];
+  const [menu, setMenu] = useState(false);
 
   return (
-    <div className="center-box side-margin">
-      <div className="spaced-box mininavbar">
-        <p className="color-white">DOLLIES</p>
-        <div className="center-box">
-          {YEARS.map((year) => {
-            return <p className="color-white small-right-margin">{year}</p>;
-          })}
+    <div>
+      <div className="center-box side-margin">
+        <div className="spaced-box mininavbar">
+          <p className="color-white">DOLLIES</p>
+          <div className="center-box">
+            {YEARS.map((year) => {
+              return <p className="color-white small-right-margin">{year}</p>;
+            })}
+          </div>
+          <p
+            className="color-white"
+            onClick={() => {
+              setMenu(true);
+            }}
+          >
+            MENU
+          </p>
         </div>
-        <p className="color-white">MENU</p>
       </div>
     </div>
   );

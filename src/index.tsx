@@ -6,20 +6,21 @@ import NavBar from "./components/NavBar";
 import MenuBar from "./components/MenuBar";
 import HomePage from "./pages/HomePage";
 import ArchivePage from "./pages/ArchivePage";
+import AuditionPage from "./pages/AuditionPage";
 import reportWebVitals from "./reportWebVitals";
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-  const [clickNavBar, setClickNavBar] = useState(false);
   return (
     <div className="main">
       <div className="background">
-        {/* <MenuBar /> */}
         <div className="vertical-box">
+          {/* <MenuBar /> */}
           {/* <HomePage /> */}
-          <NavBar />
-          <ArchivePage />
+          {/* <NavBar /> */}
+          {/* <ArchivePage /> */}
+          <AuditionPage />
         </div>
         <Router>
           <Routes>

@@ -1,0 +1,34 @@
+{
+  "audition": [
+    {
+      "title": "WHY",
+      "detail": "Love to dance? Love to kick? Love to turn? Love to smile? Love sports? Love school spirit? If so, you should audition for the Stanford Dollies!",
+      "boot": "down"
+    },
+    {
+      "title": "WHEN",
+      "detail": "Learn audition routines during Weeks 4 and 5 of Winter Quarter, and auditions take place throughout Week 6 of the quarter. ",
+      "boot": "up"
+    },
+    {
+      "title": "WHERE",
+      "detail": "Audition workshops and the audition take place in the Dollie Room in the Band Shak (located near the Avery Aquatic Center). ",
+      "boot": "right"
+    },
+    {
+      "title": "HOW",
+      "detail": "During the first round, two Dollie dances and a self choreographed solo is performed in front of current and past Dollies for the audition.",
+      "boot": "down"
+    },
+    {
+      "title": "FINALS",
+      "detail": "Dollie Day is the final round of auditions. The ProDos perform the dances one by one in front of the other Prodos and interview with Band.",
+      "boot": "up"
+    },
+    {
+      "title": "SPLASH",
+      "detail": "After becoming Dollies, the new Dollies have a couple of months to learn 10 dances before their first rally, “Dollie Splash,” in spring.",
+      "boot": "right"
+    }
+  ]
+}
