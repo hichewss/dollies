@@ -15,10 +15,10 @@ function App() {
   return (
     <div className="main">
       <div className="background">
-        <NavBar />
         {/* <MenuBar /> */}
         <div className="vertical-box">
           {/* <HomePage /> */}
+          <NavBar />
           <ArchivePage />
         </div>
         <Router>

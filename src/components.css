@@ -31,8 +31,6 @@
 /* navbar and menu */
 .mininavbar {
   width: 100%;
-  height: max-content;
-  position: absolute;
 }
 
 .navbar {
@@ -97,8 +95,12 @@
   bottom: 0;
 }
 
-.small-right-padding {
-  padding-right: 10px;
+.mini-right-margin {
+  margin-right: 2%;
+}
+
+.small-right-margin {
+  margin-right: 5%;
 }
 
 .small-center-margin {
@@ -109,12 +111,8 @@
   margin: 5% 22%;
 }
 
-.archive-photo-margin {
-  margin: 0% 5%;
-}
-
-.navbar-margin {
-  margin: 0 2% 2% 2%;
+.side-margin {
+  margin: 0% 3%;
 }
 
 /* archive */

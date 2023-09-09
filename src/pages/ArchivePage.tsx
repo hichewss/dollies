@@ -5,7 +5,7 @@ function ArchivePage() {
   return (
     <div className="vertical-box small-center-margin">
       <div className="horizontal-box archive-box">
-        {QuoteIcon()}
+        <div className="mini-right-margin">{QuoteIcon()}</div>
         <div className="archive-title-header">DOLLIES NEVER DIE</div>
         <div className="archive-main-header">,</div>
       </div>
