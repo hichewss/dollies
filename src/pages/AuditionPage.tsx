@@ -20,13 +20,12 @@ function DrawBoot(boot: string) {
 }
 
 function AuditionPage() {
-  /* this is a work in progress, need the photos from karina/new dollies*/
   return (
     <div className="vertical-box">
       <AuditionNavBar />
       <div>
         <div className="medium-center-margin">
-          <h1 className="right-box color-white">AUDITION INFO</h1>
+          <h1 className="color-white">AUDITION INFO</h1>
         </div>
         <div className="small-bottom-margin" />
       </div>
@@ -34,23 +33,23 @@ function AuditionPage() {
         <div className="vertical-box">
           {auditionInfo.audition.map((item) => {
             return (
-              <div className="vertical-box">
-                <div>
-                  <div className="line" />
-                  <div className="horizontal-box">
-                    <h1 className="small-left-margin color-white title-box">
-                      {item.title}
-                    </h1>
-                    <h5 className="color-white detail-box small-right-margin">
-                      {item.detail}
-                    </h5>
-                    <div className="center-box">{DrawBoot(item.boot)}</div>
+              <div className="right-box">
+                <div className="line" />
+                <div className="audition-box">
+                  <h1 className="color-white title-box small-left-margin">
+                    {item.title}
+                  </h1>
+                  <h5 className="color-white detail-box">{item.detail}</h5>
+                  <div className="center-box small-right-margin">
+                    {DrawBoot(item.boot)}
                   </div>
                 </div>
               </div>
             );
           })}
-          <div className="line" />
+          <div className="right-box">
+            <div className="line" />
+          </div>
           <div className="small-bottom-margin" />
         </div>
       </div>

@@ -17,7 +17,9 @@
 
 .right-box {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
+  align-items: end;
 }
 
 .home-page-image {
@@ -115,6 +117,10 @@
   margin-left: 5%;
 }
 
+.large-left-margin {
+  margin-left: 30%;
+}
+
 .small-bottom-margin {
   margin-bottom: 5%;
 }
@@ -155,18 +161,31 @@
 }
 
 /* audition */
+
+.audition-box {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
 .line {
   border-top: 2px solid var(--color-line);
   width: 70%;
 }
 
 .title-box {
+  display: flex;
+  justify-content: flex-end;
   width: 20%;
 }
 
 .detail-box {
-  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  width: 45%;
 }
+
+
 
 /* texts */
 
