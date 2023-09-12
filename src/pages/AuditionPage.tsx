@@ -4,6 +4,7 @@ import auditionInfo from "../data/audition.json";
 import DownBoot from "../images/audition/down.png";
 import UpBoot from "../images/audition/up.png";
 import RightBoot from "../images/audition/right.png";
+import WhiteFooter from "../components/WhiteFooter";
 
 function DrawBoot(boot: string) {
   const [orientation, setOrientation] = useState(DownBoot);
@@ -51,6 +52,7 @@ function AuditionPage() {
             <div className="line" />
           </div>
           <div className="small-bottom-margin" />
+          <WhiteFooter />
         </div>
       </div>
     </div>
