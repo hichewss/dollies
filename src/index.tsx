@@ -7,6 +7,7 @@ import MenuBar from "./components/MenuBar";
 import HomePage from "./pages/HomePage";
 import ArchivePage from "./pages/ArchivePage";
 import AuditionPage from "./pages/AuditionPage";
+import ContactPage from "./pages/ContactPage";
 import reportWebVitals from "./reportWebVitals";
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -20,7 +21,8 @@ function App() {
           {/* <HomePage /> */}
           {/* <NavBar /> */}
           {/* <ArchivePage /> */}
-          <AuditionPage />
+          {/* <AuditionPage /> */}
+          <ContactPage />
         </div>
         <Router>
           <Routes>
