@@ -9,12 +9,8 @@ export function DolliesNeverDie() {
         <div className="archive-title-header">DOLLIES NEVER DIE</div>
         <div className="archive-main-header">,</div>
       </div>
-      <div className="small-left-margin">
-        <div className="archive-main-header">OUR KICKS JUST GET</div>
-      </div>
-      <div className="small-left-margin">
-        <div className="archive-main-header">LOWER</div>
-      </div>
+      <div className="archive-main-header">OUR KICKS JUST GET</div>
+      <div className="archive-main-header">LOWER</div>
     </div>
   );
 }
@@ -35,6 +31,9 @@ function ArchivePage() {
           about a specific year of dollies! Or, explore reunion photos below to
           learn more about their growing history.
         </p>
+      </div>
+      <div className="small-center-margin">
+        <div className="small-bottom-margin" />
       </div>
     </div>
   );
