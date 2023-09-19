@@ -20,9 +20,9 @@ function App() {
           {/* <MenuBar /> */}
           {/* <HomePage /> */}
           {/* <NavBar /> */}
-          {/* <ArchivePage /> */}
+          <ArchivePage />
           {/* <AuditionPage /> */}
-          <ContactPage />
+          {/* <ContactPage /> */}
         </div>
         <Router>
           <Routes>
