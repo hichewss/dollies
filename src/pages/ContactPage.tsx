@@ -22,10 +22,29 @@ function ContactPage() {
         </div>
         <div className="contact-box">
           <div className="small-top-margin" />
-          <div className="contact-light-red-box"></div>
+          <div className="contact-light-red-box">
+            <div className="mini-center-margin">
+              <form>
+                <div className="vertical-box">
+                  <h6 className="color-red">Name</h6>
+                  <input className="contact-text-box" id="name" type="name" />
+                  <h6 className="color-red">Email</h6>
+                  <input className="contact-text-box" id="email" type="email" />
+                  <h6 className="color-red">Message</h6>
+                  <textarea id="message" />
+                  <input
+                    className="contact-submit-box"
+                    id="submit"
+                    type="submit"
+                  ></input>
+                </div>
+              </form>
+            </div>
+          </div>
           <div className="contact-red-box"></div>
         </div>
       </div>
+      <div className="small-bottom-margin"></div>
       <div className="small-bottom-margin"></div>
       <RedFooter />
     </div>

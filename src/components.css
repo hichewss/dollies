@@ -112,6 +112,10 @@
   margin-right: 5%;
 }
 
+.mini-center-margin {
+  margin: 2% 8%;
+}
+
 .small-center-margin {
   margin: 5% 5%;
 }
@@ -126,6 +130,10 @@
 
 .large-left-margin {
   margin-left: 30%;
+}
+
+.mini-top-margin {
+  margin-top: 2%;
 }
 
 .small-top-margin {
@@ -211,22 +219,23 @@
 }
 
 /* contact */
+
 .contact-box {
   width: 50%;
 }
 
 .contact-light-red-box {
   width: 35%;
-  height: 70vh;
+  height: 75vh;
   background-color: var(--color-line);
   z-index: 2;
   position: absolute;
-}
 
+}
 
 .contact-red-box {
   width: 35%;
-  height: 70vh;
+  height: 75vh;
   background-color: var(--color-dark-red);
   z-index: 1;
   position: absolute;
@@ -236,6 +245,18 @@
 
 .contact-text {
   width: 52%;
+}
+
+.contact-text-box {
+  background-color: white;
+  height: 5vh;
+}
+
+.contact-submit-box {
+  background-color: var(--color-dark-red);
+  color: white;
+  text-align: center;
+  padding: 2vh 0;
 }
 
 /* footer */
@@ -316,6 +337,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 22px;
+  margin-bottom: 2%;
 }
 
 p {
@@ -323,6 +345,27 @@ p {
   font-size: 32px;
   font-weight: 500;
   line-height: 48px;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 22px;
+  padding-left: 5px;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 22px;
+  padding-left: 5px;
+  margin-bottom: 2%;
+  background-color: white;
+  height: 20vh;
 }
 
 @font-face {
