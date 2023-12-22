@@ -1,5 +1,7 @@
 import React from "react";
 import { QuoteIcon } from "../components/images";
+import NavBar from "../components/NavBar";
+import WhiteFooter from "../components/WhiteFooter";
 
 export function DolliesNeverDie() {
   return (
@@ -18,6 +20,7 @@ export function DolliesNeverDie() {
 function ArchivePage() {
   return (
     <div>
+      <NavBar />
       <DolliesNeverDie />
       <div className="color-white large-center-margin">
         <p>
@@ -32,9 +35,12 @@ function ArchivePage() {
           learn more about their growing history.
         </p>
       </div>
-      <div className="small-center-margin">
-        <div className="small-bottom-margin" />
+      <div className="small-bottom-margin" />
+      <div className="medium-side-margin">
+        <div className="archive-photo-box" />
       </div>
+      <div className="small-bottom-margin" />
+      <WhiteFooter />
     </div>
   );
 }

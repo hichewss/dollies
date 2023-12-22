@@ -160,6 +160,10 @@
   margin: 0% 3%;
 }
 
+.medium-side-margin {
+  margin: 0% 8%
+}
+
 /* archive */
 
 .archive {
@@ -185,6 +189,15 @@
   color: var(--color-dark-red);
   font-weight: 700;
   -webkit-text-stroke: 3.5px var(--color-cream);
+}
+
+.archive-photo-box {
+  background-color: var(--color-cream);
+  width: 40vw;
+  height: 50vh;
+  margin-right: 5vw;
+  display: flex;
+  justify-content: center;
 }
 
 /* audition */
