@@ -38,6 +38,11 @@
   justify-content: space-between;
 }
 
+.horizontal-scroll-box {
+  display: flex;
+  overflow-x: scroll;
+}
+
 /* navbar and menu */
 .mininavbar {
   width: 100%;
@@ -202,7 +207,7 @@
   padding: 30px;
   display: flex;
   flex-direction: column;
-  margin-right: 5vw;
+  margin-right: 3vw;
 }
 
 .archive-photo-header-box {
@@ -224,6 +229,11 @@
   color: var(--color-line);
   font-weight: 500;
   font-size: 21px;
+}
+
+.archive-arrow {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* audition */
@@ -354,6 +364,7 @@
 }
 
 /* fonts */
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -420,4 +431,15 @@ textarea {
   src: url("./fonts/ttf/Montserrat-ExtraBold.ttf");
 }
 
-/* animations */
+/* misc */
+
+.hide-scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

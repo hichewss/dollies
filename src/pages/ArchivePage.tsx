@@ -1,8 +1,8 @@
 import React from "react";
-import { QuoteIcon } from "../components/images";
+import { QuoteIcon, RightArrow } from "../components/images";
 import NavBar from "../components/NavBar";
 import WhiteFooter from "../components/WhiteFooter";
-import ArnPhoto from "../images/archive/archive_a.png";
+import headers from "../data/archive";
 
 export function DolliesNeverDie() {
   return (
@@ -38,14 +38,20 @@ function ArchivePage() {
       </div>
       <div className="small-bottom-margin" />
       <div className="medium-side-margin">
-        <div className="archive-photo-box">
-          <img src={ArnPhoto} />
-          <div className="mini-top-margin" />
-          <div className="archive-photo-header-box">
-            <div className="archive-photo-header">Homecoming Game</div>
-            <div className="archive-photo-subheader">1985</div>
-          </div>
-          <div className="archive-photo-subheader">Football</div>
+        <div className="hide-scrollbar horizontal-scroll-box">
+          {headers.map((header, index) => (
+            <div className="archive-photo-box">
+              <img key={index} src={headers[index][0]} alt={`image-${index}`} />
+              <div className="mini-top-margin" />
+              <div className="archive-photo-header-box">
+                <div className="archive-photo-header">{headers[index][1]}</div>
+                <div className="archive-photo-subheader">
+                  {headers[index][2]}
+                </div>
+              </div>
+              <div className="archive-photo-subheader">{headers[index][3]}</div>
+            </div>
+          ))}
         </div>
       </div>
       <div className="medium-bottom-margin" />

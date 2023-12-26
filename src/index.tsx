@@ -16,17 +16,13 @@ function App() {
   return (
     <div className="main">
       <div className="background">
-        <div className="vertical-box">
-          {/* <MenuBar /> */}
-          {/* <HomePage /> */}
-          {/* <NavBar /> */}
-          <ArchivePage />
-          {/* <AuditionPage /> */}
-          {/* <ContactPage /> */}
-        </div>
+        <div className="vertical-box"></div>
         <Router>
           <Routes>
-            <Route path="/slay" element={<h1>Slay</h1>} />
+            <Route path="/archive" element={<ArchivePage />} />
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/audition" element={<AuditionPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </Router>
       </div>

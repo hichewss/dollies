@@ -5,7 +5,7 @@ function HomePage() {
   return (
     <div className="vertical-box">
       <div>
-        <div className="home-page-image"></div>
+        <h1>Home Page</h1>
       </div>
     </div>
   );
