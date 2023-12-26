@@ -2,6 +2,7 @@ import React from "react";
 import { QuoteIcon } from "../components/images";
 import NavBar from "../components/NavBar";
 import WhiteFooter from "../components/WhiteFooter";
+import ArnPhoto from "../images/archive/archive_a.png";
 
 export function DolliesNeverDie() {
   return (
@@ -37,9 +38,17 @@ function ArchivePage() {
       </div>
       <div className="small-bottom-margin" />
       <div className="medium-side-margin">
-        <div className="archive-photo-box" />
+        <div className="archive-photo-box">
+          <img src={ArnPhoto} />
+          <div className="mini-top-margin" />
+          <div className="archive-photo-header-box">
+            <div className="archive-photo-header">Homecoming Game</div>
+            <div className="archive-photo-subheader">1985</div>
+          </div>
+          <div className="archive-photo-subheader">Football</div>
+        </div>
       </div>
-      <div className="small-bottom-margin" />
+      <div className="medium-bottom-margin" />
       <WhiteFooter />
     </div>
   );

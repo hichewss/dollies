@@ -148,6 +148,10 @@
   margin-bottom: 5%;
 }
 
+.medium-bottom-margin {
+  margin-bottom: 10%;
+}
+
 .medium-center-margin {
   margin: 2% 10%;
 }
@@ -192,12 +196,34 @@
 }
 
 .archive-photo-box {
+  width: fit-content;
+  height: fit-content;
   background-color: var(--color-cream);
-  width: 40vw;
-  height: 50vh;
-  margin-right: 5vw;
+  padding: 30px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin-right: 5vw;
+}
+
+.archive-photo-header-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.archive-photo-header {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-dark-red);
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.archive-photo-subheader {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-line);
+  font-weight: 500;
+  font-size: 21px;
 }
 
 /* audition */
@@ -233,6 +259,10 @@
 
 .color-white {
   color: var(--color-cream);
+}
+
+.color-light-red {
+  color: var(--color-line);
 }
 
 /* contact */
