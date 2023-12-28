@@ -18,7 +18,9 @@ function NavBar() {
     <div>
       <div className="center-box side-margin">
         <div className="spaced-box mininavbar">
-          <p className="color-white">DOLLIES</p>
+          <a href="/home">
+            <p className="color-white">DOLLIES</p>
+          </a>
           <div className="center-box">
             {YEARS.map((year) => {
               return <p className="color-white small-right-margin">{year}</p>;

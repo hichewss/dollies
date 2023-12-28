@@ -5,7 +5,9 @@ function ContactNavBar() {
     <div>
       <div className="center-box side-margin">
         <div className="spaced-box mininavbar">
-          <p className="color-red">DOLLIES</p>
+          <a href="/">
+            <p className="color-red">DOLLIES</p>
+          </a>
           <h2 className="color-red">CONTACT</h2>
           <p className="color-red">MENU</p>
         </div>

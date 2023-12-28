@@ -19,6 +19,7 @@ function App() {
         <div className="vertical-box"></div>
         <Router>
           <Routes>
+            <Route path="/" element={<HomePage />} />
             <Route path="/archive" element={<ArchivePage />} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/audition" element={<AuditionPage />} />

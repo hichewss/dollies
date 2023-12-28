@@ -6,19 +6,27 @@ function WhiteFooter() {
     <div className="vertical-box">
       <div className="red-triangle"></div>
       <div className="white-footer">
-        <div className="boot-footer">
+        <div className="absolute">
           <img src={RedBoot} />
         </div>
         <div className="center-align-box">
           <div className="footer-text-container">
             <div className="spaced-box">
-              <h4 className="color-red">Home</h4>
+              <a href="/home">
+                <h4 className="color-red">Home</h4>
+              </a>
               <h4 className="color-red">|</h4>
-              <h4 className="color-red">Archive</h4>
+              <a href="/archive">
+                <h4 className="color-red">Archive</h4>
+              </a>
               <h4 className="color-red">|</h4>
-              <h4 className="color-red">Auditions</h4>
+              <a href="/audition">
+                <h4 className="color-red">Auditions</h4>
+              </a>
               <h4 className="color-red">|</h4>
-              <h4 className="color-red">Contact</h4>
+              <a href="/contact">
+                <h4 className="color-red">Contact</h4>
+              </a>
             </div>
           </div>
         </div>
