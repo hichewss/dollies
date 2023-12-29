@@ -23,6 +23,8 @@ function BlackFooter() {
             </div>
           );
         })}
+        <div className="small-bottom-margin" />
+        <h3 className="color-white">Stanford Dollies 2023-2024</h3>
       </div>
     </div>
   );
