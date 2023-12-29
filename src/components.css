@@ -33,6 +33,12 @@
   text-align: right;
 }
 
+.start-box {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+}
+
 .spaced-box {
   display: flex;
   justify-content: space-between;
@@ -392,8 +398,15 @@
 
 .black-footer {
   background-color: var(--color-black);
-  padding: 20% 10%;
+  padding: 3% 20%;
   height: max-content;
+}
+
+
+.footer-box {
+  display: flex;
+  justify-content: flex-start;
+  width: 30%;
 }
 
 /* colors */
@@ -422,6 +435,7 @@ h4 {
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
+  margin: 1vh;
 }
 
 h5 {

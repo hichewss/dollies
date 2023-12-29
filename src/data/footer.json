@@ -1,0 +1,24 @@
+{
+  "footer": [
+    {
+      "page": "Home",
+      "href": "/home",
+      "social": "Instagram"
+    },
+    {
+      "page": "Full Photo Archive",
+      "href": "/archive",
+      "social": "Facebook"
+    },
+    {
+      "page": "Audition Information",
+      "href": "/audition",
+      "social": "Twitter"
+    },
+    {
+      "page": "Contact Form",
+      "href": "/contact",
+      "social": "Youtube"
+    }
+  ]
+}

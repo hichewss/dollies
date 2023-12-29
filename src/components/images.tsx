@@ -135,3 +135,34 @@ export function RightArrow() {
     </svg>
   );
 }
+
+export function RedirectArrow() {
+  return (
+    <svg
+      width="23"
+      height="23"
+      viewBox="0 0 23 23"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        y="19.8792"
+        width="28.1134"
+        height="4"
+        rx="2"
+        transform="rotate(-45 0 19.8792)"
+        fill="#FFFBF7"
+      />
+      <rect
+        x="19"
+        y="18.0002"
+        width="18"
+        height="4"
+        rx="2"
+        transform="rotate(-90 19 18.0002)"
+        fill="#FFFBF7"
+      />
+      <rect x="5" y="0.000244141" width="18" height="4" rx="2" fill="#FFFBF7" />
+    </svg>
+  );
+}
