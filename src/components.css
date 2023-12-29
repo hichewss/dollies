@@ -131,6 +131,10 @@
   margin: 5% 22%;
 }
 
+.mini-left-margin {
+  margin-left: 2%;
+}
+
 .small-left-margin {
   margin-left: 5%;
 }
@@ -281,6 +285,10 @@
   color: var(--color-line);
 }
 
+.color-black {
+  color: var(--color-black);
+}
+
 /* contact */
 
 .contact-box {
@@ -352,11 +360,23 @@
   z-index: 0;
 }
 
+.interested-box-padding {
+  padding: 8% 0%;
+}
+
 /* dress */
 .dress-background {
   width: 120vw;
   background-color: var(--color-line);
   padding: 50px;
+}
+
+/* years */
+.black-background {
+  background-color: var(--color-black);
+  transform: rotate(2.7deg);
+  height: 10vh;
+  padding: 5% 3%;
 }
 
 /* footer */
@@ -421,6 +441,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 65px;
+  margin: 1vh;
 }
 
 h2 {
@@ -440,7 +461,6 @@ h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 32px;
-  line-height: 48px;
   margin: 1vh;
 }
 

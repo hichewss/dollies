@@ -3,6 +3,9 @@ import Dollies from "../images/home/dollies.png";
 import Sash from "../images/home/sash.png";
 import { DolliesNeverDie } from "./ArchivePage";
 import BlackFooter from "../components/BlackFooter";
+import Years from "../components/years";
+import FutureYears from "../components/years";
+import { BlackRedirectArrow } from "../components/images";
 
 function HomePage() {
   return (
@@ -48,6 +51,24 @@ function HomePage() {
         <div className="white-triangle" />
       </div>
       <DolliesNeverDie />
+      <div className="home-text-box">
+        <div className="red-triangle" />
+        <div className="interested-box-padding center-box">
+          <div className="vertical-box">
+            <h1 className="color-black center-box">INTERESTED?</h1>
+            <h1 className="color-black center-box"> YOU COULD BE NEXT!</h1>
+            <div className="small-bottom-margin" />
+            <div className="center-box">
+              <a href="/audition" className="horizontal-box">
+                <h4 className="color-black">Auditions</h4>
+                <div className="mini-left-margin center-box">
+                  {BlackRedirectArrow()}
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <BlackFooter />
     </div>
   );

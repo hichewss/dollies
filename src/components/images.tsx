@@ -166,3 +166,42 @@ export function RedirectArrow() {
     </svg>
   );
 }
+
+export function BlackRedirectArrow() {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="0.353516"
+        y="20.4709"
+        width="28.1134"
+        height="4"
+        rx="2"
+        transform="rotate(-45 0.353516 20.4709)"
+        fill="#282828"
+      />
+      <rect
+        x="19.3535"
+        y="18.592"
+        width="18"
+        height="4"
+        rx="2"
+        transform="rotate(-90 19.3535 18.592)"
+        fill="#282828"
+      />
+      <rect
+        x="5.35352"
+        y="0.592041"
+        width="18"
+        height="4"
+        rx="2"
+        fill="#282828"
+      />
+    </svg>
+  );
+}
