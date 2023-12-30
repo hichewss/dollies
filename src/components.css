@@ -183,6 +183,10 @@
   margin: 0% 8%
 }
 
+.large-side-margin {
+  margin: 0% 10%
+}
+
 /* archive */
 
 .archive {
@@ -289,6 +293,10 @@
   color: var(--color-black);
 }
 
+.color-light-pink {
+  color: var(--color-light-pink);
+}
+
 /* contact */
 
 .contact-box {
@@ -346,18 +354,28 @@
   background-color: var(--color-cream);
   width: 100%;
   height: max-content;
+  position: relative;
+  overflow: hidden;
 }
 
 .home-text-margin {
   margin: 5% 15%;
 }
 
+.home {
+  z-index: 2;
+  position: relative;
+}
+
 .home-background-text {
   font-family: "Montserrat", sans-serif;
-  font-size: 220px;
+  font-size: 150px;
   font-weight: 800;
   writing-mode: vertical-lr;
-  z-index: 0;
+  position: absolute;
+  transform: rotate(180deg) translateY(40px);
+  z-index: 1;
+  height: max-content;
 }
 
 .interested-box-padding {
@@ -366,9 +384,15 @@
 
 /* dress */
 .dress-background {
-  width: 120vw;
+  width: 110vw;
   background-color: var(--color-line);
-  padding: 50px;
+  padding: 20px;
+  border-top: 1vh solid var(--color-dark-red);
+  border-bottom: 1vh solid var(--color-dark-red);
+}
+
+.dress-container {
+  width: 90vw;
 }
 
 /* years */
@@ -377,6 +401,7 @@
   transform: rotate(2.7deg);
   height: 10vh;
   padding: 5% 3%;
+  position: absolute;
 }
 
 /* footer */
@@ -525,4 +550,8 @@ textarea {
 
 .absolute {
   position: absolute;
+}
+
+.small-rotate {
+  transform: rotate(2deg);
 }

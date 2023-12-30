@@ -3,9 +3,8 @@ import Dollies from "../images/home/dollies.png";
 import Sash from "../images/home/sash.png";
 import { DolliesNeverDie } from "./ArchivePage";
 import BlackFooter from "../components/BlackFooter";
-import Years from "../components/years";
-import FutureYears from "../components/years";
-import { BlackRedirectArrow } from "../components/images";
+import { BlackRedirectArrow, HomeBoot } from "../components/images";
+import Dresses from "../components/dresses";
 
 function HomePage() {
   return (
@@ -25,7 +24,11 @@ function HomePage() {
         </div>
       </div>
       <div className="home-text-box">
-        <div className="home-text-margin">
+        <div className="large-side-margin color-light-pink home-background-text">
+          THE DOLLIES
+        </div>
+        <div className="boot-right absolute">{HomeBoot()}</div>
+        <div className="home-text-margin home">
           <h1 className="color-red">
             SINCE 1953, DOLLIES HAVE APPEARED AT SPORTING EVENTS AND RALLIES
             WITH THE STANFORD BAND AND TREE
@@ -46,9 +49,8 @@ function HomePage() {
             </p>
           </div>
         </div>
-      </div>
-      <div>
-        <div className="white-triangle" />
+        <Dresses />
+        <div className="medium-bottom-margin" />
       </div>
       <DolliesNeverDie />
       <div className="home-text-box">
