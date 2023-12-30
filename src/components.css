@@ -384,7 +384,7 @@
 
 /* dress */
 .dress-background {
-  width: 110vw;
+  width: 120%;
   background-color: var(--color-line);
   padding: 20px;
   border-top: 1vh solid var(--color-dark-red);
@@ -422,7 +422,9 @@
 .red-footer {
   background-color: var(--color-dark-red);
   padding-top: 5vh;
+  padding-bottom: 1vh;
   height: fit-content;
+  margin: 0;
 }
 
 .red-triangle {
