@@ -11,8 +11,8 @@ const images = importAll(
 function Dresses() {
   return (
     <div className="center-box bottom">
-      <div className="dress-background small-rotate home">
-        <div className="side-margin spaced-box">
+      <div className="dress-background center-box small-rotate home">
+        <div className="side-margin dress-container spaced-and-center-box">
           {images.map((image: any, index: any) => (
             <img key={index} src={image} alt={`Image ${index + 1}`} />
           ))}

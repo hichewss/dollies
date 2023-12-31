@@ -6,6 +6,7 @@ import BlackFooter from "../components/BlackFooter";
 import { BlackRedirectArrow, HomeBoot } from "../components/images";
 import Dresses from "../components/dresses";
 import PastYears from "../components/years";
+import RedFooter from "../components/RedFooter";
 
 function HomePage() {
   return (
@@ -51,7 +52,7 @@ function HomePage() {
           </div>
         </div>
         <Dresses />
-        <div className="medium-bottom-margin" />
+        <div className="large-bottom-margin" />
         <PastYears />
       </div>
       <DolliesNeverDie />
