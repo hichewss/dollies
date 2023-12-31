@@ -10,7 +10,7 @@ const images = importAll(
 
 function Dresses() {
   return (
-    <div className="center-box horizontal-overflow">
+    <div className="center-box bottom">
       <div className="dress-background small-rotate home">
         <div className="side-margin spaced-box">
           {images.map((image: any, index: any) => (
@@ -18,6 +18,7 @@ function Dresses() {
           ))}
         </div>
       </div>
+      <div className="small-bottom-margin" />
     </div>
   );
 }

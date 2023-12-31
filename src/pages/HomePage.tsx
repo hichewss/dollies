@@ -5,6 +5,7 @@ import { DolliesNeverDie } from "./ArchivePage";
 import BlackFooter from "../components/BlackFooter";
 import { BlackRedirectArrow, HomeBoot } from "../components/images";
 import Dresses from "../components/dresses";
+import PastYears from "../components/years";
 
 function HomePage() {
   return (
@@ -51,6 +52,7 @@ function HomePage() {
         </div>
         <Dresses />
         <div className="medium-bottom-margin" />
+        <PastYears />
       </div>
       <DolliesNeverDie />
       <div className="home-text-box">
