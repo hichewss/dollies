@@ -16,9 +16,23 @@ const future = [
 function PastYears() {
   return (
     <div className="center-box">
-      <div className="black-background year-top center-box small-rotate home">
+      <div className="black-background bottom center-box home">
         <div className="year-side-margin year-container spaced-and-center-box">
           {old.map((year) => {
+            return <div className="year-font color-white">{year}</div>;
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function FutureYears() {
+  return (
+    <div className="center-box">
+      <div className="black-background year-top center-box small-rotate home">
+        <div className="year-side-margin year-container spaced-and-center-box">
+          {future.map((year) => {
             return <div className="year-font color-white">{year}</div>;
           })}
         </div>

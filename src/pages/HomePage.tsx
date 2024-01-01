@@ -1,12 +1,11 @@
 import React from "react";
 import Dollies from "../images/home/dollies.png";
-import Sash from "../images/home/sash.png";
 import { DolliesNeverDie } from "./ArchivePage";
 import BlackFooter from "../components/BlackFooter";
 import { BlackRedirectArrow, HomeBoot } from "../components/images";
 import Dresses from "../components/dresses";
 import PastYears from "../components/years";
-import RedFooter from "../components/RedFooter";
+import { FutureYears } from "../components/years";
 
 function HomePage() {
   return (
@@ -53,13 +52,15 @@ function HomePage() {
               and off as members of and choreographers for many programs.
             </p>
           </div>
-          <div className="large-bottom-margin" />
+          <div className="medium-bottom-margin" />
         </div>
       </div>
       <div className="vertical-box">
         <div className="white-triangle" />
         <Dresses />
-        <PastYears />
+        <div className="white-separator small-rotate white">
+          <PastYears />
+        </div>
       </div>
       <div className="small-bottom-margin" />
       <div className="vertical-box small-center-margin">
@@ -67,7 +68,7 @@ function HomePage() {
       </div>
       <DolliesNeverDie />
       <div className="home-text-box">
-        <PastYears />
+        <FutureYears />
         <div className="red-triangle" />
         <div className="interested-box-padding center-box">
           <div className="vertical-box">
