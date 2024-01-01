@@ -12,7 +12,7 @@ function HomePage() {
   return (
     <div className="vertical-box">
       <div className="end-box small-right-margin">
-        <p className="color-white absolute">MENU</p>
+        <p className="color-white absolute home-layer-up">MENU</p>
       </div>
       <div className="vertical-box">
         <img
@@ -20,9 +20,12 @@ function HomePage() {
           width="100%"
           height="100%"
           alt="Stanford Dollies 23-24"
+          className="home"
         />
         <div className="absolute home-header-box center-box">
-          <div className="home-header color-white">THE STANFORD DOLLIES</div>
+          <div className="home-header color-white home-layer-up">
+            THE STANFORD DOLLIES
+          </div>
         </div>
       </div>
       <div className="home-text-box">
@@ -50,16 +53,25 @@ function HomePage() {
               and off as members of and choreographers for many programs.
             </p>
           </div>
+          <div className="large-bottom-margin" />
         </div>
+      </div>
+      <div className="vertical-box">
+        <div className="white-triangle" />
         <Dresses />
-        <div className="large-bottom-margin" />
         <PastYears />
+      </div>
+      <div className="small-bottom-margin" />
+      <div className="vertical-box small-center-margin">
+        <div className="photo-album-text color-white">PHOTO ALBUM</div>
       </div>
       <DolliesNeverDie />
       <div className="home-text-box">
+        <PastYears />
         <div className="red-triangle" />
         <div className="interested-box-padding center-box">
           <div className="vertical-box">
+            <div className="small-bottom-margin" />
             <h1 className="color-black center-box">INTERESTED?</h1>
             <h1 className="color-black center-box"> YOU COULD BE NEXT!</h1>
             <div className="small-bottom-margin" />

@@ -111,6 +111,10 @@
   right: 7%;
 }
 
+.home-layer-up {
+  z-index: 3;
+}
+
 /* margins and constraints */
 
 .top {
@@ -358,15 +362,15 @@
 
 .home-header-box {
   width: 100%;
-  height: 40%;
+  height: 25%;
 }
 
 .home-text-box {
   background-color: var(--color-cream);
   width: 100%;
-  height: max-content;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  height: min-content;
 }
 
 .home-text-margin {
@@ -393,6 +397,12 @@
   padding: 8% 0%;
 }
 
+.photo-album-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+}
+
 /* dress */
 .dress-background {
   width: 100vw;
@@ -402,11 +412,14 @@
   border-bottom: 1.2vh solid var(--color-dark-red);
   overflow: hidden;
   position: absolute;
-  bottom: 10%;
 }
 
 .dress-container {
   width: 100vw;
+}
+
+.white-separator {
+  height: 5vh;
 }
 
 /* years */
@@ -414,11 +427,17 @@
   background-color: var(--color-black);
   width: 100vw;
   height: 6vh;
-  padding: 0px 5px;
-  overflow: hidden;
+  padding: 10px;
+  overflow-x: hidden;
   position: absolute;
-  z-index: 2;
+}
+
+.year-bottom {
   bottom: 4%;
+}
+
+.year-top {
+  top: 2%;
 }
 
 .year-container {
@@ -587,5 +606,5 @@ textarea {
 }
 
 .small-rotate {
-  transform: rotate(3deg);
+  transform: rotate(3.3deg);
 }
