@@ -6,6 +6,7 @@ import { BlackRedirectArrow, HomeBoot } from "../components/images";
 import Dresses from "../components/dresses";
 import PastYears from "../components/years";
 import { FutureYears } from "../components/years";
+import PhotoAlbum from "../components/HomeAlbum";
 
 function HomePage() {
   return (
@@ -62,11 +63,13 @@ function HomePage() {
           <PastYears />
         </div>
       </div>
-      <div className="small-bottom-margin" />
+      <div className="medium-bottom-margin" />
       <div className="vertical-box small-center-margin">
         <div className="photo-album-text color-white">PHOTO ALBUM</div>
+        <PhotoAlbum />
       </div>
       <DolliesNeverDie />
+      <div className="small-bottom-margin" />
       <div className="home-text-box">
         <FutureYears />
         <div className="red-triangle" />

@@ -1,6 +1,6 @@
 import React from "react";
 
-function importAll(r: any) {
+export function importAll(r: any) {
   return r.keys().map(r);
 }
 

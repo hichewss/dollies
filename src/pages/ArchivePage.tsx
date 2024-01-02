@@ -6,7 +6,7 @@ import headers from "../data/archive";
 
 export function DolliesNeverDie() {
   return (
-    <div className="vertical-box archive small-center-margin">
+    <div className="vertical-box archive xtra-large-side-margin">
       <div className="horizontal-box">
         <div className="mini-right-margin">{QuoteIcon()}</div>
         <div className="archive-title-header">DOLLIES NEVER DIE</div>
