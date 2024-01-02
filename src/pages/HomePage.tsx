@@ -7,6 +7,7 @@ import Dresses from "../components/dresses";
 import PastYears from "../components/years";
 import { FutureYears } from "../components/years";
 import PhotoAlbum from "../components/HomeAlbum";
+import Slideshow from "../components/Slideshow";
 
 function HomePage() {
   return (
@@ -69,6 +70,8 @@ function HomePage() {
         <PhotoAlbum />
       </div>
       <DolliesNeverDie />
+      <div className="small-bottom-margin" />
+      <Slideshow />
       <div className="small-bottom-margin" />
       <div className="home-text-box">
         <FutureYears />

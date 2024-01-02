@@ -370,7 +370,8 @@
 
 .home-header-box {
   width: 100%;
-  height: 25%;
+  margin-top: 30%;
+  margin-bottom: 30%;
 }
 
 .home-text-box {
@@ -446,6 +447,34 @@
 
 .photo-box-three {
   height: 13vh;
+}
+
+/* slideshow */
+.slideshow {
+  gap: 100px;
+}
+
+.slideshow-box {
+  width: 30vw;
+  height: 50vh;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.slideshow-image {
+  width: 15vw;
+  scroll-snap-align: start;
+  min-width: 100%
+}
+
+.slideshow-arrow {
+  display: flex;
+  align-items: center;
+}
+
+.slideshow-arrow:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 /* dress */
