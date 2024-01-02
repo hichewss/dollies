@@ -15,10 +15,12 @@ function BlackFooter() {
                 </a>
               </div>
               <div className="footer-box">
-                <h4 className="color-white">{item.social}</h4>
-                <div className="small-left-margin center-box">
-                  {RedirectArrow()}
-                </div>
+                <a href={item.link} className="horizontal-box">
+                  <h4 className="color-white">{item.social}</h4>
+                  <div className="small-left-margin redirect center-box">
+                    {RedirectArrow()}
+                  </div>
+                </a>
               </div>
             </div>
           );
