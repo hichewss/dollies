@@ -456,7 +456,7 @@
 
 .slideshow-box {
   width: 30vw;
-  height: 50vh;
+  height: 40vh;
   overflow: scroll;
   scroll-snap-type: x mandatory;
 }
