@@ -1,6 +1,5 @@
 import React from "react";
 import { importAll } from "./dresses";
-import { StanfordLogo } from "./images";
 
 const photos = importAll(
   require.context("../images/home/album", false, /\.(png|jpe?g|svg)$/)
