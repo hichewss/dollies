@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import NavBar from "../components/NavBar";
-import RedFooter from "../components/RedFooter";
+import PinkFooter from "../components/PinkFooter";
 
 function TestPage() {
   const [menu, setMenu] = useState(false);
@@ -31,7 +31,11 @@ function TestPage() {
           MENU
         </p>
       </div>
+      {/* <div className="archive-background absolute" /> */}
       <NavBar />
+      <div className="vertical-box">
+        <PinkFooter />
+      </div>
     </div>
   );
 }

@@ -294,6 +294,17 @@
   justify-content: flex-end;
 }
 
+/* archive pages */
+.archive-background {
+  width: 100vw;
+  height: 85vh;
+  background-color: var(--color-dark-pink);
+}
+
+.home-layer-up {
+  z-index: 3;
+}
+
 /* audition */
 
 .audition-box {
@@ -574,6 +585,12 @@
   padding-bottom: 1vh;
   height: fit-content;
   margin: 0;
+}
+
+.pink-footer {
+  background-color: var(--color-line);
+  padding-top: 5vh;
+  height: fit-content;
 }
 
 .red-triangle {
