@@ -3,14 +3,13 @@ import React, { useState } from "react";
 function ContactNavBar() {
   return (
     <div>
+      <div className="side-button side-margin">
+        <a href="/home">
+          <p className="color-red">DOLLIES</p>
+        </a>
+      </div>
       <div className="center-box side-margin">
-        <div className="spaced-box mininavbar">
-          <a href="/">
-            <p className="color-red">DOLLIES</p>
-          </a>
-          <h2 className="color-red">CONTACT</h2>
-          <p className="color-red">MENU</p>
-        </div>
+        <h2 className="color-red">CONTACT</h2>
       </div>
     </div>
   );

@@ -56,8 +56,8 @@
 }
 
 /* navbar and menu */
-.mininavbar {
-  width: 100%;
+.side-button {
+  position: absolute
 }
 
 .navbar {
@@ -130,6 +130,10 @@
 
 .home-layer-up {
   z-index: 3;
+}
+
+.menu-side-margin {
+  right: 3%;
 }
 
 /* margins and constraints */
