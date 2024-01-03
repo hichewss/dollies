@@ -28,9 +28,11 @@ function MenuBar() {
       <div className="medium-top-margin" />
       {menuData.menu.map((item) => {
         const cur = item.page.toLowerCase();
+        console.log("CURRENT PATH", loc);
         return (
           <div>
-            {cur === loc.substring(1) ? (
+            {cur === loc.substring(1) ||
+            (!loc.substring(1) && cur === "home") ? (
               <div className="navbar-options">
                 <a href={item.href} className="navbar-selected">
                   {item.page}
