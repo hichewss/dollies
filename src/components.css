@@ -75,8 +75,11 @@
   justify-content: flex-end;
   background-color: transparent;
   border: none;
-  margin: 3% 3% 3% 0px;
+  padding-right: 5%;
+  padding-top: 5%;
+  width: 100%;
   z-index: 2;
+  position: absolute;
 }
 
 .navbar-options {
@@ -595,6 +598,10 @@
   background-color: var(--color-cream);
 }
 
+.red {
+  background-color: var(--color-dark-red);
+}
+
 /* fonts */
 
 h1 {
@@ -689,4 +696,37 @@ textarea {
 
 .small-rotate {
   transform: rotate(3.3deg);
+}
+
+.hide-overflow {
+  overflow-y: hidden;
+}
+
+/* transitions */
+.fade-in-content {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fade-out-content {
+  animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { CloseOutIcon } from "./images";
 import BootOne from "../images/navbar/boot_one.png";
 import BootTwo from "../images/navbar/boot_two.png";
 import BootThree from "../images/navbar/boot_three.png";
@@ -7,7 +6,7 @@ import BootFour from "../images/navbar/boot_four.png";
 
 function MenuBar() {
   return (
-    <div className="navbar vertical-box">
+    <div className="navbar vertical-box red">
       <img
         className="boots-background about-logos top boot-short-left"
         src={BootOne}
@@ -24,7 +23,7 @@ function MenuBar() {
         className="boots-background about-logos bottom boot-right"
         src={BootFour}
       />
-      <button className="close-out">{CloseOutIcon()}</button>
+      <div className="medium-top-margin" />
       <div className="navbar-options">HOME</div>
       <div className="navbar-options">ARCHIVE</div>
       <div className="navbar-options">AUDITION</div>

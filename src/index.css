@@ -30,3 +30,10 @@ body {
 a {
   text-decoration: none;
 }
+
+button {
+  margin: 0;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
