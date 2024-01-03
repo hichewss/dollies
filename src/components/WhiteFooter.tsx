@@ -6,7 +6,7 @@ function WhiteFooter() {
     <div className="vertical-box">
       <div className="red-triangle"></div>
       <div className="white-footer">
-        <div className="absolute">
+        <div className="absolute boot-bottom">
           <img src={RedBoot} />
         </div>
         <div className="center-align-box">

@@ -3,14 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./components.css";
 import NavBar from "./components/NavBar";
-import MenuBar from "./components/MenuBar";
 import HomePage from "./pages/HomePage";
 import ArchivePage from "./pages/ArchivePage";
 import AuditionPage from "./pages/AuditionPage";
 import ContactPage from "./pages/ContactPage";
 import reportWebVitals from "./reportWebVitals";
-import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import TestPage from "./pages/TestPage";
 
 function App() {
   return (
@@ -24,6 +23,7 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/audition" element={<AuditionPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/1950" element={<TestPage />} />
           </Routes>
         </Router>
       </div>
