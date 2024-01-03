@@ -20,8 +20,9 @@ export function DolliesNeverDie() {
 
 function ArchivePage() {
   return (
-    <div>
+    <div className="fade-in-content">
       <NavBar />
+      <div className="small-top-margin" />
       <DolliesNeverDie />
       <div className="color-white large-center-margin">
         <p>

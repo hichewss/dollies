@@ -5,7 +5,7 @@ import LargeRedBoot from "../images/contact/big_red_boot.png";
 
 function ContactPage() {
   return (
-    <div className="vertical-box white">
+    <div className="vertical-box white fade-in-content">
       <ContactNavBar />
       <div className="horizontal-box">
         <div className="contact-box">

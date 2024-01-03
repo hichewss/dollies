@@ -1,0 +1,20 @@
+{
+  "menu": [
+    {
+      "page": "HOME",
+      "href": "/home"
+    },
+    {
+      "page": "ARCHIVE",
+      "href": "/archive"
+    },
+    {
+      "page": "AUDITION",
+      "href": "/audition"
+    },
+    {
+      "page": "CONTACT",
+      "href": "/contact"
+    }
+  ]
+}

@@ -86,10 +86,24 @@
   display: flex;
   margin-right: 10%;
   justify-content: flex-end;
-  color: var(--color-cream);
+}
+
+.navbar-selected {
+  -webkit-text-stroke: 3px var(--color-cream);
   font-family: "Montserrat", sans-serif;
+  color: transparent;
   font-size: 100px;
   font-weight: 800;
+  z-index: 2;
+}
+
+.navbar-unselected {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+  -webkit-text-fill-color: var(--color-cream);
+  -webkit-text-stroke: 2px var(--color-cream);
+  color: var(--color-cream);
+  position: relative;
   z-index: 2;
 }
 

@@ -22,7 +22,7 @@ function DrawBoot(boot: string) {
 
 function AuditionPage() {
   return (
-    <div className="vertical-box">
+    <div className="vertical-box fade-in-content">
       <AuditionNavBar />
       <div>
         <div className="medium-center-margin">
