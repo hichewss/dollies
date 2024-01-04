@@ -21,6 +21,7 @@ function ContactPage() {
   useEffect(() => {
     fadeMenu ? fadeInMenu() : fadeOutMenu();
   }, [fadeMenu]);
+
   return (
     <div className="fade-in-content">
       {menu ? (

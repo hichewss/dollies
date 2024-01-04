@@ -397,6 +397,26 @@
   padding: 2vh 0;
 }
 
+/* acknowledgements */
+.acknowledgements-box {
+  width: 35%;
+  height: 75vh;
+  background-color: var(--color-dark-red);
+  position: relative;
+  z-index: 2;
+}
+
+.acknowledgements-red-box {
+  width: 35%;
+  height: 75vh;
+  background-color: var(--color-line);
+  z-index: 1;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+
 /* home */
 .home-header {
   font-family: "Montserrat", sans-serif;

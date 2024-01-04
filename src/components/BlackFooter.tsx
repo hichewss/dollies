@@ -25,12 +25,13 @@ function BlackFooter() {
             </div>
           );
         })}
+        <div className="footer-box">
+          <a href="/acknowledgements">
+            <h4 className="color-white">Acknowledgements</h4>
+          </a>
+        </div>
         <div className="small-bottom-margin" />
         <h3 className="color-white">Stanford Dollies 2023-2024</h3>
-        <h3 className="color-white">
-          Photos Courtesy of Dominic Hing, Robert Siegel, Al Ponce, Robby
-          Beyers, and Alan Mela
-        </h3>
       </div>
     </div>
   );
