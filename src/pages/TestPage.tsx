@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import NavBar from "../components/NavBar";
 import PinkFooter from "../components/PinkFooter";
+import Dresses from "../components/dresses";
 
 function TestPage() {
   const [menu, setMenu] = useState(false);
@@ -19,22 +20,26 @@ function TestPage() {
     fadeMenu ? fadeInMenu() : fadeOutMenu();
   }, [fadeMenu]);
   return (
-    <div className="fade-in-content">
-      <div className="side-button menu-side-margin fade-in-content">
-        <p
-          className="color-white"
-          onClick={() => {
-            setMenu(true);
-            setFadeMenu(true);
-          }}
-        >
-          MENU
-        </p>
-      </div>
-      {/* <div className="archive-background absolute" /> */}
-      <NavBar />
-      <div className="vertical-box">
-        <PinkFooter />
+    <div>
+      <div className="fade-in-content white">
+        <div className="side-button menu-side-margin fade-in-content home-layer-up">
+          <p
+            className="color-white"
+            onClick={() => {
+              setMenu(true);
+              setFadeMenu(true);
+            }}
+          >
+            MENU
+          </p>
+        </div>
+        <div className="archive-background dark-pink absolute" />
+        <div className="vertical-box">
+          <NavBar />
+          <div className="vertical-box archive-white-background white"></div>
+          <Dresses />
+          <PinkFooter />
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,28 @@
+{
+  "footer": [
+    {
+      "page": "Home",
+      "href": "/home",
+      "social": "Instagram",
+      "link": "https://www.instagram.com/stanforddollies/?hl=en"
+    },
+    {
+      "page": "Full Photo Archive",
+      "href": "/archive",
+      "social": "Facebook",
+      "link": "https://www.facebook.com/TheStanfordDollies/"
+    },
+    {
+      "page": "Audition Information",
+      "href": "/audition",
+      "social": "Twitter",
+      "link": "https://twitter.com/stanforddollies?lang=en"
+    },
+    {
+      "page": "Contact Form",
+      "href": "/contact",
+      "social": "Youtube",
+      "link": "https://www.youtube.com/@StanfordBand"
+    }
+  ]
+}

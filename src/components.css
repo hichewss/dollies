@@ -298,7 +298,11 @@
 .archive-background {
   width: 100vw;
   height: 85vh;
-  background-color: var(--color-dark-pink);
+}
+
+.archive-white-background {
+  width: 100vw;
+  height: 80vh;
 }
 
 .home-layer-up {
@@ -640,6 +644,10 @@
   background-color: var(--color-dark-red);
 }
 
+.dark-pink {
+  background-color: var(--color-dark-pink);
+}
+
 /* fonts */
 
 h1 {
@@ -660,6 +668,7 @@ h3 {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 500;
+  margin: 0;
 }
 
 h4 {
@@ -738,6 +747,11 @@ textarea {
 
 .hide-overflow {
   overflow-y: hidden;
+}
+
+.layer-up {
+  position: relative;
+  z-index: 2;
 }
 
 /* transitions */
