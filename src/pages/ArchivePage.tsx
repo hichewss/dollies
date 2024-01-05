@@ -71,6 +71,7 @@ function ArchivePage() {
           </div>
           <div className="fade-in-content">
             <NavBar />
+            <div className="mini-top-margin" />
             <div className="small-top-margin" />
             <DolliesNeverDie />
             <div className="color-white large-center-margin">

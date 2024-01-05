@@ -62,29 +62,28 @@ function AcknowledgementsPage() {
               <div className="small-top-margin" />
               <div className="acknowledgements-red-box" />
               <div className="acknowledgements-box">
-                <div className="vertical-box side-margin center-box">
-                  <div className="medium-top-margin" />
-                  <h4 className="color-white">
+                <div className="vertical-box medium-side-margin">
+                  <div className="small-top-margin" />
+                  <h5 className="color-white">
                     The Stanford Dollies website was made using photos taken by
                     the LSJUMB, Al Ponce, Robby Beyers, Robert Siegel, Alan
                     Mela, and Dominic Hing.
-                  </h4>
-                  <div className="small-top-margin" />
-                  <h4 className="color-white">
+                  </h5>
+                  <h5 className="color-white">
                     This website takes inspiration from the{" "}
                     <a
                       href="https://web.stanford.edu/group/lsjumb/cgi-bin/dollies/index2.php?pg=1"
                       className="color-white"
+                      target="_blank"
                     >
                       <u>original Stanford Dollie website</u>
                     </a>{" "}
                     created by Carrie Edwards (04/05).
-                  </h4>
-                  <div className="small-top-margin" />
-                  <h4 className="color-white">
+                  </h5>
+                  <h5 className="color-white">
                     The designs were developed by Karina Chen (22/23) and
                     implemented by Chuyi Zhang (22/23).
-                  </h4>
+                  </h5>
                 </div>
               </div>
             </div>

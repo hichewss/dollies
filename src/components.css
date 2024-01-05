@@ -289,10 +289,36 @@
   font-size: 21px;
 }
 
-.archive-arrow {
-  display: flex;
-  justify-content: flex-end;
+.archive-dropdowns {
+  top: 3%;
+  left: 23.5%;
+  gap: 2.6%;
 }
+
+.dropdown {
+  width: max-content;
+  padding: 5px;
+  background-color: var(--color-line);
+  border-radius: 10px;
+  border: 3px solid var(--color-cream);
+}
+
+.dropdown::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translate(175%, -325%);
+  background-color: var(--color-line);
+  border-left: 3px solid var(--color-cream);
+  border-top: 3px solid var(--color-cream);
+}
+
+.dropdown-start {
+  top: 3%;
+  left: 23.2%
+}
+
 
 /* archive pages */
 .archive-background {
