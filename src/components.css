@@ -291,8 +291,8 @@
 
 .archive-dropdowns {
   top: 3%;
-  left: 23.5%;
-  gap: 2.6%;
+  left: 22.2%;
+  gap: 1.7%;
 }
 
 .dropdown {
@@ -797,6 +797,14 @@ textarea {
 
 .layer-up {
   position: relative;
+  z-index: 2;
+}
+
+.hide {
+  z-index: -1;
+}
+
+.show {
   z-index: 2;
 }
 
