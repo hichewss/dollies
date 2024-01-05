@@ -291,8 +291,8 @@
 
 .archive-dropdowns {
   top: 3%;
-  left: 22.2%;
-  gap: 1.7%;
+  left: 19.5%;
+  gap: 15px;
 }
 
 .dropdown {
@@ -301,6 +301,15 @@
   background-color: var(--color-line);
   border-radius: 10px;
   border: 3px solid var(--color-cream);
+}
+
+.dropdown-hide {
+  width: max-content;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  color: transparent;
 }
 
 .dropdown::before {

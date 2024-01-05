@@ -42,6 +42,7 @@ function NavBar() {
     dispatch({ type: "CLICK_YEAR", variable });
     console.log(state.yr1950s);
   };
+  const filler = "         ";
 
   return (
     <div>
@@ -79,6 +80,14 @@ function NavBar() {
                           return <li>{increment}</li>;
                         })}
                       </ul>
+                    )}
+                    {/* TODO: Come up with a less hacky solution*/}
+                    {year !== "Reunions" && !state[cur_year] && (
+                      <ol className="dropdown-hide">
+                        {increments[index].map((increment: any) => {
+                          return <li>{increment}</li>;
+                        })}
+                      </ol>
                     )}
                   </div>
                 );
