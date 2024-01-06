@@ -638,6 +638,16 @@
   position: absolute;
 }
 
+.red-background {
+  background-color: var(--color-dark-red);
+  width: 100vw;
+  height: 6vh;
+  padding: 10px;
+  transform: translateY(5px);
+  overflow-x: hidden;
+  position: absolute;
+}
+
 .year-bottom {
   bottom: 4%;
 }
@@ -686,7 +696,7 @@
 
 .pink-footer {
   background-color: var(--color-line);
-  padding-top: 8vh;
+  padding-top: 5vh;
   height: fit-content;
 }
 
@@ -719,7 +729,6 @@
   padding: 3% 20%;
   height: max-content;
 }
-
 
 .footer-box {
   display: flex;

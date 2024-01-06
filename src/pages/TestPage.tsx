@@ -4,8 +4,7 @@ import PinkFooter from "../components/PinkFooter";
 import Dresses from "../components/dresses";
 import MenuBar from "../components/MenuBar";
 import { CloseOutIcon } from "../components/images";
-import PastYears from "../components/years";
-import { FutureYears } from "../components/years";
+import { RedPastYears, RedFutureYears } from "../components/years";
 import { useLocation } from "react-router-dom";
 
 function TestPage() {
@@ -76,7 +75,7 @@ function TestPage() {
                     <div className="pink-triangle" />
                     <Dresses />
                     <div className="white-separator small-rotate white">
-                      <PastYears />
+                      <RedPastYears />
                     </div>
                   </div>
                 </div>
@@ -89,8 +88,10 @@ function TestPage() {
                   </div>
                 </div>
               </div>
+              <div className="home-text-box">
+                <RedFutureYears />
+              </div>
               <div className="vertical-box">
-                {/* <FutureYears /> */}
                 <PinkFooter />
               </div>
             </div>
