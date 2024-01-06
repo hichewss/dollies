@@ -27,7 +27,6 @@ function App() {
               path="/acknowledgements"
               element={<AcknowledgementsPage />}
             />
-            <Route path="/1950" element={<TestPage />} />
           </Routes>
         </Router>
       </div>

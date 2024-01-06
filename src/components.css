@@ -190,6 +190,10 @@
   margin-top: 10%;
 }
 
+.large-top-margin {
+  margin-top: 20%;
+}
+
 .mini-bottom-margin {
   margin-bottom: 2%;
 }
@@ -204,6 +208,10 @@
 
 .large-bottom-margin {
   margin-bottom: 12%;
+}
+
+.xtra-large-bottom-margin {
+  margin-bottom: 18%;
 }
 
 .medium-center-margin {
@@ -328,20 +336,46 @@
   left: 23.2%
 }
 
-
 /* archive pages */
 .archive-background {
   width: 100vw;
-  height: 85vh;
+  height: 95vh;
 }
 
 .archive-white-background {
   width: 100vw;
-  height: 80vh;
+  height: 15vh;
+}
+
+.archive-photo-background {
+  width: 100vw;
+  height: 100vh;
+}
+
+.archive-year-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 90px;
+  font-weight: 800;
 }
 
 .home-layer-up {
   z-index: 3;
+}
+
+.archive-text-font {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.archive-page-margin {
+  margin: 0% 20%;
+  padding-top: 15%;
+}
+
+.archive-year-placement {
+  top: 10%;
+  left: 10%;
 }
 
 /* audition */
@@ -389,6 +423,10 @@
 
 .color-light-pink {
   color: var(--color-light-pink);
+}
+
+.color-dark-pink {
+  color: var(--color-dark-pink);
 }
 
 /* contact */
@@ -648,7 +686,7 @@
 
 .pink-footer {
   background-color: var(--color-line);
-  padding-top: 5vh;
+  padding-top: 8vh;
   height: fit-content;
 }
 
@@ -665,6 +703,14 @@
   height: 0;
   border-bottom: 100px solid transparent;
   border-right: 100vw solid var(--color-cream);
+  position: absolute;
+}
+
+.pink-triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid transparent;
+  border-right: 100vw solid var(--color-dark-pink);
   position: absolute;
 }
 
@@ -796,6 +842,10 @@ textarea {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .small-rotate {
   transform: rotate(3.3deg);
 }
@@ -809,12 +859,8 @@ textarea {
   z-index: 2;
 }
 
-.hide {
-  z-index: -1;
-}
-
-.show {
-  z-index: 2;
+.move-up {
+  transform: translateY(-50px);
 }
 
 /* transitions */

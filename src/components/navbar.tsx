@@ -1,5 +1,6 @@
-import React, { useReducer, useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import { increments } from "../data/archive";
+import TestPage from "../pages/TestPage";
 
 function NavBar() {
   const YEARS = [
@@ -40,9 +41,7 @@ function NavBar() {
   const [state, dispatch] = useReducer(yearReducer, yearsDropdown);
   const handleToggle = (variable: any) => {
     dispatch({ type: "CLICK_YEAR", variable });
-    console.log(state.yr1950s);
   };
-  const filler = "         ";
 
   return (
     <div>
@@ -77,7 +76,13 @@ function NavBar() {
                     {year !== "Reunions" && state[cur_year] && (
                       <ul className="color-white dropdown">
                         {increments[index].map((increment: any) => {
-                          return <li>{increment}</li>;
+                          var url =
+                            window.location.pathname + "?year=" + increment;
+                          return (
+                            <a href={url} className="color-white">
+                              <li>{increment}</li>
+                            </a>
+                          );
                         })}
                       </ul>
                     )}

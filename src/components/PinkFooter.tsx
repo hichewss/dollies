@@ -5,7 +5,7 @@ function PinkFooter() {
   return (
     <div className="vertical-box">
       <div className="white-triangle"></div>
-      <div className="absolute">
+      <div className="absolute boot-bottom">
         <img src={RedBoot} />
       </div>
       <div className="pink-footer">
