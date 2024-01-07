@@ -9,7 +9,7 @@ import AuditionPage from "./pages/AuditionPage";
 import ContactPage from "./pages/ContactPage";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import TestPage from "./pages/TestPage";
+import TestPage from "./pages/YearPage";
 
 function App() {
   return (

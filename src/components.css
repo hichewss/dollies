@@ -358,14 +358,10 @@
   font-weight: 800;
 }
 
-.home-layer-up {
-  z-index: 3;
-}
-
 .archive-text-font {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .archive-page-margin {
@@ -376,6 +372,10 @@
 .archive-year-placement {
   top: 10%;
   left: 10%;
+}
+
+.archive-names {
+  display: inline-block;
 }
 
 /* audition */

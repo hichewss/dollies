@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer, useState } from "react";
 import { increments } from "../data/archive";
-import TestPage from "../pages/TestPage";
+import TestPage from "../pages/YearPage";
 
 function NavBar() {
   const YEARS = [

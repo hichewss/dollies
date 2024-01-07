@@ -6,8 +6,9 @@ import MenuBar from "../components/MenuBar";
 import { CloseOutIcon } from "../components/images";
 import { RedPastYears, RedFutureYears } from "../components/years";
 import { useLocation } from "react-router-dom";
+import dollieData from "../data/years";
 
-function TestPage() {
+function YearPage() {
   const [menu, setMenu] = useState(false);
   const [fadeMenu, setFadeMenu] = useState(false);
   const [fadeEffect, setFadeEffect] = useState("");
@@ -15,6 +16,7 @@ function TestPage() {
   const params = new URLSearchParams(location.search);
   const selectedYear = params.get("year");
   const [curYear, setCurYear] = useState(selectedYear || "2023-2024");
+  const year = dollieData.pages.find((year) => year[curYear]);
 
   const fadeInMenu = () => {
     setFadeEffect("fade-in-content");
@@ -82,10 +84,23 @@ function TestPage() {
               </div>
               <div className="white archive-photo-background">
                 <div className="color-red archive-page-margin">
-                  <div className="archive-text-font color-red center-box">
-                    #1: Jeanine Mouchawar ・ #2: Susan Callahan ・ #3: Laurie
-                    Croft ・ #4: Anne O'Brien ・ #5: Arija Bareikis
+                  <div className="center-box">
+                    {year ? (
+                      <div className="archive-text-font color-red">
+                        {Object.entries(year[curYear]).map(([key, value]) => (
+                          <div style={{ display: "inline" }}>
+                            {"#"}
+                            {key} {value}
+                            {key !== "5" && "・"}
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div />
+                    )}
                   </div>
+                  <div className="small-bottom-margin" />
+                  <p className="color-red">Photos go here</p>
                 </div>
               </div>
               <div className="home-text-box">
@@ -102,4 +117,4 @@ function TestPage() {
   );
 }
 
-export default TestPage;
+export default YearPage;

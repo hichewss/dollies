@@ -6,8 +6,7 @@ import WhiteFooter from "../components/WhiteFooter";
 import headers from "../data/archive";
 import MenuBar from "../components/MenuBar";
 import { CloseOutIcon } from "../components/images";
-import TestPage from "./TestPage";
-
+import YearPage from "./YearPage";
 export function DolliesNeverDie() {
   return (
     <div className="vertical-box archive xtra-large-side-margin">
@@ -50,7 +49,7 @@ function ArchivePage() {
   return (
     <div>
       {yearSelected ? (
-        <TestPage />
+        <YearPage />
       ) : (
         <div>
           <div className="fade-in-content">
