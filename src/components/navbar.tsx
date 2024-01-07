@@ -29,10 +29,11 @@ function NavBar() {
   const yearReducer = (state: any, action: any) => {
     switch (action.type) {
       case "CLICK_YEAR":
-        return {
-          ...state,
-          [action.variable]: !state[action.variable],
-        };
+        const update = Object.keys(state).reduce((acc: any, key) => {
+          acc[key] = key === action.variable;
+          return acc;
+        }, {});
+        return update;
       default:
         return state;
     }

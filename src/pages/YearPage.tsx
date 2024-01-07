@@ -96,7 +96,9 @@ function YearPage() {
                         ))}
                       </div>
                     ) : (
-                      <div />
+                      <div className="archive-text-font color-red">
+                        No Data Available on This Year!
+                      </div>
                     )}
                   </div>
                   <div className="small-bottom-margin" />
