@@ -298,8 +298,8 @@
 }
 
 .archive-dropdowns {
-  top: 3%;
-  left: 19.5%;
+  top: 6.5vh;
+  left: 19.5vw;
   gap: 15px;
 }
 
@@ -347,9 +347,14 @@
   height: 15vh;
 }
 
+.archive-text-background {
+  width: 100vw;
+  height: 60vh;
+}
+
 .archive-photo-background {
   width: 100vw;
-  height: 100vh;
+  height: max-content;
 }
 
 .archive-year-header {
@@ -361,21 +366,29 @@
 .archive-text-font {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
-  font-weight: 00;
+  font-weight: 600;
 }
 
 .archive-page-margin {
   margin: 0% 20%;
-  padding-top: 15%;
+  padding-top: 12%;
+}
+
+.archive-photo-margin {
+  margin: 0% 20%
 }
 
 .archive-year-placement {
-  top: 10%;
+  top: 20vh;
   left: 10%;
 }
 
 .archive-names {
   display: inline-block;
+}
+
+.archive-padding {
+  padding-bottom: 20%;
 }
 
 /* audition */

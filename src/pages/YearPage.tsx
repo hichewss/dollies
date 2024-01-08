@@ -7,6 +7,7 @@ import { CloseOutIcon } from "../components/images";
 import { RedPastYears, RedFutureYears } from "../components/years";
 import { useLocation } from "react-router-dom";
 import dollieData from "../data/years";
+import { importAll } from "../components/dresses";
 
 function YearPage() {
   const [menu, setMenu] = useState(false);
@@ -17,6 +18,9 @@ function YearPage() {
   const selectedYear = params.get("year");
   const [curYear, setCurYear] = useState(selectedYear || "2023-2024");
   const year = dollieData.pages.find((year) => year[curYear]);
+  // const photos = importAll(
+  //   require.context("../images/years/2020-2022", false, /\.(png|jpe?g|svg)$/)
+  // );
 
   const fadeInMenu = () => {
     setFadeEffect("fade-in-content");
@@ -82,7 +86,7 @@ function YearPage() {
                   </div>
                 </div>
               </div>
-              <div className="white archive-photo-background">
+              <div className="white archive-text-background">
                 <div className="color-red archive-page-margin">
                   <div className="center-box">
                     {year ? (
@@ -103,9 +107,21 @@ function YearPage() {
                       </div>
                     )}
                   </div>
-                  <div className="small-bottom-margin" />
-                  <p className="color-red">Photos go here</p>
                 </div>
+                <p className="color-red center-box">Photos Coming Soon!</p>
+              </div>
+              <div className="white archive-photo-background">
+                {/* <div className="archive-photo-margin center-box photo-album">
+                  {photos.map((image: any, index: any) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt={`Image ${index + 1}`}
+                      width="30%"
+                      height="30%"
+                    />
+                  ))}
+                </div> */}
               </div>
               <div className="home-text-box">
                 <RedFutureYears />
