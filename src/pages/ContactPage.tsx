@@ -10,6 +10,9 @@ function ContactPage() {
   const [menu, setMenu] = useState(false);
   const [fadeMenu, setFadeMenu] = useState(false);
   const [fadeEffect, setFadeEffect] = useState("");
+  const service_ID = process.env.REACT_APP_SERVICE_ID;
+  const template_ID = process.env.REACT_APP_TEMPLATE_ID;
+  const user_ID = process.env.REACT_APP_PUBLIC_KEY;
 
   const fadeInMenu = () => {
     setFadeEffect("fade-in-content");
@@ -26,22 +29,18 @@ function ContactPage() {
 
     if (emailForm === null) return;
 
-    emailjs
-      .sendForm(
-        "service_9nw64km",
-        "template_4dofp87",
-        emailForm.current!,
-        "ZKmnMkfIii7kX931h"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-
+    if (service_ID && template_ID && user_ID) {
+      emailjs
+        .sendForm(service_ID, template_ID, emailForm.current!, user_ID)
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
     window.location.reload();
   };
 
