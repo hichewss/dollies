@@ -87,13 +87,15 @@ function YearPage() {
                   <div className="center-box">
                     {year ? (
                       <div className="archive-text-font color-red">
-                        {Object.entries(year[curYear]).map(([key, value]) => (
-                          <div style={{ display: "inline" }}>
-                            {"#"}
-                            {key} {value}
-                            {key !== "5" && "・"}
-                          </div>
-                        ))}
+                        {Object.entries(year[curYear]).map(
+                          ([key, value], index, entries) => (
+                            <div style={{ display: "inline" }}>
+                              {"#"}
+                              {key} {value}
+                              {index != entries.length - 1 && "・"}
+                            </div>
+                          )
+                        )}
                       </div>
                     ) : (
                       <div className="archive-text-font color-red">
