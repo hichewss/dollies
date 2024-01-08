@@ -281,7 +281,7 @@ const dollieData: DollieYears = {
         "1": "Michelle Avril",
         "2": "Erin (Cutler) Clausen",
         "3": "Vivienne Hsy",
-        "4": "KFelicia Khoja",
+        "4": "Felicia Khoja",
         "5": "Sondra Ward",
       },
       "1993-1994": {

@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ContactNavBar from "../components/ContactNavBar";
 import RedFooter from "../components/RedFooter";
 import LargeRedBoot from "../images/contact/big_red_boot.png";
 import MenuBar from "../components/MenuBar";
 import { CloseOutIcon } from "../components/images";
+import emailjs from "@emailjs/browser";
 
 function ContactPage() {
   const [menu, setMenu] = useState(false);
@@ -16,6 +17,32 @@ function ContactPage() {
 
   const fadeOutMenu = () => {
     setFadeEffect("fade-out-content");
+  };
+
+  const emailForm = useRef(null);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    if (emailForm === null) return;
+
+    emailjs
+      .sendForm(
+        "service_9nw64km",
+        "template_4dofp87",
+        emailForm.current!,
+        "ZKmnMkfIii7kX931h"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    window.location.reload();
   };
 
   useEffect(() => {
@@ -75,22 +102,24 @@ function ContactPage() {
                 <div className="small-top-margin" />
                 <div className="contact-light-red-box">
                   <div className="mini-center-margin">
-                    <form>
+                    <form ref={emailForm} onSubmit={sendEmail}>
                       <div className="vertical-box">
                         <h6 className="color-red">Name</h6>
                         <input
                           className="contact-text-box"
                           id="name"
                           type="name"
+                          name="name"
                         />
                         <h6 className="color-red">Email</h6>
                         <input
                           className="contact-text-box"
                           id="email"
                           type="email"
+                          name="email"
                         />
                         <h6 className="color-red">Message</h6>
-                        <textarea id="message" />
+                        <textarea id="message" name="message" />
                         <input
                           className="contact-submit-box"
                           id="submit"
