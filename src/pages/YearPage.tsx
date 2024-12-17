@@ -11,64 +11,60 @@ import { importAll } from "../components/dresses";
 
 function YearPage() {
   const [menu, setMenu] = useState(false);
-  const [fadeMenu, setFadeMenu] = useState(false);
-  const [fadeEffect, setFadeEffect] = useState("");
+  const [fadeOutMain, setFadeOutMain] = useState(false);
+  const [fadeInMenu, setFadeInMenu] = useState(false);
   var location = useLocation();
   const params = new URLSearchParams(location.search);
   const selectedYear = params.get("year");
-  const [curYear, setCurYear] = useState(selectedYear || "2023-2024");
+  const [curYear, setCurYear] = useState(selectedYear || "2024-2025");
   const year = dollieData.pages.find((year) => year[curYear]);
   // const photos = importAll(
   //   require.context("../images/years/2020-2022", false, /\.(png|jpe?g|svg)$/)
   // );
 
-  const fadeInMenu = () => {
-    setFadeEffect("fade-in-content");
+  const handleMenuOpen = () => {
+    setFadeOutMain(true);
+    setTimeout(() => {
+      setMenu(true);
+      setFadeOutMain(false);
+      setFadeInMenu(true);
+    }, 300);
   };
 
-  const fadeOutMenu = () => {
-    setFadeEffect("fade-out-content");
+  const handleMenuClose = () => {
+    setFadeInMenu(false);
+    setTimeout(() => {
+      setMenu(false);
+      setFadeOutMain(false);
+      setFadeInMenu(false);
+    }, 300);
   };
-
-  useEffect(() => {
-    fadeMenu ? fadeInMenu() : fadeOutMenu();
-  }, [fadeMenu]);
 
   return (
     <div>
       <div>
         <div className="fade-in-content">
           {menu ? (
-            <div className={fadeEffect}>
+            <div
+              className={fadeInMenu ? "fade-in-content" : "fade-out-content"}
+            >
               <div>
-                <button
-                  className="close-out"
-                  onClick={() => {
-                    setFadeMenu(false);
-                    setTimeout(() => {
-                      setMenu(false);
-                    }, 300);
-                  }}
-                >
+                <button className="close-out" onClick={handleMenuClose}>
                   {CloseOutIcon()}
                 </button>
               </div>
               <MenuBar />
             </div>
           ) : (
-            <div>
-              <div className="side-button menu-side-margin fade-in-content">
-                <p
-                  className="color-white"
-                  onClick={() => {
-                    setMenu(true);
-                    setFadeMenu(true);
-                  }}
-                >
+            <div
+              className={fadeOutMain ? "fade-out-content" : "fade-in-content"}
+            >
+              <div className="side-button menu-side-margin">
+                <p className="color-white" onClick={handleMenuOpen}>
                   MENU
                 </p>
               </div>
-              <div className="dark-pink fade-in-content vertical-box">
+              <div className="dark-pink vertical-box">
                 <NavBar />
                 <div className="archive-year-header absolute archive-year-placement color-white">
                   {curYear}
