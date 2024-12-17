@@ -369,7 +369,7 @@
 
 .archive-text-background {
   width: 100vw;
-  height: 60vh;
+  height: 45vh;
 }
 
 .archive-photo-background {
@@ -409,6 +409,18 @@
 
 .archive-padding {
   padding-bottom: 20%;
+}
+
+.archive-photo-box-red {
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--color-dark-red);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3vw;
+  width: auto;
+  max-height: 300px;
 }
 
 /* audition */

@@ -7,7 +7,13 @@ import { CloseOutIcon } from "../components/images";
 import { RedPastYears, RedFutureYears } from "../components/years";
 import { useLocation } from "react-router-dom";
 import dollieData from "../data/years";
-import { importAll } from "../components/dresses";
+import headers from "../data/archive";
+
+const allImages = require.context(
+  "../images/years",
+  true,
+  /\.(png|jpe?g|svg|JPG)$/
+);
 
 function YearPage() {
   const [menu, setMenu] = useState(false);
@@ -17,10 +23,20 @@ function YearPage() {
   const params = new URLSearchParams(location.search);
   const selectedYear = params.get("year");
   const [curYear, setCurYear] = useState(selectedYear || "2024-2025");
+  const [images, setImages] = useState<string[]>([]);
   const year = dollieData.pages.find((year) => year[curYear]);
-  // const photos = importAll(
-  //   require.context("../images/years/2020-2022", false, /\.(png|jpe?g|svg)$/)
-  // );
+  function importAll(r: any) {
+    return r.keys().map(r);
+  }
+
+  useEffect(() => {
+    const filteredImages = allImages
+      .keys()
+      .filter((key) => key.includes(`/${curYear}/`))
+      .map((key) => allImages(key) as string);
+
+    setImages(filteredImages);
+  }, [curYear]);
 
   const handleMenuOpen = () => {
     setFadeOutMain(true);
@@ -41,7 +57,7 @@ function YearPage() {
   };
 
   return (
-    <div>
+    <div className="white">
       <div>
         <div className="fade-in-content">
           {menu ? (
@@ -99,26 +115,29 @@ function YearPage() {
                       </div>
                     ) : (
                       <div className="archive-text-font color-red">
-                        No Data Available on This Year!
+                        No Info on This Year 😞
                       </div>
                     )}
                   </div>
                 </div>
-                <p className="color-red center-box">Photos Coming Soon!</p>
               </div>
-              <div className="white archive-photo-background">
-                {/* <div className="archive-photo-margin center-box photo-album">
-                  {photos.map((image: any, index: any) => (
-                    <img
-                      key={index}
-                      src={image}
-                      alt={`Image ${index + 1}`}
-                      width="30%"
-                      height="30%"
-                    />
-                  ))}
-                </div> */}
+              <div className="mini-top-margin" />
+              <div className="medium-side-margin">
+                <div className="hide-scrollbar horizontal-scroll-box">
+                  <div className="center-box">
+                    {images.map((src, index) => (
+                      <img
+                        key={index}
+                        src={src}
+                        alt={`archive-${index}`}
+                        loading="lazy"
+                        className="archive-photo-box-red"
+                      />
+                    ))}
+                  </div>
+                </div>
               </div>
+              {year && <div className="medium-bottom-margin" />}
               <div className="home-text-box">
                 <RedFutureYears />
               </div>
