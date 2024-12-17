@@ -54,56 +54,42 @@ function NavBar() {
         </a>
       </div>
       <div className="center-box side-margin">
-        <div className="center-box">
-          {YEARS.map((year) => {
-            const cur_year = "yr" + year;
-            return (
+        {YEARS.map((year, index) => {
+          const cur_year = "yr" + year;
+          return (
+            <div
+              key={year}
+              className="mini-right-margin dropdown-top-margin"
+              style={{ position: "relative" }}
+            >
               <p
-                className="color-white small-right-margin"
+                className="color-white dropdown-text"
                 onClick={() => handleToggle(cur_year)}
               >
                 {year}
               </p>
-            );
-          })}
-        </div>
-      </div>
-      {
-        <div className="absolute archive-dropdowns">
-          <div className="center-box side-margin">
-            <div className="center-box archive-dropdowns">
-              {YEARS.map((year: any, index: any) => {
-                const cur_year = "yr" + year;
-                return (
-                  <div>
-                    {year !== "Reunions" && state[cur_year] && (
-                      <ul className="color-white dropdown">
-                        {increments[index].map((increment: any) => {
-                          var url =
-                            window.location.pathname + "?year=" + increment;
-                          return (
-                            <a href={url} className="color-white">
-                              <li className="center-box">{increment}</li>
-                            </a>
-                          );
-                        })}
-                      </ul>
-                    )}
-                    {/* TODO: Come up with a less hacky solution*/}
-                    {year !== "Reunions" && !state[cur_year] && (
-                      <ol className="dropdown-hide">
-                        {increments[index].map((increment: any) => {
-                          return <li>{increment}</li>;
-                        })}
-                      </ol>
-                    )}
-                  </div>
-                );
-              })}
+              {state[cur_year] && (
+                <div className="archive-dropdowns">
+                  <ul className="dropdown">
+                    {increments[index].map((increment) => {
+                      const url = `${window.location.pathname}?year=${increment}`;
+                      return (
+                        <a
+                          href={url}
+                          key={increment}
+                          className="color-white center-box"
+                        >
+                          <li>{increment}</li>
+                        </a>
+                      );
+                    })}
+                  </ul>
+                </div>
+              )}
             </div>
-          </div>
-        </div>
-      }
+          );
+        })}
+      </div>
     </div>
   );
 }
