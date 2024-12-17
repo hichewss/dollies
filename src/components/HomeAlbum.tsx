@@ -11,9 +11,9 @@ function PhotoAlbum() {
       <div className="mini-bottom-margin" />
       <div className="horizontal-box photo-album">
         <div className="vertical-box photo-album-box photo-album">
-          <div className="vertical-box photo-box-one photo-album">
+          <div className="vertical-box photo-box-one photo-album-vertical">
             <img src={photos[0]} alt="dollies" />
-            <div className="photo-album color-white photo-album-subtext">
+            <div className="color-white photo-album-subtext">
               Photos from the 1950s to the 2020s. The Dollie Legacy has lasted
               over 70+ years, and continues to live on.{" "}
             </div>
@@ -31,9 +31,9 @@ function PhotoAlbum() {
           <img src={photos[6]} alt="dollies" className="photo-box-two" />
         </div>
         <div className="vertical-box photo-album">
-          <div className="horizontal-box photo-box-one photo-album">
+          <div className="horizontal-box photo-box-one photo-album-vertical">
             <img src={photos[7]} alt="dollies" />
-            <div className="vertical-box photo-album">
+            <div className="vertical-box photo-album-vertical">
               <div className="color-white photo-album-vertical-subtext">
                 The Dollies of the LSJUMB
               </div>

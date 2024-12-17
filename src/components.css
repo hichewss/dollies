@@ -529,6 +529,10 @@
   gap: 20px;
 }
 
+.photo-album-vertical {
+  gap: 10px;
+}
+
 .photo-album-box {
   width: 18vw;
   height: 100vh;
