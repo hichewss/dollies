@@ -27,7 +27,7 @@ function BlackFooter() {
         })}
         <div className="footer-box"></div>
         <div className="small-bottom-margin" />
-        <h3 className="color-white">Stanford Dollies 2023-2024</h3>
+        <h3 className="color-white">Stanford Dollies 2024-2025</h3>
       </div>
     </div>
   );
