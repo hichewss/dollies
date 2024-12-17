@@ -32,8 +32,12 @@ function ContactPage() {
   const service_ID = process.env.REACT_APP_SERVICE_ID;
   const template_ID = process.env.REACT_APP_TEMPLATE_ID;
   const user_ID = process.env.REACT_APP_PUBLIC_KEY;
+  const dollies = process.env.REACT_APP_DOLLIES;
+  const lsjumb = process.env.REACT_APP_LSJUMB;
+  const webmaster = process.env.REACT_APP_WEBMASTER;
+  const [toEmail, setToEmail] = useState(dollies);
 
-  const emailForm = useRef(null);
+  const emailForm = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -41,18 +45,21 @@ function ContactPage() {
     if (emailForm === null) return;
 
     if (service_ID && template_ID && user_ID) {
+      console.log(emailForm.current);
       emailjs
         .sendForm(service_ID, template_ID, emailForm.current!, user_ID)
         .then(
           (result) => {
             console.log(result.text);
+            emailForm.current?.reset();
+            alert("Your email has been sent successfully! 🎉");
           },
           (error) => {
             console.log(error.text);
+            alert("Something went wrong. Please try again. 😢");
           }
         );
     }
-    window.location.reload();
   };
 
   return (
@@ -91,11 +98,29 @@ function ContactPage() {
                 </div>
               </div>
               <div className="contact-box">
-                <div className="small-top-margin" />
+                <div className="mini-top-margin" />
                 <div className="contact-light-red-box">
                   <div className="mini-center-margin">
                     <form ref={emailForm} onSubmit={sendEmail}>
+                      <input
+                        type="hidden"
+                        name="to_email"
+                        id="to_email"
+                        value={toEmail}
+                      />
                       <div className="vertical-box">
+                        <h6 className="color-red">To</h6>
+                        <select
+                          className="contact-text-box"
+                          id="to"
+                          name="to"
+                          onChange={(e) => setToEmail(e.target.value)}
+                          value={toEmail}
+                        >
+                          <option value={dollies}>Current Dollies</option>
+                          <option value={webmaster}>Webmaster</option>
+                          <option value={lsjumb}>LSJUMB</option>
+                        </select>
                         <h6 className="color-red">Name</h6>
                         <input
                           className="contact-text-box"
@@ -124,6 +149,7 @@ function ContactPage() {
                 <div className="contact-red-box"></div>
               </div>
             </div>
+            <div className="small-bottom-margin"></div>
             <div className="small-bottom-margin"></div>
             <div className="small-bottom-margin"></div>
             <RedFooter />
