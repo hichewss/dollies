@@ -25,11 +25,7 @@ function BlackFooter() {
             </div>
           );
         })}
-        <div className="footer-box">
-          <a href="/acknowledgements">
-            <h4 className="color-white">Acknowledgements</h4>
-          </a>
-        </div>
+        <div className="footer-box"></div>
         <div className="small-bottom-margin" />
         <h3 className="color-white">Stanford Dollies 2023-2024</h3>
       </div>

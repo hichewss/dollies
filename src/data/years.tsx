@@ -494,6 +494,13 @@ const dollieData: DollieYears = {
         "4": "Eva Geierstanger",
         "5": "Ava Tiffany",
       },
+      "2024-2025": {
+        "1": "Ariana Lee",
+        "2": "Alice Finkelstein",
+        "3": "Yujen Lin",
+        "4": "Janae Lindsay",
+        "5": "Abigail Lee",
+      },
     },
   ],
 };

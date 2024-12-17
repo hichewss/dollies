@@ -12,7 +12,6 @@ function NavBar() {
     "2000s",
     "2010s",
     "2020s",
-    "Reunions",
   ];
 
   const yearsDropdown = {
@@ -29,11 +28,14 @@ function NavBar() {
   const yearReducer = (state: any, action: any) => {
     switch (action.type) {
       case "CLICK_YEAR":
-        const update = Object.keys(state).reduce((acc: any, key) => {
-          acc[key] = key === action.variable;
-          return acc;
-        }, {});
-        return update;
+        return {
+          ...state,
+          [action.variable]: !state[action.variable], // Toggle the clicked dropdown
+          ...Object.keys(state).reduce((acc: any, key) => {
+            if (key !== action.variable) acc[key] = false; // Close other dropdowns
+            return acc;
+          }, {}),
+        };
       default:
         return state;
     }
@@ -67,7 +69,7 @@ function NavBar() {
         </div>
       </div>
       {
-        <div className="absolute archive-dropdowns dropdown-box">
+        <div className="absolute archive-dropdowns">
           <div className="center-box side-margin">
             <div className="center-box archive-dropdowns">
               {YEARS.map((year: any, index: any) => {
@@ -81,7 +83,7 @@ function NavBar() {
                             window.location.pathname + "?year=" + increment;
                           return (
                             <a href={url} className="color-white">
-                              <li>{increment}</li>
+                              <li className="center-box">{increment}</li>
                             </a>
                           );
                         })}

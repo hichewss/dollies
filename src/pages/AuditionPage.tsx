@@ -8,11 +8,52 @@ import WhiteFooter from "../components/WhiteFooter";
 import MenuBar from "../components/MenuBar";
 import { CloseOutIcon } from "../components/images";
 
+function AuditionPageMainContents() {
+  const boots = [DownBoot, UpBoot, RightBoot];
+  return (
+    <div className="fade-in-content">
+      <div className="vertical-box">
+        <AuditionNavBar />
+        <div>
+          <div className="medium-center-margin">
+            <h1 className="color-white">AUDITION INFO</h1>
+          </div>
+          <div className="small-bottom-margin" />
+        </div>
+        <div>
+          <div className="vertical-box">
+            {auditionInfo.audition.map((item, index) => {
+              return (
+                <div className="right-box">
+                  <div className="line" />
+                  <div className="audition-box">
+                    <h1 className="color-white title-box center-box small-left-margin">
+                      {item.title}
+                    </h1>
+                    <h5 className="color-white detail-box">{item.detail}</h5>
+                    <div className="center-box small-right-margin">
+                      <img src={boots[index % 3]} />
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+            <div className="right-box">
+              <div className="line" />
+            </div>
+            <div className="small-bottom-margin" />
+            <WhiteFooter />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function AuditionPage() {
   const [menu, setMenu] = useState(false);
   const [fadeMenu, setFadeMenu] = useState(false);
   const [fadeEffect, setFadeEffect] = useState("");
-  const boots = [DownBoot, UpBoot, RightBoot];
 
   const fadeInMenu = () => {
     setFadeEffect("fade-in-content");
@@ -47,55 +88,20 @@ function AuditionPage() {
         </div>
       ) : (
         <div>
-          <div className="side-button menu-side-margin fade-in-content">
-            <p
-              className="color-white fade-in-content"
+          <div className="end-box small-right-margin">
+            <button
+              className="end-box"
               onClick={() => {
                 setMenu(true);
                 setFadeMenu(true);
               }}
             >
-              MENU
-            </p>
+              <p className="color-white mini-top-margin absolute home-layer-up">
+                MENU
+              </p>
+            </button>
           </div>
-          <div className="fade-in-content">
-            <div className="vertical-box">
-              <AuditionNavBar />
-              <div>
-                <div className="medium-center-margin">
-                  <h1 className="color-white">AUDITION INFO</h1>
-                </div>
-                <div className="small-bottom-margin" />
-              </div>
-              <div>
-                <div className="vertical-box">
-                  {auditionInfo.audition.map((item, index) => {
-                    return (
-                      <div className="right-box">
-                        <div className="line" />
-                        <div className="audition-box">
-                          <h1 className="color-white title-box center-box small-left-margin">
-                            {item.title}
-                          </h1>
-                          <h5 className="color-white detail-box">
-                            {item.detail}
-                          </h5>
-                          <div className="center-box small-right-margin">
-                            <img src={boots[index % 3]} />
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                  <div className="right-box">
-                    <div className="line" />
-                  </div>
-                  <div className="small-bottom-margin" />
-                  <WhiteFooter />
-                </div>
-              </div>
-            </div>
-          </div>
+          <AuditionPageMainContents />
         </div>
       )}
     </div>

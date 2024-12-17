@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./components.css";
-import AcknowledgementsPage from "./pages/AcknowledgementsPage";
 import HomePage from "./pages/HomePage";
 import ArchivePage from "./pages/ArchivePage";
 import AuditionPage from "./pages/AuditionPage";
@@ -23,10 +22,6 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/audition" element={<AuditionPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route
-              path="/acknowledgements"
-              element={<AcknowledgementsPage />}
-            />
           </Routes>
         </Router>
       </div>

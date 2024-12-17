@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Dollies from "../images/home/dollies.png";
+import Dollies from "../images/home/dollies.jpg";
 import { DolliesNeverDie } from "./ArchivePage";
 import BlackFooter from "../components/BlackFooter";
 import { BlackRedirectArrow, HomeBoot } from "../components/images";
