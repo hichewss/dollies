@@ -12,6 +12,7 @@ function NavBar() {
     "2000s",
     "2010s",
     "2020s",
+    "Reunions",
   ];
 
   const yearsDropdown = {
@@ -56,6 +57,19 @@ function NavBar() {
       <div className="center-box side-margin">
         {YEARS.map((year, index) => {
           const cur_year = "yr" + year;
+          if (year === "Reunions") {
+            return (
+              <div
+                key={year}
+                className="mini-right-margin dropdown-top-margin"
+                style={{ position: "relative" }}
+              >
+                <a href="/reunions" className="color-white dropdown-text">
+                  <p className="color-white dropdown-text">{year}</p>
+                </a>
+              </div>
+            );
+          }
           return (
             <div
               key={year}
