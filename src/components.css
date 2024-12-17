@@ -867,29 +867,33 @@ textarea {
 
 /* transitions */
 .fade-in-content {
-  animation: fadeIn 0.5s ease-in-out forwards;
+  animation: fadeIn 0.3s ease-in-out forwards;
 }
 
 .fade-out-content {
-  animation: fadeOut 0.3s forwards;
+  animation: fadeOut 0.3s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    visibility: visible;
   }
 
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
 @keyframes fadeOut {
   0% {
     opacity: 1;
+    visibility: visible;
   }
 
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
