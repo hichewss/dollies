@@ -369,7 +369,15 @@
 
 .archive-text-background {
   width: 100vw;
-  height: 45vh;
+  height: max-content;
+}
+
+.archive-no-info-background {
+  width: 100vw;
+  height: 10vh;
+  margin: 0;
+  height: max-content;
+  padding: 0;
 }
 
 .archive-photo-background {

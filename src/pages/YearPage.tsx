@@ -8,6 +8,7 @@ import { RedPastYears, RedFutureYears } from "../components/years";
 import { useLocation } from "react-router-dom";
 import dollieData from "../data/years";
 import headers from "../data/archive";
+import Dress from "../images/dresses/2010.png";
 
 const allImages = require.context(
   "../images/years",
@@ -114,30 +115,43 @@ function YearPage() {
                         )}
                       </div>
                     ) : (
-                      <div className="archive-text-font color-red">
-                        No Info on This Year 😞
+                      <div>
+                        <div className="archive-text-font color-red">
+                          No Info on This Year 😞
+                        </div>
                       </div>
                     )}
                   </div>
                 </div>
               </div>
               <div className="mini-top-margin" />
+              {images.length <= 0 && (
+                <div className="center-box">
+                  <img src={Dress} />
+                </div>
+              )}
               <div className="medium-side-margin">
                 <div className="hide-scrollbar horizontal-scroll-box">
                   <div className="center-box">
-                    {images.map((src, index) => (
-                      <img
-                        key={index}
-                        src={src}
-                        alt={`archive-${index}`}
-                        loading="lazy"
-                        className="archive-photo-box-red"
-                      />
-                    ))}
+                    {images &&
+                      images.length > 0 &&
+                      images.map((src, index) => (
+                        <img
+                          key={index}
+                          src={src}
+                          alt={`archive-${index}`}
+                          loading="lazy"
+                          className="archive-photo-box-red"
+                        />
+                      ))}
                   </div>
                 </div>
               </div>
-              {year && <div className="medium-bottom-margin" />}
+              {images.length > 0 ? (
+                <div className="medium-bottom-margin" />
+              ) : (
+                <div className="small-bottom-margin" />
+              )}
               <div className="home-text-box">
                 <RedFutureYears />
               </div>
