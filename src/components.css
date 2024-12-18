@@ -428,6 +428,7 @@
   flex-direction: column;
   margin-right: 3vw;
   width: auto;
+  min-height: 300px;
   max-height: 300px;
 }
 
