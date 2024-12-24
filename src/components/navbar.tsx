@@ -64,7 +64,10 @@ function NavBar() {
                 className="mini-right-margin dropdown-top-margin"
                 style={{ position: "relative" }}
               >
-                <a href="/reunions" className="color-white dropdown-text">
+                <a
+                  href={`${window.location.pathname}?year=Reunions`}
+                  className="color-white dropdown-text"
+                >
                   <p className="color-white dropdown-text">{year}</p>
                 </a>
               </div>
