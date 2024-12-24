@@ -140,7 +140,7 @@ function YearPage() {
                       : ""
                   }`}
                 >
-                  <div className="center-box">
+                  <div className="archive-gap center-box">
                     {images &&
                       images.length > 0 &&
                       images.map((src, index) => (

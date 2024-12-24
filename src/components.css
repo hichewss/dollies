@@ -430,10 +430,13 @@
   padding: 30px;
   display: flex;
   flex-direction: column;
-  margin-right: 3vw;
   width: auto;
   min-height: 300px;
   max-height: 300px;
+}
+
+.archive-gap {
+  gap: 3vw;
 }
 
 /* audition */
