@@ -129,8 +129,8 @@ function ArchivePage() {
                   </div>
                   <div className="center-box">
                     <p className="color-white">
-                      Photos by Alan Mela, Al Ponce, Robby Beyers, Dominick
-                      Hing, and more!
+                      Photos by Alan Mela, Al Ponce, Robby Beyers, Robert
+                      Siegel, Dominick Hing, and more!
                     </p>
                   </div>
                   <div className="medium-bottom-margin" />
