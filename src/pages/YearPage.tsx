@@ -115,11 +115,13 @@ function YearPage() {
                         )}
                       </div>
                     ) : (
-                      <div>
-                        <div className="archive-text-font color-red">
-                          No Info on This Year 😞
+                      selectedYear !== "Reunions" && (
+                        <div>
+                          <div className="archive-text-font color-red">
+                            No Info on This Year 😞
+                          </div>
                         </div>
-                      </div>
+                      )
                     )}
                   </div>
                 </div>
