@@ -136,6 +136,10 @@
   right: 3%;
 }
 
+.menu {
+  cursor: pointer;
+}
+
 /* margins and constraints */
 
 .top {

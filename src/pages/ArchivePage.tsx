@@ -76,7 +76,7 @@ function ArchivePage() {
               >
                 <div className="end-box small-right-margin">
                   <button className="end-box" onClick={handleMenuOpen}>
-                    <p className="color-white mini-top-margin absolute home-layer-up">
+                    <p className="color-white mini-top-margin absolute home-layer-up menu">
                       MENU
                     </p>
                   </button>

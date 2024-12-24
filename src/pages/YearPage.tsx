@@ -76,7 +76,7 @@ function YearPage() {
             <div
               className={fadeOutMain ? "fade-out-content" : "fade-in-content"}
             >
-              <div className="side-button menu-side-margin">
+              <div className="side-button menu-side-margin menu">
                 <p className="color-white" onClick={handleMenuOpen}>
                   MENU
                 </p>
