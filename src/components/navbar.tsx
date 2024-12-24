@@ -1,6 +1,5 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useEffect, useReducer, useRef } from "react";
 import { increments } from "../data/archive";
-import TestPage from "../pages/YearPage";
 
 function NavBar() {
   const YEARS = [
@@ -30,25 +29,48 @@ function NavBar() {
     switch (action.type) {
       case "CLICK_YEAR":
         return {
-          ...state,
-          [action.variable]: !state[action.variable], // Toggle the clicked dropdown
           ...Object.keys(state).reduce((acc: any, key) => {
-            if (key !== action.variable) acc[key] = false; // Close other dropdowns
+            acc[key] = false;
             return acc;
           }, {}),
+          [action.variable]: !state[action.variable], // Toggle the clicked dropdown
         };
+      case "CLOSE_ALL":
+        return Object.keys(state).reduce((acc: any, key) => {
+          acc[key] = false; // Close all dropdowns
+          return acc;
+        }, {});
       default:
         return state;
     }
   };
 
   const [state, dispatch] = useReducer(yearReducer, yearsDropdown);
-  const handleToggle = (variable: any) => {
+
+  const navBarRef = useRef<HTMLDivElement>(null);
+
+  const handleToggle = (variable: string) => {
     dispatch({ type: "CLICK_YEAR", variable });
   };
 
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      navBarRef.current &&
+      !navBarRef.current.contains(event.target as Node) // Check if click outside
+    ) {
+      dispatch({ type: "CLOSE_ALL" });
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div>
+    <div ref={navBarRef}>
       <div className="side-button side-margin">
         <a href="/home">
           <p className="color-white">DOLLIES</p>
