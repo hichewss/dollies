@@ -270,6 +270,24 @@
   -webkit-text-stroke: 3.5px var(--color-cream);
 }
 
+@media (max-width: 768px) {
+
+  .archive-title-header,
+  .archive-main-header {
+    font-size: 60px;
+    -webkit-text-stroke: 2.5px var(--color-cream);
+  }
+}
+
+@media (max-width: 480px) {
+
+  .archive-title-header,
+  .archive-main-header {
+    font-size: 40px;
+    -webkit-text-stroke: 1.5px var(--color-cream);
+  }
+}
+
 .archive-photo-box {
   width: fit-content;
   height: fit-content;
@@ -664,6 +682,7 @@
 
 .dress-container {
   width: 100vw;
+  height: max-content;
 }
 
 .white-separator {
