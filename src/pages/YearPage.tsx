@@ -133,7 +133,13 @@ function YearPage() {
                 </div>
               )}
               <div className="medium-side-margin">
-                <div className="hide-scrollbar horizontal-scroll-box">
+                <div
+                  className={`${
+                    images && images.length > 3
+                      ? "hide-scrollbar horizontal-scroll-box"
+                      : ""
+                  }`}
+                >
                   <div className="center-box">
                     {images &&
                       images.length > 0 &&
