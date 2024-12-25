@@ -30,12 +30,12 @@ function HomePageMainContents() {
           </div>
         </div>
         <div className="home-text-box">
+          <div className="boot-right absolute">{HomeBoot()}</div>
           <div className="large-side-margin color-light-pink home-background-text">
             THE DOLLIES
           </div>
-          <div className="boot-right absolute">{HomeBoot()}</div>
-          <div className="home-text-margin home">
-            <h1 className="color-red">
+          <div className="relative home-text-margin">
+            <h1 className="color-red home-layer-up relative">
               SINCE 1953, DOLLIES HAVE APPEARED AT SPORTING EVENTS AND RALLIES
               WITH THE STANFORD BAND AND TREE
             </h1>
