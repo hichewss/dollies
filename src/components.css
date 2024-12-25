@@ -568,10 +568,15 @@
   }
 }
 
-/* Media query for extra-small screens */
 @media (max-width: 524px) {
   .home-header {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 328px) {
+  .home-header {
+    font-size: 20px;
   }
 }
 
@@ -892,6 +897,32 @@ p {
   font-size: 32px;
   font-weight: 500;
 }
+
+@media (max-width: 1180px) {
+  p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 524px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 328px) {
+  p {
+    font-size: 12px;
+  }
+}
+
+
 
 input {
   font-family: "Poppins", sans-serif;
