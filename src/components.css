@@ -552,11 +552,11 @@
 /* home */
 .home-header {
   font-family: "Montserrat", sans-serif;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: 800;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   .home-header {
     font-size: 55px;
   }
@@ -569,7 +569,7 @@
 }
 
 /* Media query for extra-small screens */
-@media (max-width: 480px) {
+@media (max-width: 524px) {
   .home-header {
     font-size: 25px;
   }
