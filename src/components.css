@@ -615,6 +615,26 @@
   transform: rotate(180deg) translateY(40px);
   z-index: 1;
   height: max-content;
+  margin: 0% 10%;
+}
+
+
+@media (max-width: 1180px) {
+  .home-background-text {
+    font-size: 85px;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-background-text {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 799px) {
+  .home-background-text {
+    visibility: hidden;
+  }
 }
 
 .interested-box-padding {
@@ -854,8 +874,33 @@
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 65px;
+  font-size: 60px;
   margin: 1vh;
+}
+
+
+@media (max-width: 1180px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 524px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 328px) {
+  h1 {
+    font-size: 20px;
+  }
 }
 
 h2 {
@@ -921,8 +966,6 @@ p {
     font-size: 12px;
   }
 }
-
-
 
 input {
   font-family: "Poppins", sans-serif;
