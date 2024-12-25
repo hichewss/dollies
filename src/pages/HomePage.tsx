@@ -30,7 +30,7 @@ function HomePageMainContents() {
           </div>
         </div>
         <div className="home-text-box">
-          {/* <div className="boot-right absolute">{HomeBoot()}</div> */}
+          <div className="boot-right absolute">{HomeBoot()}</div>
           <div className="color-light-pink home-background-text">
             THE DOLLIES
           </div>

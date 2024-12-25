@@ -125,7 +125,40 @@
 }
 
 .boot-right {
-  right: 7%;
+  top: 0;
+  right: 8%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.boot-right svg {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1180px) {
+  .boot-right svg {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .boot-right svg {
+    width: 275px;
+  }
+}
+
+@media (max-width: 800px) {
+  .boot-right svg {
+    width: 250px;
+  }
+}
+
+@media (max-width: 799px) {
+  .boot-right {
+    visibility: hidden;
+  }
 }
 
 .home-layer-up {
@@ -596,7 +629,7 @@
 }
 
 .home-text-margin {
-  margin: 5% 15%;
+  margin: 5% 12%;
 }
 
 .home {
@@ -615,7 +648,7 @@
   transform: rotate(180deg) translateY(40px);
   z-index: 1;
   height: max-content;
-  margin: 0% 10%;
+  margin: 0% 6%;
 }
 
 
