@@ -15,15 +15,15 @@ function HomePageMainContents() {
   return (
     <div className="fade-in-content">
       <div className="vertical-box">
-        <div className="vertical-box">
+        <div className="vertical-box relative">
           <img
             src={Dollies}
             width="100%"
-            height="100%"
+            height="auto"
             alt="Stanford Dollies 23-24"
             className="home"
           />
-          <div className="absolute home-header-box center-box">
+          <div className="home-header-box center-box">
             <div className="home-header color-white home-layer-up">
               THE STANFORD DOLLIES
             </div>

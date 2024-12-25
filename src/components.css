@@ -552,14 +552,34 @@
 /* home */
 .home-header {
   font-family: "Montserrat", sans-serif;
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 800;
 }
 
+@media (max-width: 1024px) {
+  .home-header {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-header {
+    font-size: 40px;
+  }
+}
+
+/* Media query for extra-small screens */
+@media (max-width: 480px) {
+  .home-header {
+    font-size: 25px;
+  }
+}
+
 .home-header-box {
+  position: absolute;
+  z-index: 3;
   width: 100%;
-  margin-top: 30%;
-  margin-bottom: 30%;
+  height: 100%;
 }
 
 .home-text-box {
@@ -576,7 +596,9 @@
 
 .home {
   z-index: 2;
-  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .home-background-text {
