@@ -83,6 +83,10 @@ function HomePageMainContents() {
           {isWideScreen && (
             <div className="vertical-box center-box scale-down">
               <div className="photo-album-text color-white">PHOTO ALBUM</div>
+              <div className="photo-album-subtext color-white">
+                Photos from the 1950s to the 2020s. The Dollie Legacy has lasted
+                over 70+ years, and continues to live on.{" "}
+              </div>
               <PhotoAlbum />
             </div>
           )}

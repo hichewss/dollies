@@ -293,7 +293,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 690px) {
   .quote-icon svg {
     height: 2vh;
     width: auto;
@@ -714,6 +714,7 @@
 
 .photo-album-vertical {
   gap: 10px;
+  height: 100%;
 }
 
 .photo-album-box {
@@ -731,27 +732,37 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
+  display: flex;
 }
 
-.photo-album-vertical-subtext {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 28px;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  margin: 0;
+@media (max-width: 1440px) {
+  .photo-album-subtext {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .photo-album-subtext {
+    font-size: 18px;
+  }
 }
 
 .photo-box-one {
   height: 35vh;
+  object-fit: cover;
+  object-position: top;
 }
 
 .photo-box-two {
   height: 20vh;
+  object-fit: cover;
+  object-position: top;
 }
 
 .photo-box-three {
   height: 13vh;
+  object-fit: cover;
+  object-position: top;
 }
 
 /* slideshow */
@@ -832,16 +843,7 @@
 
 @media (max-width: 768px) {
   .dress-background {
-    top: -25px;
-    border-top: 1vh solid var(--color-dark-red);
-    border-bottom: 1vh solid var(--color-dark-red);
-  }
-}
-
-@media (max-width: 468px) {
-  .dress-background {
-    border-top: 0.8vh solid var(--color-dark-red);
-    border-bottom: 0.8vh solid var(--color-dark-red);
+    visibility: hidden;
   }
 }
 
@@ -1264,6 +1266,10 @@ select {
   border: 0;
 }
 
+img {
+  object-fit: cover;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("./fonts/ttf/Montserrat-ExtraBold.ttf");
@@ -1363,13 +1369,13 @@ select {
 
 @media (max-width: 1180px) {
   .resp-bottom-margin {
-    margin-bottom: 10%;
+    margin-bottom: 25%;
   }
 }
 
-@media (max-width: 978px) {
+@media (max-width: 768px) {
   .resp-bottom-margin {
-    margin-bottom: 20%;
+    margin-bottom: 5%;
   }
 }
 
