@@ -764,15 +764,24 @@
   position: absolute;
 }
 
+@media (max-width: 768px) {
+  .dress-background {
+    top: -25px;
+    border-top: 1vh solid var(--color-dark-red);
+    border-bottom: 1vh solid var(--color-dark-red);
+  }
+}
+
+@media (max-width: 468px) {
+  .dress-background {
+    border-top: 0.8vh solid var(--color-dark-red);
+    border-bottom: 0.8vh solid var(--color-dark-red);
+  }
+}
+
 .dress-container {
   width: 100vw;
   min-height: 1vh;
-}
-
-.white-separator {
-  height: 23vh;
-  width: 100vw;
-  position: absolute;
 }
 
 .dress-image {
@@ -805,15 +814,65 @@
 /* years */
 .black-background {
   background-color: var(--color-black);
+  border-top: 2.2vh solid var(--color-cream);
   width: 100vw;
   height: 6vh;
   padding: 10px;
   transform: translateY(5px);
   overflow-x: hidden;
   position: absolute;
+  top: 30px;
+}
+
+.black-background-future {
+  background-color: var(--color-black);
+  width: 100vw;
+  height: 6vh;
+  padding: 10px;
+  transform: translateY(5px);
+  overflow-x: hidden;
+  position: absolute;
+  top: 30px;
+}
+
+
+@media (max-width: 1180px) {
+
+  .red-background,
+  .black-background {
+    top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .red-background,
+  .black-background {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .red-triangle,
+  .white-triangle {
+    visibility: hidden;
+  }
 }
 
 .red-background {
+  background-color: var(--color-dark-red);
+  border-top: 1.2vh solid var(--color-cream);
+  width: 100vw;
+  height: 6vh;
+  padding: 10px;
+  transform: translateY(5px);
+  overflow-x: hidden;
+  position: absolute;
+  top: 30px;
+}
+
+.red-background-future {
   background-color: var(--color-dark-red);
   width: 100vw;
   height: 6vh;
@@ -821,6 +880,7 @@
   transform: translateY(5px);
   overflow-x: hidden;
   position: absolute;
+  top: 30px;
 }
 
 .year-bottom {
@@ -839,6 +899,18 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 32px;
+}
+
+@media (max-width: 1180px) {
+  .year-font {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .year-font {
+    font-size: 18px;
+  }
 }
 
 .year-side-margin {

@@ -59,10 +59,10 @@ function HomePageMainContents() {
             <div className="additional-margin" />
           </div>
         </div>
-        <div className="vertical-box">
+        <div className="vertical-box relative">
           <div className="white-triangle" />
           <Dresses />
-          <div className="white-separator small-rotate white">
+          <div className="small-rotate white">
             <PastYears />
           </div>
         </div>

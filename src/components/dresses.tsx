@@ -1,4 +1,5 @@
 import React from "react";
+import PastYears from "./years";
 
 export function importAll(r: any) {
   return r.keys().map(r);
