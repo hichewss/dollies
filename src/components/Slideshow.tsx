@@ -13,19 +13,27 @@ const photos = importAll(
 
 function Slideshow() {
   const photoRef = useRef<HTMLInputElement>(null);
-  const prev = () => {
-    if (photoRef.current) {
-      photoRef.current.scrollLeft -= 500;
-    }
-  };
+  let currentIndex = 0; // Track the current index
+  const totalImages = photos.length;
+
   const next = () => {
     if (photoRef.current) {
-      photoRef.current.scrollLeft += 500;
+      currentIndex = (currentIndex + 1) % totalImages; // Loop back at the end
+      const scrollAmount = photoRef.current.clientWidth * currentIndex;
+      photoRef.current.scrollLeft = scrollAmount;
+    }
+  };
+
+  const prev = () => {
+    if (photoRef.current) {
+      currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Loop back at the start
+      const scrollAmount = photoRef.current.clientWidth * currentIndex;
+      photoRef.current.scrollLeft = scrollAmount;
     }
   };
 
   return (
-    <div className="center-box">
+    <div className="center-box full-container">
       <div className="spaced-box slideshow">
         <div className="slideshow-arrow" onClick={prev}>
           {LeftSlideshowArrow()}

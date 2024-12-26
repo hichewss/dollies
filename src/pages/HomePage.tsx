@@ -87,7 +87,6 @@ function HomePageMainContents() {
             </div>
           )}
         </div>
-        <div className="mini-bottom-margin" />
         <DolliesNeverDie />
         <div className="small-bottom-margin" />
         <Slideshow />
@@ -98,13 +97,14 @@ function HomePageMainContents() {
           <div className="interested-box-padding center-box">
             <div className="vertical-box">
               <div className="small-bottom-margin" />
+              <div className="interested-margin" />
               <h1 className="color-black center-box">INTERESTED?</h1>
               <h1 className="color-black center-box"> YOU COULD BE NEXT!</h1>
               <div className="small-bottom-margin" />
               <div className="center-box">
                 <a href="/audition" className="horizontal-box">
                   <h4 className="color-black">Auditions</h4>
-                  <div className="mini-left-margin center-box">
+                  <div className="mini-left-margin center-box scale-down">
                     {BlackRedirectArrow()}
                   </div>
                 </a>
