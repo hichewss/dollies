@@ -14,7 +14,12 @@ function Dresses() {
       <div className="dress-background center-box small-rotate home">
         <div className="dress-container spaced-and-center-box">
           {images.map((image: any, index: any) => (
-            <img key={index} src={image} alt={`Image ${index + 1}`} />
+            <img
+              key={index}
+              src={image}
+              alt={`Image ${index + 1}`}
+              className="dress-image"
+            />
           ))}
         </div>
       </div>
