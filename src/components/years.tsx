@@ -6,7 +6,7 @@ const future = ["2030", "2040", "2050", "2060", "2070", "2080", "2090", "..."];
 function PastYears() {
   return (
     <div className="center-box">
-      <div className="black-background bottom center-box home">
+      <div className="black-background bottom center-box">
         <div className="year-side-margin year-container spaced-and-center-box">
           {old.map((year) => {
             return <div className="year-font color-white">{year}</div>;

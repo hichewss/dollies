@@ -56,6 +56,7 @@ function HomePageMainContents() {
               </p>
             </div>
             <div className="medium-bottom-margin" />
+            <div className="additional-margin" />
           </div>
         </div>
         <div className="vertical-box">

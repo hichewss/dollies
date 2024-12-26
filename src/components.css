@@ -275,6 +275,23 @@
   margin: 0% 23%;
 }
 
+.additional-margin {
+  margin-bottom: 20%;
+}
+
+@media (max-width: 1180px) {
+  .additional-margin {
+    margin-bottom: 35%;
+  }
+}
+
+@media (max-width: 468px) {
+  .additional-margin {
+    margin-top: 45%;
+  }
+}
+
+
 /* archive */
 
 .archive {
@@ -811,8 +828,7 @@
 }
 
 .year-side-margin {
-  margin-left: 2%;
-  margin-right: 3%
+  margin-left: -1.75%;
 }
 
 /* footer */
