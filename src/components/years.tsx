@@ -7,7 +7,7 @@ function PastYears() {
   return (
     <div className="center-box">
       <div className="black-background bottom center-box">
-        <div className="year-side-margin year-container spaced-and-center-box">
+        <div className="year-side-margin full-container spaced-and-center-box">
           {old.map((year) => {
             return <div className="year-font color-white">{year}</div>;
           })}
@@ -21,7 +21,7 @@ export function RedPastYears() {
   return (
     <div className="center-box">
       <div className="red-background bottom center-box">
-        <div className="year-side-margin year-container spaced-and-center-box">
+        <div className="year-side-margin full-container spaced-and-center-box">
           {old.map((year) => {
             return <div className="year-font color-white">{year}</div>;
           })}
@@ -35,7 +35,7 @@ export function FutureYears() {
   return (
     <div className="center-box">
       <div className="black-background-future year-top center-box small-rotate home-layer-up">
-        <div className="year-side-margin year-container spaced-and-center-box">
+        <div className="year-side-margin full-container spaced-and-center-box">
           {future.map((year) => {
             return <div className="year-font color-white">{year}</div>;
           })}
@@ -49,7 +49,7 @@ export function RedFutureYears() {
   return (
     <div className="center-box">
       <div className="red-background-future year-top center-box small-rotate home-layer-up">
-        <div className="year-side-margin year-container spaced-and-center-box">
+        <div className="year-side-margin full-container spaced-and-center-box">
           {future.map((year) => {
             return <div className="year-font color-white">{year}</div>;
           })}

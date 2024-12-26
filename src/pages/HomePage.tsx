@@ -12,6 +12,18 @@ import MenuBar from "../components/MenuBar";
 import { CloseOutIcon } from "../components/images";
 
 function HomePageMainContents() {
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 978);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 978);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="fade-in-content">
       <div className="vertical-box">
@@ -66,11 +78,16 @@ function HomePageMainContents() {
             <PastYears />
           </div>
         </div>
-        <div className="medium-bottom-margin" />
-        <div className="vertical-box small-center-margin">
-          <div className="photo-album-text color-white">PHOTO ALBUM</div>
-          <PhotoAlbum />
+        <div className="resp-bottom-margin" />
+        <div>
+          {isWideScreen && (
+            <div className="vertical-box center-box scale-down">
+              <div className="photo-album-text color-white">PHOTO ALBUM</div>
+              <PhotoAlbum />
+            </div>
+          )}
         </div>
+        <div className="mini-bottom-margin" />
         <DolliesNeverDie />
         <div className="small-bottom-margin" />
         <Slideshow />
