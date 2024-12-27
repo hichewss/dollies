@@ -32,7 +32,7 @@ function AuditionPageMainContents() {
                     </h1>
                     <h5 className="color-white detail-box">{item.detail}</h5>
                     <div className="center-box small-right-margin">
-                      <img src={boots[index % 3]} />
+                      <img src={boots[index % 3]} className="scale-down" />
                     </div>
                   </div>
                 </div>

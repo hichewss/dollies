@@ -17,7 +17,7 @@ function BlackFooter() {
               <div>
                 <a href={item.link} className="horizontal-box">
                   <h4 className="color-white">{item.social}</h4>
-                  <div className="small-left-margin redirect center-box scale-down">
+                  <div className="small-left-margin redirect center-box">
                     {RedirectArrow()}
                   </div>
                 </a>
