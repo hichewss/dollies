@@ -7,25 +7,25 @@ function RedFooter() {
       <div className="white-triangle"></div>
       <div className="red-footer">
         <div className="absolute boot-bottom">
-          <img src={WhiteBoot} />
+          <img src={WhiteBoot} className="red-boot" />
         </div>
-        <div className="center-align-box">
+        <div className="full-container">
           <div className="footer-text-container">
             <div className="spaced-box">
               <a href="/home">
-                <h4 className="color-white">Home</h4>
+                <div className="footer-text color-white">Home</div>
               </a>
-              <h4 className="color-white">|</h4>
+              <div className="footer-text color-white">|</div>
               <a href="/archive">
-                <h4 className="color-white">Archive</h4>
+                <div className="footer-text color-white">Archive</div>
               </a>
-              <h4 className="color-white">|</h4>
+              <div className="footer-text color-white">|</div>
               <a href="/audition">
-                <h4 className="color-white">Auditions</h4>
+                <div className="footer-text color-white">Auditions</div>
               </a>
-              <h4 className="color-white">|</h4>
+              <div className="footer-text color-white">|</div>
               <a href="/contact">
-                <h4 className="color-white">Contact</h4>
+                <div className="footer-text color-white">Contact</div>
               </a>
             </div>
           </div>
