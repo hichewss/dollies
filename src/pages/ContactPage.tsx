@@ -10,6 +10,17 @@ function ContactPage() {
   const [menu, setMenu] = useState(false);
   const [fadeOutMain, setFadeOutMain] = useState(false);
   const [fadeInMenu, setFadeInMenu] = useState(false);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1023);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 1023);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleMenuOpen = () => {
     setFadeOutMain(true);
@@ -84,9 +95,19 @@ function ContactPage() {
           </div>
           <div className="vertical-box white fade-in-content">
             <ContactNavBar />
-            <div className="horizontal-box">
-              <div className="contact-box">
-                <div className="medium-left-margin contact-text">
+            <div className={isWideScreen ? "horizontal-box" : "vertical-box"}>
+              <div
+                className={
+                  isWideScreen ? "contact-box" : "contact-box center-box"
+                }
+              >
+                <div
+                  className={
+                    isWideScreen
+                      ? "medium-left-margin contact-text"
+                      : "contact-text"
+                  }
+                >
                   <h1 className="color-red">LET'S TALK!</h1>
                   <h5 className="color-red">
                     Send a message about inquiries, auditions, or any other
@@ -94,13 +115,19 @@ function ContactPage() {
                   </h5>
                 </div>
                 <div className="medium-top-margin">
-                  <img src={LargeRedBoot} />
+                  {isWideScreen && (
+                    <img src={LargeRedBoot} className="large-boot" />
+                  )}
                 </div>
               </div>
-              <div className="contact-box">
+              <div
+                className={
+                  isWideScreen ? "contact-box" : "contact-box center-box"
+                }
+              >
                 <div className="mini-top-margin" />
                 <div className="contact-light-red-box">
-                  <div className="mini-center-margin">
+                  <div className="mini-center-margin home-layer-up">
                     <form ref={emailForm} onSubmit={sendEmail}>
                       <input
                         type="hidden"
@@ -109,9 +136,9 @@ function ContactPage() {
                         value={toEmail}
                       />
                       <div className="vertical-box">
-                        <h6 className="color-red">To</h6>
+                        <h6 className="color-red start-box">To</h6>
                         <select
-                          className="contact-text-box"
+                          className="contact-text-box selected"
                           id="to"
                           name="to"
                           onChange={(e) => setToEmail(e.target.value)}
@@ -121,21 +148,21 @@ function ContactPage() {
                           <option value={webmaster}>Webmaster</option>
                           <option value={lsjumb}>LSJUMB</option>
                         </select>
-                        <h6 className="color-red">Name</h6>
+                        <h6 className="color-red start-box">Name</h6>
                         <input
                           className="contact-text-box"
                           id="name"
                           type="name"
                           name="name"
                         />
-                        <h6 className="color-red">Email</h6>
+                        <h6 className="color-red start-box">Email</h6>
                         <input
                           className="contact-text-box"
                           id="email"
                           type="email"
                           name="email"
                         />
-                        <h6 className="color-red">Message</h6>
+                        <h6 className="color-red start-box">Message</h6>
                         <textarea id="message" name="message" />
                         <input
                           className="contact-submit-box"
@@ -146,7 +173,7 @@ function ContactPage() {
                     </form>
                   </div>
                 </div>
-                <div className="contact-red-box"></div>
+                {isWideScreen && <div className="contact-red-box"></div>}
               </div>
             </div>
             <div className="small-bottom-margin"></div>

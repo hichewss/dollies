@@ -163,7 +163,6 @@
   }
 }
 
-
 .boots-background {
   position: absolute;
   z-index: 1;
@@ -686,25 +685,41 @@
 
 .contact-box {
   width: 50%;
+  position: relative;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .contact-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .home-header {
+    font-size: 55px;
+  }
 }
 
 .contact-light-red-box {
-  width: 35%;
-  min-height: 75vh;
+  width: 80%;
+  height: auto;
   background-color: var(--color-line);
   z-index: 2;
-  position: absolute;
+  position: relative;
   padding-bottom: 5vh;
 }
 
 .contact-red-box {
-  width: 35%;
-  min-height: 91vh;
+  content: '';
+  width: 80%;
+  height: 100%;
   background-color: var(--color-dark-red);
   z-index: 1;
   position: absolute;
-  top: 21vh;
-  left: 52vw;
+  left: 0;
+  top: 0;
+  transform: translate(5%, 5%);
 }
 
 .contact-text {
@@ -721,6 +736,10 @@
   color: white;
   text-align: center;
   padding: 2vh 0;
+}
+
+.large-boot {
+  width: 75%;
 }
 
 /* home */
@@ -1419,6 +1438,28 @@ h6 {
   margin-bottom: 2%;
 }
 
+@media (max-width: 1024px) {
+
+  select,
+  option,
+  textarea,
+  input,
+  h6 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  select,
+  option,
+  textarea,
+  input,
+  h6 {
+    font-size: 15px;
+  }
+}
+
 p {
   font-family: "Poppins", sans-serif;
   font-size: 32px;
@@ -1603,4 +1644,26 @@ img {
 .keep-red {
   background-color: var(--color-dark-red);
   height: max-content;
+}
+
+.selected {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 2%;
+}
+
+@media (max-width: 1024px) {
+
+  .selected {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .selected {
+    font-size: 15px;
+  }
 }
