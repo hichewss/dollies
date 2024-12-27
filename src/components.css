@@ -46,6 +46,14 @@
   gap: 5rem;
 }
 
+.spaced-box-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 5%;
+}
+
 @media (max-width: 1440px) {
   .spaced-box {
     gap: 4rem;
@@ -102,10 +110,23 @@
   position: absolute;
 }
 
+@media (max-width: 767px) {
+  .close-out {
+    justify-content: center;
+    padding-right: 0;
+  }
+}
+
 .navbar-options {
   display: flex;
   margin-right: 10%;
   justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+  .navbar-options {
+    margin: 0;
+  }
 }
 
 .navbar-selected {
@@ -123,25 +144,66 @@
   -webkit-text-fill-color: var(--color-cream);
   -webkit-text-stroke: 2px var(--color-cream);
   color: var(--color-cream);
-  position: relative;
   z-index: 2;
 }
+
+@media (max-width: 1025px) {
+
+  .navbar-selected,
+  .navbar-unselected {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .navbar-selected,
+  .navbar-unselected {
+    font-size: 40px;
+  }
+}
+
 
 .boots-background {
   position: absolute;
   z-index: 1;
 }
 
+@media (max-width: 1025px) {
+
+  .boot-short-left,
+  .boot-menu-right {
+    width: 40%;
+  }
+
+  .boot-far-left,
+  .boot-left {
+    width: 30%;
+  }
+
+  .boot-left {
+    left: 48%;
+  }
+}
+
 .boot-short-left {
   left: 0%;
+  width: 25%;
 }
 
 .boot-left {
-  left: 32%;
+  left: 40%;
+  width: 22%;
 }
 
 .boot-far-left {
-  left: 40%;
+  left: 50%;
+  width: 25%;
+}
+
+.boot-menu-right {
+  left: 85%;
+  width: 35%;
 }
 
 .boot-right {
@@ -1009,6 +1071,10 @@
   width: 100vw;
 }
 
+.full-container-vertical {
+  height: 100%;
+}
+
 .year-font {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
@@ -1492,6 +1558,8 @@ img {
   }
 }
 
+/* additional resp components */
+
 .scale-down {
   transform: scale(1.0);
 }
@@ -1529,4 +1597,9 @@ img {
   .interested-margin {
     margin-bottom: 5%;
   }
+}
+
+.keep-red {
+  background-color: var(--color-dark-red);
+  height: max-content;
 }
