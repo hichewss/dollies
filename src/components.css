@@ -1321,6 +1321,7 @@
   height: fit-content;
   width: 100%;
   position: relative;
+  min-height: 10vh;
 }
 
 .red-triangle {
@@ -1842,5 +1843,11 @@ img {
 
   .selected {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .dress-padding {
+    min-height: 32vh;
   }
 }

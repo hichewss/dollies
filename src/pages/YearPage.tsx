@@ -122,91 +122,117 @@ function YearPage() {
                     </div>
                   </div>
                 </div>
-                <div
-                  className={`white archive-text-background ${
-                    !isWideScreen && !year && selectedYear !== "Reunions"
-                      ? "center-box"
-                      : ""
-                  }`}
-                >
+                <div className="">
                   <div
-                    className={`color-red ${
-                      isWideScreen
-                        ? "archive-page-margin"
-                        : "archive-margin-no-padding"
+                    className={`white archive-text-background ${
+                      !isWideScreen && !year && selectedYear !== "Reunions"
+                        ? "center-box"
+                        : ""
                     }`}
                   >
-                    {!isWideScreen && <div className="" />}
-                    <div className="center-box">
-                      {year ? (
-                        <div className="archive-text-font color-red">
-                          {Object.entries(year[curYear]).map(
-                            ([key, value], index, entries) => (
-                              <div style={{ display: "inline" }}>
-                                {"#"}
-                                {key} {value}
-                                {index != entries.length - 1 && "・"}
+                    <div
+                      className={`color-red ${
+                        isWideScreen
+                          ? "archive-page-margin"
+                          : "archive-margin-no-padding"
+                      }`}
+                    >
+                      {!isWideScreen && <div className="" />}
+                      <div
+                        className={`center-box ${
+                          year && images.length <= 0
+                            ? "archive-no-info-background"
+                            : ""
+                        }`}
+                      >
+                        {year ? (
+                          images.length > 0 ? (
+                            <div className="archive-text-font color-red">
+                              {Object.entries(year[curYear]).map(
+                                ([key, value], index, entries) => (
+                                  <div style={{ display: "inline" }} key={key}>
+                                    {"#"}
+                                    {key} {value}
+                                    {index !== entries.length - 1 && "・"}
+                                  </div>
+                                )
+                              )}
+                            </div>
+                          ) : (
+                            <div>
+                              <div className="archive-text-font color-red">
+                                {Object.entries(year[curYear]).map(
+                                  ([key, value], index, entries) => (
+                                    <div
+                                      style={{ display: "inline" }}
+                                      key={key}
+                                    >
+                                      {"#"}
+                                      {key} {value}
+                                      {index !== entries.length - 1 && "・"}
+                                    </div>
+                                  )
+                                )}
                               </div>
-                            )
-                          )}
-                        </div>
-                      ) : selectedYear === "Reunions" ? (
-                        <div className="color-red">
-                          <h1>Dollies of the past and present!</h1>
-                        </div>
-                      ) : (
-                        <div
-                          className={`vertical-box ${
-                            !isWideScreen &&
-                            "archive-no-info-background center-box"
-                          }`}
-                        >
+                              <div className="mini-top-margin" />
+                              <div className="center-box">
+                                <img src={Dress} />
+                              </div>
+                            </div>
+                          )
+                        ) : selectedYear === "Reunions" ? (
                           <div className="color-red">
-                            <h1>No Info on This Year 😞</h1>
+                            <h1>Dollies of the past and present!</h1>
                           </div>
-                          <div className="mini-top-margin" />
-                          <div className="center-box">
-                            <img src={Dress} alt="No info image" />
+                        ) : (
+                          <div
+                            className={`vertical-box ${
+                              !isWideScreen &&
+                              "archive-no-info-background center-box"
+                            }`}
+                          >
+                            <div className="color-red">
+                              <h1>No Info on This Year 😞</h1>
+                            </div>
+                            <div className="mini-top-margin" />
+                            <div className="center-box">
+                              <img src={Dress} />
+                            </div>
                           </div>
-                        </div>
-                      )}
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="mini-top-margin" />
-                {year && images.length <= 0 && (
-                  <div className="center-box">
-                    <img src={Dress} />
-                  </div>
-                )}
-                <div className="medium-side-margin">
-                  <div
-                    className={`${
-                      !isWideScreen ||
-                      (images && images.length > 0 && images.length <= 3)
-                        ? "hide-scrollbar vertical-scroll-box"
-                        : "hide-scrollbar horizontal-scroll-box"
-                    }`}
-                  >
+                  <div className="mini-top-margin" />
+                  <div className="medium-side-margin">
                     <div
                       className={`${
                         !isWideScreen ||
                         (images && images.length > 0 && images.length <= 3)
-                          ? "vertical-center-box archive-gap"
-                          : "center-box archive-gap"
+                          ? "hide-scrollbar vertical-scroll-box"
+                          : "hide-scrollbar horizontal-scroll-box"
                       }`}
                     >
-                      {images &&
-                        images.length > 0 &&
-                        images.map((src, index) => (
-                          <img
-                            key={index}
-                            src={src}
-                            alt={`archive-${index}`}
-                            loading="lazy"
-                            className="archive-photo-box-red"
-                          />
-                        ))}
+                      <div
+                        className={`${
+                          !isWideScreen ||
+                          (images && images.length > 0 && images.length <= 3)
+                            ? "vertical-center-box archive-gap"
+                            : "center-box archive-gap"
+                        }`}
+                      >
+                        {images &&
+                          images.length > 0 &&
+                          images.map((src, index) => (
+                            <img
+                              key={index}
+                              src={src}
+                              alt={`archive-${index}`}
+                              loading="lazy"
+                              className="archive-photo-box-red"
+                            />
+                          ))}
+                      </div>
                     </div>
                   </div>
                 </div>
