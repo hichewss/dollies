@@ -1211,7 +1211,7 @@
 
 .white-footer {
   background-color: var(--color-cream);
-  padding-top: 5vh;
+  padding-top: 8vh;
   height: fit-content;
   width: 100%;
   position: relative;
@@ -1219,7 +1219,7 @@
 
 .red-footer {
   background-color: var(--color-dark-red);
-  padding-top: 5vh;
+  padding-top: 8vh;
   height: fit-content;
   width: 100%;
   position: relative;
@@ -1229,6 +1229,8 @@
   background-color: var(--color-line);
   padding-top: 8vh;
   height: fit-content;
+  width: 100%;
+  position: relative;
 }
 
 .red-triangle {
@@ -1255,6 +1257,7 @@
   border-bottom: 100px solid transparent;
   border-right: 100vw solid var(--color-dark-pink);
   position: absolute;
+  z-index: 2;
 }
 
 .black-footer {

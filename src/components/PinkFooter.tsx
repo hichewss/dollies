@@ -5,27 +5,27 @@ function PinkFooter() {
   return (
     <div className="vertical-box">
       <div className="white-triangle"></div>
-      <div className="absolute boot-bottom">
-        <img src={RedBoot} />
-      </div>
       <div className="pink-footer">
-        <div className="center-align-box">
+        <div className="absolute boot-bottom">
+          <img src={RedBoot} className="red-boot" />
+        </div>
+        <div className="full-container">
           <div className="footer-text-container">
             <div className="spaced-box">
               <a href="/home">
-                <h4 className="color-red">Home</h4>
+                <div className="footer-text color-red">Home</div>
               </a>
-              <h4 className="color-red">|</h4>
+              <div className="footer-text color-red">|</div>
               <a href="/archive">
-                <h4 className="color-red">Archive</h4>
+                <div className="footer-text color-red">Archive</div>
               </a>
-              <h4 className="color-red">|</h4>
+              <div className="footer-text color-red">|</div>
               <a href="/audition">
-                <h4 className="color-red">Auditions</h4>
+                <div className="footer-text color-red">Auditions</div>
               </a>
-              <h4 className="color-red">|</h4>
+              <div className="footer-text color-red">|</div>
               <a href="/contact">
-                <h4 className="color-red">Contact</h4>
+                <div className="footer-text color-red">Contact</div>
               </a>
             </div>
           </div>
