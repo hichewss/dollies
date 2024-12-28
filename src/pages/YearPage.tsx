@@ -114,7 +114,7 @@ function YearPage() {
                 <div className="white">
                   <div className="vertical-box">
                     {isWideScreen && <div className="pink-triangle" />}
-                    <Dresses />
+                    {isWideScreen && <Dresses />}
                     <div className="white-separator small-rotate white">
                       <RedPastYears />
                     </div>
@@ -123,6 +123,7 @@ function YearPage() {
               </div>
               <div className="white archive-text-background">
                 <div className="color-red archive-page-margin">
+                  {!isWideScreen && <div className="small-top-margin" />}
                   <div className="center-box">
                     {year ? (
                       <div className="archive-text-font color-red">

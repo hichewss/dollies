@@ -1160,8 +1160,8 @@
   background-color: var(--color-black);
   border-top: 2.2vh solid var(--color-cream);
   width: 100vw;
-  height: 6vh;
-  padding: 10px;
+  height: fit-content;
+  padding: 20px;
   transform: translateY(5px);
   overflow-x: hidden;
   position: absolute;
@@ -1171,8 +1171,8 @@
 .black-background-future {
   background-color: var(--color-black);
   width: 100vw;
-  height: 6vh;
-  padding: 10px;
+  height: fit-content;
+  padding: 20px;
   transform: translateY(5px);
   overflow-x: hidden;
   position: absolute;
@@ -1192,8 +1192,6 @@
 
 @media (max-width: 768px) {
 
-  .red-background,
-  .red-background-future,
   .black-background-future,
   .black-background {
     visibility: hidden;
@@ -1212,8 +1210,8 @@
   background-color: var(--color-dark-red);
   border-top: 2.2vh solid var(--color-cream);
   width: 100vw;
-  height: 6vh;
-  padding: 10px;
+  height: fit-content;
+  padding: 20px;
   transform: translateY(5px);
   overflow-x: hidden;
   position: absolute;
@@ -1223,12 +1221,20 @@
 .red-background-future {
   background-color: var(--color-dark-red);
   width: 100vw;
-  height: 6vh;
-  padding: 10px;
+  height: fit-content;
+  padding: 20px;
   transform: translateY(5px);
   overflow-x: hidden;
   position: absolute;
   top: 30px;
+}
+
+@media (max-width: 1024px) {
+
+  .red-background-future,
+  .red-background {
+    visibility: hidden;
+  }
 }
 
 .year-bottom {

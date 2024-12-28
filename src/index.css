@@ -13,13 +13,13 @@
 body {
   margin: 0;
   position: relative;
-  min-height: 100vh;
+  min-height: fit-content;
   background-color: var(--color-dark-red);
 }
 
 .background {
   width: 100%;
-  min-height: 100vh;
+  min-height: fit-content;
   background-color: var(--color-dark-red);
   position: relative;
 }
