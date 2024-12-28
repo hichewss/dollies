@@ -122,9 +122,15 @@ function YearPage() {
                     </div>
                   </div>
                 </div>
-                <div className="white archive-text-background">
+                <div
+                  className={`white archive-text-background ${
+                    !isWideScreen && !year && selectedYear !== "Reunions"
+                      ? "center-box"
+                      : ""
+                  }`}
+                >
                   <div className="color-red archive-page-margin">
-                    {!isWideScreen && <div className="small-top-margin" />}
+                    {!isWideScreen && <div className="" />}
                     <div className="center-box">
                       {year ? (
                         <div className="archive-text-font color-red">
@@ -138,20 +144,26 @@ function YearPage() {
                             )
                           )}
                         </div>
+                      ) : selectedYear === "Reunions" ? (
+                        <div className="color-red">
+                          <h1>Dollies of the past and present!</h1>
+                        </div>
                       ) : (
-                        selectedYear !== "Reunions" && (
-                          <div>
-                            <div className="archive-text-font color-red">
-                              No Info on This Year 😞
-                            </div>
+                        <div className="vertical-box">
+                          <div className="color-red">
+                            <h1>No Info on This Year 😞</h1>
                           </div>
-                        )
+                          <div className="mini-top-margin" />
+                          <div className="center-box">
+                            <img src={Dress} alt="No info image" />
+                          </div>
+                        </div>
                       )}
                     </div>
                   </div>
                 </div>
                 <div className="mini-top-margin" />
-                {images.length <= 0 && (
+                {year && images.length <= 0 && (
                   <div className="center-box">
                     <img src={Dress} />
                   </div>
@@ -160,11 +172,17 @@ function YearPage() {
                   <div
                     className={`${
                       images && images.length > 3
-                        ? "hide-scrollbar horizontal-scroll-box"
+                        ? isWideScreen
+                          ? "hide-scrollbar vertical-scroll-box"
+                          : "hide-scrollbar horizontal-scroll-box"
                         : ""
                     }`}
                   >
-                    <div className="archive-gap center-box">
+                    <div
+                      className={`archive-gap ${
+                        isWideScreen ? "center-box" : "vertical-center-box"
+                      }`}
+                    >
                       {images &&
                         images.length > 0 &&
                         images.map((src, index) => (

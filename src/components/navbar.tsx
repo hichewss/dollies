@@ -89,12 +89,12 @@ function NavBar() {
           <p className="color-white">DOLLIES</p>
         </a>
       </button>
-      <div className="center-box side-margin">
+      <div className="center-box">
         <div
           className={
             isWideScreen
               ? "center-box dropdown-top-margin"
-              : "center-box dropdown-top-margin dropdown-options-container header-options"
+              : "center-box small-top-margin dropdown-options-container header-options"
           }
         >
           {YEARS.map((year, index) => {

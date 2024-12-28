@@ -19,15 +19,14 @@ body {
 
 .background {
   width: 100%;
-  min-height: fit-content;
+  max-height: fit-content;
   background-color: var(--color-dark-red);
   position: relative;
 }
 
 .main {
   width: 100vw;
-  height: 100vh;
-  min-height: fit-content;
+  max-height: fit-content;
   overflow-y: scroll;
   overflow-x: hidden;
 }
