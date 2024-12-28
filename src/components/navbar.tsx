@@ -2,11 +2,11 @@ import React, { useEffect, useReducer, useRef, useState } from "react";
 import { increments } from "../data/archive";
 
 function NavBar() {
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1023);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1679);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsWideScreen(window.innerWidth > 1023);
+      setIsWideScreen(window.innerWidth > 1679);
     };
 
     window.addEventListener("resize", handleResize);
@@ -89,19 +89,21 @@ function NavBar() {
           <p className="color-white">DOLLIES</p>
         </a>
       </button>
-      <div
-        className={
-          isWideScreen ? "center-box side-margin" : "center-box side-margin "
-        }
-      >
-        <div className="center-box dropdown-options-container header-options dropdown-top-margin">
+      <div className="center-box side-margin">
+        <div
+          className={
+            isWideScreen
+              ? "center-box dropdown-top-margin"
+              : "center-box dropdown-top-margin dropdown-options-container header-options"
+          }
+        >
           {YEARS.map((year, index) => {
             const cur_year = "yr" + year;
             if (year === "Reunions") {
               return (
                 <div
                   key={year}
-                  className="mini-right-margin dropdown-top-margin"
+                  className="dropdown-top-margin"
                   style={{ position: "relative" }}
                 >
                   <a
@@ -116,7 +118,7 @@ function NavBar() {
             return (
               <div
                 key={year}
-                className="mini-right-margin dropdown-top-margin"
+                className="small-right-margin dropdown-top-margin"
                 style={{ position: "relative" }}
               >
                 <p
