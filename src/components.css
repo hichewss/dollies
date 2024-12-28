@@ -700,7 +700,12 @@
 
 .archive-page-margin {
   margin: 0% 20%;
-  padding-top: 12%;
+  padding-top: 15%;
+}
+
+.archive-margin-no-padding {
+  margin: 0% 20%;
+  padding-top: 2%;
 }
 
 .archive-photo-margin {

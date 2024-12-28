@@ -129,7 +129,13 @@ function YearPage() {
                       : ""
                   }`}
                 >
-                  <div className="color-red archive-page-margin">
+                  <div
+                    className={`color-red ${
+                      isWideScreen
+                        ? "archive-page-margin"
+                        : "archive-margin-no-padding"
+                    }`}
+                  >
                     {!isWideScreen && <div className="" />}
                     <div className="center-box">
                       {year ? (
