@@ -29,28 +29,28 @@ function MenuBar() {
     <div className="keep-red">
       <div className="navbar vertical-box red">
         {isWideScreen && isTallScreen && (
-          <img
-            className="boots-background about-logos top boot-short-left"
-            src={BootOne}
-          />
-        )}
-        {isWideScreen && isTallScreen && (
-          <img
-            className="boots-background about-logos top boot-far-left absolute"
-            src={BootTwo}
-          />
-        )}
-        {isWideScreen && isTallScreen && (
-          <img
-            className="boots-background about-logos bottom boot-left"
-            src={BootThree}
-          />
-        )}
-        {isWideScreen && isTallScreen && (
-          <img
-            className="boots-background about-logos bottom boot-menu-right"
-            src={BootFour}
-          />
+          <>
+            <img
+              className="boots-background about-logos top boot-short-left"
+              src={BootOne}
+              loading="lazy"
+            />
+            <img
+              className="boots-background about-logos top boot-far-left absolute"
+              src={BootTwo}
+              loading="lazy"
+            />
+            <img
+              className="boots-background about-logos bottom boot-left"
+              src={BootThree}
+              loading="lazy"
+            />
+            <img
+              className="boots-background about-logos bottom boot-menu-right"
+              src={BootFour}
+              loading="lazy"
+            />
+          </>
         )}
         <div className="medium-top-margin" />
         {menuData.menu.map((item) => {
