@@ -12,10 +12,10 @@ import MenuBar from "../components/MenuBar";
 import { CloseOutIcon } from "../components/images";
 
 function HomePageMainContents() {
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 978);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1024);
   useEffect(() => {
     const handleResize = () => {
-      setIsWideScreen(window.innerWidth > 978);
+      setIsWideScreen(window.innerWidth > 1024);
     };
 
     window.addEventListener("resize", handleResize);

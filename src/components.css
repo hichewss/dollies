@@ -438,7 +438,6 @@
 .archive-photo-box {
   width: fit-content;
   height: fit-content;
-  background-color: var(--color-cream);
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -479,6 +478,10 @@
     width: 400px;
     height: auto;
   }
+
+  .archive-photo-box {
+    padding: 24px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -500,6 +503,10 @@
   .archive-photo-box img {
     width: 250px;
     height: auto;
+  }
+
+  .archive-photo-box {
+    padding: 20px;
   }
 }
 
@@ -650,6 +657,37 @@
   font-weight: 600;
 }
 
+
+@media (max-width: 1180px) {
+  .archive-text-font {
+    font-size: 32px;
+  }
+
+  .archive-year-header {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .archive-text-font {
+    font-size: 24px;
+  }
+
+  .archive-year-header {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 524px) {
+  .archive-text-font {
+    font-size: 18px;
+  }
+
+  .archive-year-header {
+    font-size: 45px;
+  }
+}
+
 .archive-page-margin {
   margin: 0% 20%;
   padding-top: 12%;
@@ -657,11 +695,6 @@
 
 .archive-photo-margin {
   margin: 0% 20%
-}
-
-.archive-year-placement {
-  top: 20vh;
-  left: 10%;
 }
 
 .archive-names {
@@ -682,6 +715,38 @@
   width: auto;
   min-height: 350px;
   max-height: 350px;
+}
+
+
+@media (max-width: 1023px) {
+  .archive-photo-box-red {
+    width: auto;
+    min-height: 300px;
+    max-height: 300px;
+    padding: 24px;
+  }
+
+  .archive-page-margin {
+    padding-top: 0;
+    margin: 0% 10%;
+  }
+}
+
+@media (max-width: 767px) {
+  .archive-photo-box-red {
+    width: auto;
+    min-height: 250px;
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 524px) {
+  .archive-photo-box-red {
+    width: auto;
+    min-height: 200px;
+    max-height: 200px;
+    padding: 20px;
+  }
 }
 
 .archive-gap {
@@ -1117,6 +1182,8 @@
 
 @media (max-width: 1180px) {
 
+  .red-background,
+  .red-background-future,
   .black-background-future,
   .black-background {
     top: 10px;
@@ -1125,6 +1192,8 @@
 
 @media (max-width: 768px) {
 
+  .red-background,
+  .red-background-future,
   .black-background-future,
   .black-background {
     visibility: hidden;
@@ -1141,7 +1210,7 @@
 
 .red-background {
   background-color: var(--color-dark-red);
-  border-top: 1.2vh solid var(--color-cream);
+  border-top: 2.2vh solid var(--color-cream);
   width: 100vw;
   height: 6vh;
   padding: 10px;

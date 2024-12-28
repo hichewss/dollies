@@ -26,6 +26,18 @@ function YearPage() {
   const [curYear, setCurYear] = useState(selectedYear || "2024-2025");
   const [images, setImages] = useState<string[]>([]);
   const year = dollieData.pages.find((year) => year[curYear]);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1024);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 1023);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   function importAll(r: any) {
     return r.keys().map(r);
   }
@@ -83,15 +95,25 @@ function YearPage() {
               </div>
               <div className="dark-pink vertical-box">
                 <NavBar />
-                <div className="archive-year-header absolute archive-year-placement color-white">
+                <div
+                  className={
+                    isWideScreen
+                      ? "dark-pink archive-year-header color-white small-left-margin small-top-margin"
+                      : "dark-pink archive-year-header color-white small-top-margin center-box"
+                  }
+                >
                   {curYear}
                 </div>
-                <div className="xtra-large-bottom-margin" />
+                <div
+                  className={
+                    isWideScreen ? "large-bottom-margin" : "small-bottom-margin"
+                  }
+                />
               </div>
               <div className="vertical-box">
                 <div className="white">
                   <div className="vertical-box">
-                    <div className="pink-triangle" />
+                    {isWideScreen && <div className="pink-triangle" />}
                     <Dresses />
                     <div className="white-separator small-rotate white">
                       <RedPastYears />
@@ -163,9 +185,7 @@ function YearPage() {
               <div className="home-text-box">
                 <RedFutureYears />
               </div>
-              <div className="vertical-box">
-                <PinkFooter />
-              </div>
+              <PinkFooter />
             </div>
           )}
         </div>

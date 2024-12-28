@@ -104,7 +104,7 @@ function ArchivePage() {
                   <div className="medium-side-margin">
                     <div className="hide-scrollbar horizontal-scroll-box">
                       {headers.map((header, index) => (
-                        <div className="archive-photo-box">
+                        <div className="archive-photo-box white">
                           <img
                             key={index}
                             src={headers[index][0]}
