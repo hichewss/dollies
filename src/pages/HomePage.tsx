@@ -74,7 +74,7 @@ function HomePageMainContents() {
         <div className="vertical-box relative">
           <div className="white-triangle" />
           <Dresses />
-          <div className="small-rotate white">
+          <div className="small-rotate white home-layer-up">
             <PastYears />
           </div>
         </div>

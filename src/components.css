@@ -1126,10 +1126,12 @@
   width: 100vw;
   background-color: var(--color-line);
   padding: 5px;
-  border-top: 1.2vh solid var(--color-dark-red);
-  border-bottom: 1.2vh solid var(--color-dark-red);
+  border-top: 10px solid var(--color-dark-red);
+  border-bottom: 10px solid var(--color-dark-red);
   overflow: hidden;
   position: absolute;
+  min-height: 8vh;
+  z-index: 4;
 }
 
 @media (max-width: 768px) {
@@ -1148,24 +1150,16 @@
   width: auto;
 }
 
-
 @media (max-width: 1180px) {
   .dress-image {
-    height: 8vh;
+    height: 60px;
     width: auto;
   }
 }
 
 @media (max-width: 768px) {
   .dress-image {
-    height: 5vh;
-    width: auto;
-  }
-}
-
-@media (max-width: 468px) {
-  .dress-image {
-    height: 3vh;
+    height: 75px;
     width: auto;
   }
 }
@@ -1173,7 +1167,7 @@
 /* years */
 .black-background {
   background-color: var(--color-black);
-  border-top: 2.2vh solid var(--color-cream);
+  border-top: 20px solid var(--color-cream);
   width: 100vw;
   height: fit-content;
   padding: 20px;
@@ -1181,6 +1175,7 @@
   overflow-x: hidden;
   position: absolute;
   top: 30px;
+  z-index: 2;
 }
 
 .black-background-future {
@@ -1339,7 +1334,7 @@
   border-bottom: 100px solid transparent;
   border-right: 100vw solid var(--color-cream);
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 }
 
 .pink-triangle {
