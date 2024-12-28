@@ -182,16 +182,18 @@ function YearPage() {
                 <div className="medium-side-margin">
                   <div
                     className={`${
-                      images && images.length > 3
-                        ? isWideScreen
-                          ? "hide-scrollbar vertical-scroll-box"
-                          : "hide-scrollbar horizontal-scroll-box"
-                        : ""
+                      !isWideScreen ||
+                      (images && images.length > 0 && images.length <= 3)
+                        ? "hide-scrollbar vertical-scroll-box"
+                        : "hide-scrollbar horizontal-scroll-box"
                     }`}
                   >
                     <div
-                      className={`archive-gap ${
-                        isWideScreen ? "center-box" : "vertical-center-box"
+                      className={`${
+                        !isWideScreen ||
+                        (images && images.length > 0 && images.length <= 3)
+                          ? "vertical-center-box archive-gap"
+                          : "center-box archive-gap"
                       }`}
                     >
                       {images &&
