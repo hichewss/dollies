@@ -111,82 +111,84 @@ function YearPage() {
                 />
               </div>
               <div className="vertical-box">
-                <div className="white">
-                  <div className="vertical-box">
-                    {isWideScreen && <div className="pink-triangle" />}
-                    {isWideScreen && <Dresses />}
-                    <div className="white-separator small-rotate white">
-                      <RedPastYears />
+                <div className="vertical-box">
+                  <div className="white">
+                    <div className="vertical-box">
+                      {isWideScreen && <div className="pink-triangle" />}
+                      {isWideScreen && <Dresses />}
+                      <div className="white-separator small-rotate white">
+                        <RedPastYears />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="white archive-text-background">
-                <div className="color-red archive-page-margin">
-                  {!isWideScreen && <div className="small-top-margin" />}
-                  <div className="center-box">
-                    {year ? (
-                      <div className="archive-text-font color-red">
-                        {Object.entries(year[curYear]).map(
-                          ([key, value], index, entries) => (
-                            <div style={{ display: "inline" }}>
-                              {"#"}
-                              {key} {value}
-                              {index != entries.length - 1 && "・"}
-                            </div>
-                          )
-                        )}
-                      </div>
-                    ) : (
-                      selectedYear !== "Reunions" && (
-                        <div>
-                          <div className="archive-text-font color-red">
-                            No Info on This Year 😞
-                          </div>
+                <div className="white archive-text-background">
+                  <div className="color-red archive-page-margin">
+                    {!isWideScreen && <div className="small-top-margin" />}
+                    <div className="center-box">
+                      {year ? (
+                        <div className="archive-text-font color-red">
+                          {Object.entries(year[curYear]).map(
+                            ([key, value], index, entries) => (
+                              <div style={{ display: "inline" }}>
+                                {"#"}
+                                {key} {value}
+                                {index != entries.length - 1 && "・"}
+                              </div>
+                            )
+                          )}
                         </div>
-                      )
-                    )}
+                      ) : (
+                        selectedYear !== "Reunions" && (
+                          <div>
+                            <div className="archive-text-font color-red">
+                              No Info on This Year 😞
+                            </div>
+                          </div>
+                        )
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="mini-top-margin" />
-              {images.length <= 0 && (
-                <div className="center-box">
-                  <img src={Dress} />
-                </div>
-              )}
-              <div className="medium-side-margin">
-                <div
-                  className={`${
-                    images && images.length > 3
-                      ? "hide-scrollbar horizontal-scroll-box"
-                      : ""
-                  }`}
-                >
-                  <div className="archive-gap center-box">
-                    {images &&
-                      images.length > 0 &&
-                      images.map((src, index) => (
-                        <img
-                          key={index}
-                          src={src}
-                          alt={`archive-${index}`}
-                          loading="lazy"
-                          className="archive-photo-box-red"
-                        />
-                      ))}
+                <div className="mini-top-margin" />
+                {images.length <= 0 && (
+                  <div className="center-box">
+                    <img src={Dress} />
+                  </div>
+                )}
+                <div className="medium-side-margin">
+                  <div
+                    className={`${
+                      images && images.length > 3
+                        ? "hide-scrollbar horizontal-scroll-box"
+                        : ""
+                    }`}
+                  >
+                    <div className="archive-gap center-box">
+                      {images &&
+                        images.length > 0 &&
+                        images.map((src, index) => (
+                          <img
+                            key={index}
+                            src={src}
+                            alt={`archive-${index}`}
+                            loading="lazy"
+                            className="archive-photo-box-red"
+                          />
+                        ))}
+                    </div>
                   </div>
                 </div>
+                {images.length > 0 ? (
+                  <div className="medium-bottom-margin" />
+                ) : (
+                  <div className="small-bottom-margin" />
+                )}
+                <div className="home-text-box">
+                  <RedFutureYears />
+                </div>
+                <PinkFooter />
               </div>
-              {images.length > 0 ? (
-                <div className="medium-bottom-margin" />
-              ) : (
-                <div className="small-bottom-margin" />
-              )}
-              <div className="home-text-box">
-                <RedFutureYears />
-              </div>
-              <PinkFooter />
             </div>
           )}
         </div>
