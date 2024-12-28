@@ -149,7 +149,12 @@ function YearPage() {
                           <h1>Dollies of the past and present!</h1>
                         </div>
                       ) : (
-                        <div className="vertical-box">
+                        <div
+                          className={`vertical-box ${
+                            !isWideScreen &&
+                            "archive-no-info-background center-box"
+                          }`}
+                        >
                           <div className="color-red">
                             <h1>No Info on This Year 😞</h1>
                           </div>

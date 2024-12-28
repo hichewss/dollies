@@ -646,18 +646,8 @@
   height: max-content;
 }
 
-@media (max-width: 1023px) {
-  .archive-text-background {
-    min-height: 40vh;
-  }
-}
-
 .archive-no-info-background {
-  width: 100vw;
-  height: 10vh;
-  margin: 0;
-  height: max-content;
-  padding: 0;
+  height: 100vh;
 }
 
 .archive-photo-background {
