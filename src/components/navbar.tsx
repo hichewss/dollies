@@ -1,7 +1,20 @@
-import React, { useEffect, useReducer, useRef } from "react";
+import React, { useEffect, useReducer, useRef, useState } from "react";
 import { increments } from "../data/archive";
 
 function NavBar() {
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1023);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 1023);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const YEARS = [
     "1950s",
     "1960s",
@@ -71,12 +84,18 @@ function NavBar() {
 
   return (
     <div ref={navBarRef}>
-      <div className="side-button side-margin">
+      <button className="side-button small-left-margin">
         <a href="/home">
           <p className="color-white">DOLLIES</p>
         </a>
-      </div>
-      <div className="center-box side-margin">
+      </button>
+      <div
+        className={
+          isWideScreen
+            ? "center-box side-margin"
+            : "center-box side-margin header-options"
+        }
+      >
         {YEARS.map((year, index) => {
           const cur_year = "yr" + year;
           if (year === "Reunions") {

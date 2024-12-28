@@ -1,5 +1,4 @@
 /* flexbox */
-
 .horizontal-box {
   display: flex;
 }
@@ -85,7 +84,9 @@
 
 /* navbar and menu */
 .side-button {
-  position: absolute
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
 }
 
 .navbar {
@@ -475,7 +476,7 @@
 }
 
 .dropdown-top-margin {
-  margin-top: 2.5%;
+  margin-top: 3%;
 }
 
 .dropdown {
@@ -497,6 +498,22 @@
   margin: 0;
   line-height: 1;
   padding: 0;
+}
+
+@media (max-width: 420px) {
+  .dropdown-text {
+    font-size: 12px;
+  }
+}
+
+.header-options {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.header-options::-webkit-scrollbar {
+  display: none;
 }
 
 .dropdown-hide {
@@ -523,6 +540,10 @@
 .dropdown-start {
   top: 3%;
   left: 23.2%
+}
+
+.dropdown-options-container {
+  width: 80vw;
 }
 
 /* archive pages */

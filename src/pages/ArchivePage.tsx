@@ -25,17 +25,6 @@ function ArchivePage() {
   const [yearSelected, setYearSelected] = useState(false);
   const [fadeOutMain, setFadeOutMain] = useState(false);
   const [fadeInMenu, setFadeInMenu] = useState(false);
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1023);
-  useEffect(() => {
-    const handleResize = () => {
-      setIsWideScreen(window.innerWidth > 1023);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const handleMenuOpen = () => {
     setFadeOutMain(true);
@@ -86,7 +75,7 @@ function ArchivePage() {
               >
                 <div className="end-box small-right-margin">
                   <button className="end-box" onClick={handleMenuOpen}>
-                    <p className="color-white mini-top-margin absolute home-layer-up menu">
+                    <p className="color-white side-button home-layer-up menu">
                       MENU
                     </p>
                   </button>
