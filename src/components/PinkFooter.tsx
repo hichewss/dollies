@@ -3,7 +3,7 @@ import RedBoot from "../images/footer/red_boot.png";
 
 function PinkFooter() {
   return (
-    <div className="vertical-box">
+    <div className="vertical-box white">
       <div className="white-triangle"></div>
       <div className="pink-footer">
         <div className="absolute boot-bottom">
