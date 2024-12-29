@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dollies/static/css/main.9accb3a2.css",
-    "main.js": "/dollies/static/js/main.0df674f8.js",
+    "main.js": "/dollies/static/js/main.99783034.js",
     "static/js/787.a063d15f.chunk.js": "/dollies/static/js/787.a063d15f.chunk.js",
     "static/media/20190428.164305.0281.JPG": "/dollies/static/media/20190428.164305.0281.22763aaa090a601d9997.JPG",
     "static/media/Football-BYU-130.JPG": "/dollies/static/media/Football-BYU-130.2e4e8ebe165945abc159.JPG",
@@ -238,11 +238,11 @@
     "static/media/boot_four.png": "/dollies/static/media/boot_four.6cc822aad6bc7388ff6e.png",
     "index.html": "/dollies/index.html",
     "main.9accb3a2.css.map": "/dollies/static/css/main.9accb3a2.css.map",
-    "main.0df674f8.js.map": "/dollies/static/js/main.0df674f8.js.map",
+    "main.99783034.js.map": "/dollies/static/js/main.99783034.js.map",
     "787.a063d15f.chunk.js.map": "/dollies/static/js/787.a063d15f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9accb3a2.css",
-    "static/js/main.0df674f8.js"
+    "static/js/main.99783034.js"
   ]
 }
