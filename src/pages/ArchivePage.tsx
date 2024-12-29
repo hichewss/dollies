@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { QuoteIcon, RightArrow } from "../components/images";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/navbar";
 import WhiteFooter from "../components/WhiteFooter";
 import headers from "../data/archive";
 import MenuBar from "../components/MenuBar";

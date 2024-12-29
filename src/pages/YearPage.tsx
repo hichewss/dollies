@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/navbar";
 import PinkFooter from "../components/PinkFooter";
 import Dresses from "../components/dresses";
 import MenuBar from "../components/MenuBar";
