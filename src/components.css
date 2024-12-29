@@ -613,6 +613,20 @@
   .dropdown-text {
     font-size: 12px;
   }
+
+  .dropdown {
+    border: 2px solid var(--color-cream);
+  }
+
+  .dropdown::before {
+    border-left: 2px solid var(--color-cream);
+    border-top: 2px solid var(--color-cream);
+    top: -8px;
+  }
+
+  .archive-dropdowns {
+    top: calc(65%);
+  }
 }
 
 .header-options {
