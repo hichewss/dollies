@@ -1254,6 +1254,29 @@
   top: 30px;
 }
 
+.red-background {
+  background-color: var(--color-dark-red);
+  border-top: 20px solid var(--color-cream);
+  width: 100vw;
+  height: fit-content;
+  padding: 20px;
+  transform: translateY(5px);
+  overflow-x: hidden;
+  position: absolute;
+  top: calc(5vh + 10px + 10px);
+  z-index: 2;
+}
+
+.red-background-future {
+  background-color: var(--color-dark-red);
+  width: 100vw;
+  height: fit-content;
+  padding: 20px;
+  transform: translateY(5px);
+  overflow-x: hidden;
+  position: absolute;
+  top: 30px;
+}
 
 @media (max-width: 1180px) {
 
@@ -1270,6 +1293,8 @@
 
 @media (max-width: 768px) {
 
+  .red-background,
+  .red-background-future,
   .black-background-future,
   .black-background {
     visibility: hidden;
@@ -1280,38 +1305,6 @@
 
   .red-triangle,
   .white-triangle {
-    visibility: hidden;
-  }
-}
-
-.red-background {
-  background-color: var(--color-dark-red);
-  border-top: 20px solid var(--color-cream);
-  width: 100vw;
-  height: fit-content;
-  padding: 20px;
-  transform: translateY(5px);
-  overflow-x: hidden;
-  position: absolute;
-  top: 30px;
-  z-index: 2;
-}
-
-.red-background-future {
-  background-color: var(--color-dark-red);
-  width: 100vw;
-  height: fit-content;
-  padding: 20px;
-  transform: translateY(5px);
-  overflow-x: hidden;
-  position: absolute;
-  top: 30px;
-}
-
-@media (max-width: 1024px) {
-
-  .red-background-future,
-  .red-background {
     visibility: hidden;
   }
 }

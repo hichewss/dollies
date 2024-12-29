@@ -119,9 +119,6 @@ function YearPage() {
                       <div className="vertical-box">
                         {isWideScreen && <div className="pink-triangle" />}
                         {isWideScreen && <Dresses />}
-                        <div className="white-separator small-rotate white">
-                          <RedPastYears />
-                        </div>
                       </div>
                     </div>
                   </div>
