@@ -548,12 +548,22 @@
   position: absolute;
   top: -8px;
   left: 50%;
+  /* Center horizontally */
   transform: translateX(-50%) rotate(45deg);
+  /* Adjust for arrow shape */
   width: 10px;
   height: 10px;
   background-color: var(--color-line);
   border-left: 3px solid var(--color-cream);
   border-top: 3px solid var(--color-cream);
+  pointer-events: none;
+  /* Prevent arrow from interfering with clicks */
+}
+
+/* Ensure proper alignment regardless of dropdown size */
+.dropdown::before {
+  left: calc(50%);
+  /* Adjust based on the size of the arrow and borders */
 }
 
 .dropdown-top-margin {
@@ -586,10 +596,6 @@
   .archive-dropdowns {
     top: calc(40%);
   }
-
-  .dropdown::before {
-    top: -9px;
-  }
 }
 
 
@@ -600,10 +606,6 @@
 
   .archive-dropdowns {
     top: calc(50%);
-  }
-
-  .dropdown::before {
-    top: -9px;
   }
 }
 
@@ -616,8 +618,13 @@
     top: calc(60%);
   }
 
+  .dropdown {
+    border: 2px solid var(--color-cream);
+  }
+
   .dropdown::before {
-    top: -9px;
+    border-left: 2px solid var(--color-cream);
+    border-top: 2px solid var(--color-cream);
   }
 }
 
@@ -633,7 +640,6 @@
   .dropdown::before {
     border-left: 2px solid var(--color-cream);
     border-top: 2px solid var(--color-cream);
-    top: -8.5px;
   }
 
   .archive-dropdowns {
