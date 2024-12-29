@@ -1,5 +1,5 @@
 # The Newly Updated Stanford Dollies Github Repo!!
-Website is [viewable](https://stanforddollies.netlify.app/) here. \
+Website is [viewable](https://stanforddollies.netlify.app/) here.
 
 This repo contains the files and components used to build the new Stanford Dollies website. 
 
