@@ -1100,28 +1100,6 @@
 }
 
 /* slideshow */
-.slideshow {
-  gap: 100px;
-}
-
-@media (max-width: 1180px) {
-  .slideshow {
-    gap: 75px;
-  }
-}
-
-@media (max-width: 768px) {
-  .slideshow {
-    gap: 50px;
-  }
-}
-
-@media (max-width: 468px) {
-  .slideshow {
-    gap: 25px;
-  }
-}
-
 .carousel-container {
   width: 50vw;
   height: 35vh;
@@ -1143,7 +1121,8 @@
 }
 
 .slideshow-button-box {
-  width: 80%;
+  width: 100%;
+  gap: 3vw;
 }
 
 .slideshow-arrow {
