@@ -11,7 +11,7 @@ import { CloseOutIcon } from "../components/images";
 function AuditionPageMainContents() {
   const boots = [DownBoot, UpBoot, RightBoot];
   return (
-    <div className="fade-in-content page-container">
+    <div className="page-container fade-in-content">
       <div className="vertical-box">
         <AuditionNavBar />
         <div>

@@ -85,7 +85,7 @@ function ContactPage() {
           <MenuBar />
         </div>
       ) : (
-        <div className="page-container">
+        <div className="page-container fade-in-content">
           <div className={fadeOutMain ? "fade-out-content" : "fade-in-content"}>
             <div className="end-box small-right-margin">
               <button className="end-box" onClick={handleMenuOpen}>
