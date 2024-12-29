@@ -14,7 +14,7 @@ function App() {
     <div className="main">
       <div className="background">
         <div className="vertical-box"></div>
-        <Router basename="/dollies">
+        <Router>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/archive" element={<ArchivePage />} />
