@@ -71,13 +71,8 @@ function HomePageMainContents() {
             <div className="additional-margin" />
           </div>
         </div>
-        <div className="vertical-box relative">
-          <div className="white-triangle" />
-          <Dresses />
-          <div className="small-rotate white home-layer-up">
-            <PastYears />
-          </div>
-        </div>
+        <div className="white-triangle" />
+        <Dresses />
         <div className="resp-bottom-margin" />
         <div>
           {isWideScreen && (

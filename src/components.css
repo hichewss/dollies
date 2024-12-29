@@ -1239,7 +1239,7 @@
   transform: translateY(5px);
   overflow-x: hidden;
   position: absolute;
-  top: 30px;
+  top: calc(5vh + 10px + 10px);
   z-index: 2;
 }
 
@@ -1257,11 +1257,14 @@
 
 @media (max-width: 1180px) {
 
-  .red-background,
   .red-background-future,
-  .black-background-future,
-  .black-background {
+  .black-background-future {
     top: 10px;
+  }
+
+  .red-background,
+  .black-background {
+    top: calc(2vh + 10px + 10px);
   }
 }
 
