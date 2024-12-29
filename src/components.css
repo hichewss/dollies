@@ -558,7 +558,7 @@
 .dropdown::before {
   content: '';
   position: absolute;
-  top: -8px;
+  top: -9px;
   left: 50%;
   /* Center horizontally */
   transform: translateX(-50%) rotate(45deg);
