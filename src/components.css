@@ -1239,7 +1239,7 @@
   transform: translateY(5px);
   overflow-x: hidden;
   position: absolute;
-  top: calc(5vh + 10px + 10px);
+  top: calc(45px + 10px + 10px);
   z-index: 2;
 }
 
@@ -1263,7 +1263,7 @@
   transform: translateY(5px);
   overflow-x: hidden;
   position: absolute;
-  top: calc(5vh + 10px + 10px);
+  top: calc(45px + 10px + 10px);
   z-index: 2;
 }
 
