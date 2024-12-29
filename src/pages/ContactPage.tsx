@@ -85,101 +85,103 @@ function ContactPage() {
           <MenuBar />
         </div>
       ) : (
-        <div className={fadeOutMain ? "fade-out-content" : "fade-in-content"}>
-          <div className="end-box small-right-margin">
-            <button className="end-box" onClick={handleMenuOpen}>
-              <p className="color-red mini-top-margin absolute home-layer-up menu">
-                MENU
-              </p>
-            </button>
-          </div>
-          <div className="vertical-box white fade-in-content">
-            <ContactNavBar />
-            <div className={isWideScreen ? "horizontal-box" : "vertical-box"}>
-              <div
-                className={
-                  isWideScreen ? "contact-box" : "contact-box center-box"
-                }
-              >
+        <div className="page-container">
+          <div className={fadeOutMain ? "fade-out-content" : "fade-in-content"}>
+            <div className="end-box small-right-margin">
+              <button className="end-box" onClick={handleMenuOpen}>
+                <p className="color-red mini-top-margin absolute home-layer-up menu">
+                  MENU
+                </p>
+              </button>
+            </div>
+            <div className="vertical-box white fade-in-content">
+              <ContactNavBar />
+              <div className={isWideScreen ? "horizontal-box" : "vertical-box"}>
                 <div
                   className={
-                    isWideScreen
-                      ? "medium-left-margin contact-text"
-                      : "contact-text"
+                    isWideScreen ? "contact-box" : "contact-box center-box"
                   }
                 >
-                  <h1 className="color-red">LET'S TALK!</h1>
-                  <h5 className="color-red">
-                    Send a message about inquiries, auditions, or any other
-                    questions we could possibly answer for you!
-                  </h5>
-                </div>
-                <div className="medium-top-margin">
-                  {isWideScreen && (
-                    <img src={LargeRedBoot} className="large-boot" />
-                  )}
-                </div>
-              </div>
-              <div
-                className={
-                  isWideScreen ? "contact-box" : "contact-box center-box"
-                }
-              >
-                <div className="mini-top-margin" />
-                <div className="contact-light-red-box">
-                  <div className="mini-center-margin home-layer-up">
-                    <form ref={emailForm} onSubmit={sendEmail}>
-                      <input
-                        type="hidden"
-                        name="to_email"
-                        id="to_email"
-                        value={toEmail}
-                      />
-                      <div className="vertical-box">
-                        <h6 className="color-red start-box">To</h6>
-                        <select
-                          className="contact-text-box selected"
-                          id="to"
-                          name="to"
-                          onChange={(e) => setToEmail(e.target.value)}
-                          value={toEmail}
-                        >
-                          <option value={dollies}>Current Dollies</option>
-                          <option value={webmaster}>Webmaster</option>
-                          <option value={lsjumb}>LSJUMB</option>
-                        </select>
-                        <h6 className="color-red start-box">Name</h6>
-                        <input
-                          className="contact-text-box"
-                          id="name"
-                          type="name"
-                          name="name"
-                        />
-                        <h6 className="color-red start-box">Email</h6>
-                        <input
-                          className="contact-text-box"
-                          id="email"
-                          type="email"
-                          name="email"
-                        />
-                        <h6 className="color-red start-box">Message</h6>
-                        <textarea id="message" name="message" />
-                        <input
-                          className="contact-submit-box"
-                          id="submit"
-                          type="submit"
-                        ></input>
-                      </div>
-                    </form>
+                  <div
+                    className={
+                      isWideScreen
+                        ? "medium-left-margin contact-text"
+                        : "contact-text"
+                    }
+                  >
+                    <h1 className="color-red">LET'S TALK!</h1>
+                    <h5 className="color-red">
+                      Send a message about inquiries, auditions, or any other
+                      questions we could possibly answer for you!
+                    </h5>
+                  </div>
+                  <div className="medium-top-margin">
+                    {isWideScreen && (
+                      <img src={LargeRedBoot} className="large-boot" />
+                    )}
                   </div>
                 </div>
-                {isWideScreen && <div className="contact-red-box"></div>}
+                <div
+                  className={
+                    isWideScreen ? "contact-box" : "contact-box center-box"
+                  }
+                >
+                  <div className="mini-top-margin" />
+                  <div className="contact-light-red-box">
+                    <div className="mini-center-margin home-layer-up">
+                      <form ref={emailForm} onSubmit={sendEmail}>
+                        <input
+                          type="hidden"
+                          name="to_email"
+                          id="to_email"
+                          value={toEmail}
+                        />
+                        <div className="vertical-box">
+                          <h6 className="color-red start-box">To</h6>
+                          <select
+                            className="contact-text-box selected"
+                            id="to"
+                            name="to"
+                            onChange={(e) => setToEmail(e.target.value)}
+                            value={toEmail}
+                          >
+                            <option value={dollies}>Current Dollies</option>
+                            <option value={webmaster}>Webmaster</option>
+                            <option value={lsjumb}>LSJUMB</option>
+                          </select>
+                          <h6 className="color-red start-box">Name</h6>
+                          <input
+                            className="contact-text-box"
+                            id="name"
+                            type="name"
+                            name="name"
+                          />
+                          <h6 className="color-red start-box">Email</h6>
+                          <input
+                            className="contact-text-box"
+                            id="email"
+                            type="email"
+                            name="email"
+                          />
+                          <h6 className="color-red start-box">Message</h6>
+                          <textarea id="message" name="message" />
+                          <input
+                            className="contact-submit-box"
+                            id="submit"
+                            type="submit"
+                          ></input>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  {isWideScreen && <div className="contact-red-box"></div>}
+                </div>
               </div>
+              <div className="small-bottom-margin"></div>
+              <div className="small-bottom-margin"></div>
+              <div className="small-bottom-margin"></div>
+              <RedFooter />
             </div>
-            <div className="small-bottom-margin"></div>
-            <div className="small-bottom-margin"></div>
-            <div className="small-bottom-margin"></div>
-            <RedFooter />
           </div>
         </div>
       )}

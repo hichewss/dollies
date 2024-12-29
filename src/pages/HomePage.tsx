@@ -25,7 +25,7 @@ function HomePageMainContents() {
   }, []);
 
   return (
-    <div className="fade-in-content">
+    <div className="fade-in-content page-container">
       <div className="vertical-box">
         <div className="vertical-box relative">
           <img
@@ -91,6 +91,7 @@ function HomePageMainContents() {
             </div>
           )}
         </div>
+        {isWideScreen && <div className="small-bottom-margin" />}
         <DolliesNeverDie />
         <div className="small-bottom-margin" />
         <Slideshow />

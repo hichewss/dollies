@@ -765,7 +765,6 @@
   padding: 30px;
   display: flex;
   flex-direction: column;
-  width: auto;
   min-height: 350px;
   max-height: 350px;
   box-sizing: border-box;
@@ -1354,7 +1353,6 @@
 .footer-text-container {
   display: flex;
   height: fit-content;
-  padding-top: 12vh;
   justify-content: center;
   position: absolute;
   bottom: 0;
@@ -1369,7 +1367,6 @@
   width: 100%;
   position: relative;
   min-height: 10vh;
-  margin: 0;
 }
 
 .red-footer {
@@ -1961,4 +1958,9 @@ img {
   .dress-padding {
     min-height: 32vh;
   }
+}
+
+.page-container {
+  height: 500px;
+  min-height: 100vh;
 }

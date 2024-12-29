@@ -70,7 +70,7 @@ function YearPage() {
   };
 
   return (
-    <div className="white relative footer">
+    <div className="white relative">
       <div>
         <div className="fade-in-content">
           {menu ? (
@@ -85,81 +85,71 @@ function YearPage() {
               <MenuBar />
             </div>
           ) : (
-            <div
-              className={fadeOutMain ? "fade-out-content" : "fade-in-content"}
-            >
-              <div className="side-button menu-side-margin menu">
-                <p className="color-white" onClick={handleMenuOpen}>
-                  MENU
-                </p>
-              </div>
-              <div className="dark-pink vertical-box">
-                <NavBar />
-                <div
-                  className={
-                    isWideScreen
-                      ? "dark-pink archive-year-header color-white small-left-margin small-top-margin"
-                      : "dark-pink archive-year-header color-white small-top-margin center-box"
-                  }
-                >
-                  {curYear}
+            <div className="page-container">
+              <div
+                className={fadeOutMain ? "fade-out-content" : "fade-in-content"}
+              >
+                <div className="side-button menu-side-margin menu">
+                  <p className="color-white" onClick={handleMenuOpen}>
+                    MENU
+                  </p>
                 </div>
-                <div
-                  className={
-                    isWideScreen ? "large-bottom-margin" : "small-bottom-margin"
-                  }
-                />
-              </div>
-              <div className="vertical-box">
-                <div className="vertical-box">
-                  <div className="white">
-                    <div className="vertical-box">
-                      {isWideScreen && <div className="pink-triangle" />}
-                      {isWideScreen && <Dresses />}
-                      <div className="white-separator small-rotate white">
-                        <RedPastYears />
+                <div className="dark-pink vertical-box">
+                  <NavBar />
+                  <div
+                    className={
+                      isWideScreen
+                        ? "dark-pink archive-year-header color-white small-left-margin small-top-margin"
+                        : "dark-pink archive-year-header color-white small-top-margin center-box"
+                    }
+                  >
+                    {curYear}
+                  </div>
+                  <div
+                    className={
+                      isWideScreen
+                        ? "large-bottom-margin"
+                        : "small-bottom-margin"
+                    }
+                  />
+                </div>
+                <div className="vertical-box white">
+                  <div className="vertical-box">
+                    <div className="white">
+                      <div className="vertical-box">
+                        {isWideScreen && <div className="pink-triangle" />}
+                        {isWideScreen && <Dresses />}
+                        <div className="white-separator small-rotate white">
+                          <RedPastYears />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="">
-                  <div
-                    className={`white archive-text-background ${
-                      !isWideScreen && !year && selectedYear !== "Reunions"
-                        ? "center-box"
-                        : ""
-                    }`}
-                  >
+                  <div className="white">
                     <div
-                      className={`color-red ${
-                        isWideScreen
-                          ? "archive-page-margin"
-                          : "archive-margin-no-padding"
+                      className={`white archive-text-background ${
+                        !isWideScreen && !year && selectedYear !== "Reunions"
+                          ? "center-box"
+                          : ""
                       }`}
                     >
-                      {!isWideScreen && <div className="" />}
                       <div
-                        className={`center-box ${
-                          year && images.length <= 0
-                            ? "archive-no-info-background"
-                            : ""
+                        className={`color-red ${
+                          isWideScreen
+                            ? "archive-page-margin"
+                            : "archive-margin-no-padding"
                         }`}
                       >
-                        {year ? (
-                          images.length > 0 ? (
-                            <div className="archive-text-font color-red">
-                              {Object.entries(year[curYear]).map(
-                                ([key, value], index, entries) => (
-                                  <div style={{ display: "inline" }} key={key}>
-                                    {"#"}
-                                    {key} {value}
-                                    {index !== entries.length - 1 && "・"}
-                                  </div>
-                                )
-                              )}
-                            </div>
-                          ) : (
-                            <div>
+                        {!isWideScreen && <div className="" />}
+                        <div
+                          className={`center-box ${
+                            year && images.length <= 0
+                              ? "archive-no-info-background"
+                              : ""
+                          }`}
+                        >
+                          {year ? (
+                            images.length > 0 ? (
                               <div className="archive-text-font color-red">
                                 {Object.entries(year[curYear]).map(
                                   ([key, value], index, entries) => (
@@ -174,77 +164,94 @@ function YearPage() {
                                   )
                                 )}
                               </div>
+                            ) : (
+                              <div>
+                                <div className="archive-text-font color-red">
+                                  {Object.entries(year[curYear]).map(
+                                    ([key, value], index, entries) => (
+                                      <div
+                                        style={{ display: "inline" }}
+                                        key={key}
+                                      >
+                                        {"#"}
+                                        {key} {value}
+                                        {index !== entries.length - 1 && "・"}
+                                      </div>
+                                    )
+                                  )}
+                                </div>
+                                <div className="mini-top-margin" />
+                                <div className="center-box">
+                                  <img src={Dress} />
+                                </div>
+                              </div>
+                            )
+                          ) : selectedYear === "Reunions" ? (
+                            <div className="color-red">
+                              <h1>Dollies of the past and present!</h1>
+                            </div>
+                          ) : (
+                            <div
+                              className={`vertical-box ${
+                                !isWideScreen &&
+                                "archive-no-info-background center-box"
+                              }`}
+                            >
+                              <div className="color-red">
+                                <h1>No Info on This Year 😞</h1>
+                              </div>
                               <div className="mini-top-margin" />
                               <div className="center-box">
                                 <img src={Dress} />
                               </div>
                             </div>
-                          )
-                        ) : selectedYear === "Reunions" ? (
-                          <div className="color-red">
-                            <h1>Dollies of the past and present!</h1>
-                          </div>
-                        ) : (
-                          <div
-                            className={`vertical-box ${
-                              !isWideScreen &&
-                              "archive-no-info-background center-box"
-                            }`}
-                          >
-                            <div className="color-red">
-                              <h1>No Info on This Year 😞</h1>
-                            </div>
-                            <div className="mini-top-margin" />
-                            <div className="center-box">
-                              <img src={Dress} />
-                            </div>
-                          </div>
-                        )}
+                          )}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="mini-top-margin" />
-                  <div className="medium-side-margin">
-                    <div
-                      className={`${
-                        !isWideScreen ||
-                        (images && images.length > 0 && images.length <= 3)
-                          ? "hide-scrollbar vertical-scroll-box"
-                          : "hide-scrollbar horizontal-scroll-box"
-                      }`}
-                    >
+                    <div className="mini-top-margin" />
+                    <div className="medium-side-margin">
                       <div
                         className={`${
                           !isWideScreen ||
                           (images && images.length > 0 && images.length <= 3)
-                            ? "vertical-center-box archive-gap"
-                            : "center-box archive-gap"
+                            ? "hide-scrollbar vertical-scroll-box"
+                            : "hide-scrollbar horizontal-scroll-box"
                         }`}
                       >
-                        {images &&
-                          images.length > 0 &&
-                          images.map((src, index) => (
-                            <img
-                              key={index}
-                              src={src}
-                              alt={`archive-${index}`}
-                              loading="lazy"
-                              className="archive-photo-box-red"
-                            />
-                          ))}
+                        <div
+                          className={`${
+                            !isWideScreen ||
+                            (images && images.length > 0 && images.length <= 3)
+                              ? "vertical-center-box white archive-gap"
+                              : "center-box white archive-gap"
+                          }`}
+                        >
+                          {images &&
+                            images.length > 0 &&
+                            images.map((src, index) => (
+                              <img
+                                key={index}
+                                src={src}
+                                alt={`archive-${index}`}
+                                loading="lazy"
+                                className="archive-photo-box-red"
+                              />
+                            ))}
+                        </div>
                       </div>
                     </div>
                   </div>
+                  {images.length > 0 ? (
+                    <div className="medium-bottom-margin" />
+                  ) : (
+                    <div className="small-bottom-margin" />
+                  )}
+                  <div className="home-text-box">
+                    <RedFutureYears />
+                  </div>
+                  <PinkFooter />
                 </div>
-                {images.length > 0 ? (
-                  <div className="medium-bottom-margin" />
-                ) : (
-                  <div className="small-bottom-margin" />
-                )}
-                <div className="home-text-box">
-                  <RedFutureYears />
-                </div>
-                <PinkFooter />
               </div>
             </div>
           )}
