@@ -1,7 +1,7 @@
 {
   "name": "dollies",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://hichewss.github.io/dollies",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
