@@ -7,6 +7,7 @@ import headers from "../data/archive";
 import MenuBar from "../components/MenuBar";
 import { CloseOutIcon } from "../components/images";
 import YearPage from "./YearPage";
+
 export function DolliesNeverDie() {
   return (
     <div className="vertical-box full-container">
@@ -15,7 +16,7 @@ export function DolliesNeverDie() {
         <div className="archive-title-header">DOLLIES NEVER DIE,</div>
       </div>
       <div className="center-box archive-main-header">OUR KICKS JUST GET</div>
-      <div className="center-box archive-main-header">LOWER</div>
+      <div className="center-box archive-main-header text-animation">LOWER</div>
     </div>
   );
 }

@@ -70,7 +70,7 @@ function YearPage() {
   };
 
   return (
-    <div className="white">
+    <div className="white relative footer">
       <div>
         <div className="fade-in-content">
           {menu ? (

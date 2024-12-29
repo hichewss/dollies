@@ -1,9 +1,6 @@
-import { useEffect, useRef } from "react";
-import PhotoA from "../images/home/slideshow/slideshow_a.png";
-import PhotoB from "../images/home/slideshow/slideshow_b.jpg";
-import PhotoC from "../images/home/slideshow/slideshow_c.jpg";
-import PhotoD from "../images/home/slideshow/slideshow_d.png";
-import PhotoE from "../images/home/slideshow/slideshow_e.jpg";
+import { useEffect, useRef, useState } from "react";
+import Carousel from "react-spring-3d-carousel";
+import { config } from "react-spring";
 import { LeftSlideshowArrow, RightSlideshowArrow } from "./images";
 import { importAll } from "./dresses";
 
@@ -12,42 +9,63 @@ const photos = importAll(
 );
 
 function Slideshow() {
-  const photoRef = useRef<HTMLInputElement>(null);
-  let currentIndex = 0; // Track the current index
-  const totalImages = photos.length;
-
-  const next = () => {
-    if (photoRef.current) {
-      currentIndex = (currentIndex + 1) % totalImages; // Loop back at the end
-      const scrollAmount = photoRef.current.clientWidth * currentIndex;
-      photoRef.current.scrollLeft = scrollAmount;
+  const [goToSlide, setGoToSlide] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const intervalRef = useRef<any>(null);
+  const togglePlay = () => {
+    if (isPlaying) {
+      clearInterval(intervalRef.current);
+      setIsPlaying(false);
+    } else {
+      intervalRef.current = setInterval(() => {
+        setGoToSlide((prev) => (prev + 1) % slides.length);
+      }, 3000);
+      setIsPlaying(true);
     }
   };
 
-  const prev = () => {
-    if (photoRef.current) {
-      currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Loop back at the start
-      const scrollAmount = photoRef.current.clientWidth * currentIndex;
-      photoRef.current.scrollLeft = scrollAmount;
-    }
-  };
+  useEffect(() => {
+    return () => clearInterval(intervalRef.current);
+  }, []);
+
+  const slides = photos.map((photo: any, index: number) => ({
+    key: `slide-${index}`,
+    content: (
+      <img src={photo} alt={`Slide ${index + 1}`} className="slideshow-image" />
+    ),
+  }));
+
+  const next = () => setGoToSlide((prev) => (prev + 1) % slides.length);
+  const prev = () =>
+    setGoToSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
     <div className="center-box full-container">
-      <div className="spaced-box slideshow">
-        <div className="slideshow-arrow" onClick={prev}>
-          {LeftSlideshowArrow()}
+      <div className="vertical-box slideshow">
+        <div className="carousel-container">
+          <Carousel
+            slides={slides}
+            goToSlide={goToSlide}
+            offsetRadius={2}
+            showNavigation={false}
+            animationConfig={config.gentle}
+          />
         </div>
-        <div
-          className="horizontal-box slideshow-box hide-scrollbar"
-          ref={photoRef}
-        >
-          {photos.map((photo: any) => {
-            return <img src={photo} className="slideshow-image" />;
-          })}
-        </div>
-        <div className="slideshow-arrow" onClick={next}>
-          {RightSlideshowArrow()}
+        <div className="center-box">
+          <div className="spaced-and-center-box slideshow-button-box">
+            <div className="slideshow-arrow" onClick={prev}>
+              {LeftSlideshowArrow()}
+            </div>
+            <div
+              className="play-button year-font color-white"
+              onClick={togglePlay}
+            >
+              {isPlaying ? "STOP" : "PLAY"}
+            </div>
+            <div className="slideshow-arrow" onClick={next}>
+              {RightSlideshowArrow()}
+            </div>
+          </div>
         </div>
       </div>
     </div>
