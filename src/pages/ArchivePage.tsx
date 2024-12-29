@@ -128,7 +128,7 @@ function ArchivePage() {
                         ))}
                       </div>
                     </div>
-                    <div className="center-box">
+                    <div className="center-box side-margin">
                       <p className="color-white">
                         Photos by Alan Mela, Al Ponce, Robby Beyers, Robert
                         Siegel, Dominick Hing, and more!
