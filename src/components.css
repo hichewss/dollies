@@ -558,24 +558,19 @@
 .dropdown::before {
   content: '';
   position: absolute;
-  top: -9px;
+  top: -8px;
   left: 50%;
-  /* Center horizontally */
   transform: translateX(-50%) rotate(45deg);
-  /* Adjust for arrow shape */
   width: 10px;
   height: 10px;
   background-color: var(--color-line);
   border-left: 3px solid var(--color-cream);
   border-top: 3px solid var(--color-cream);
   pointer-events: none;
-  /* Prevent arrow from interfering with clicks */
 }
 
-/* Ensure proper alignment regardless of dropdown size */
 .dropdown::before {
   left: calc(50%);
-  /* Adjust based on the size of the arrow and borders */
 }
 
 .dropdown-top-margin {
