@@ -88,9 +88,7 @@ function AuditionPage() {
         <div className={fadeOutMain ? "fade-out-content" : "fade-in-content"}>
           <div className="end-box small-right-margin">
             <button className="end-box" onClick={handleMenuOpen}>
-              <p className="color-white mini-top-margin absolute home-layer-up menu">
-                MENU
-              </p>
+              <p className="color-white side-button home-layer-up menu">MENU</p>
             </button>
           </div>
           <AuditionPageMainContents />

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function AuditionNavBar() {
   return (
     <div>
-      <div className="side-button side-margin">
+      <div className="side-button small-left-margin">
         <a href="/home">
           <p className="color-white">DOLLIES</p>
         </a>

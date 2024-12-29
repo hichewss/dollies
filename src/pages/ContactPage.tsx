@@ -89,9 +89,7 @@ function ContactPage() {
           <div className={fadeOutMain ? "fade-out-content" : "fade-in-content"}>
             <div className="end-box small-right-margin">
               <button className="end-box" onClick={handleMenuOpen}>
-                <p className="color-red mini-top-margin absolute home-layer-up menu">
-                  MENU
-                </p>
+                <p className="color-red side-button home-layer-up menu">MENU</p>
               </button>
             </div>
             <div className="vertical-box white fade-in-content">
