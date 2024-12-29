@@ -12,6 +12,18 @@ function Slideshow() {
   const [goToSlide, setGoToSlide] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const intervalRef = useRef<any>(null);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1024);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const togglePlay = () => {
     if (isPlaying) {
       clearInterval(intervalRef.current);
@@ -51,6 +63,7 @@ function Slideshow() {
             animationConfig={config.gentle}
           />
         </div>
+        {isWideScreen && <div className="mini-top-margin" />}
         <div className="center-box">
           <div className="spaced-and-center-box slideshow-button-box">
             <div className="slideshow-arrow" onClick={prev}>

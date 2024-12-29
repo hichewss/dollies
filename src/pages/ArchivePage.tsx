@@ -12,7 +12,7 @@ export function DolliesNeverDie() {
   return (
     <div className="vertical-box full-container">
       <div className="center-box horizontal-box">
-        <div className="quote-icon">{QuoteIcon()}</div>
+        <div className="quote-icon top-box">{QuoteIcon()}</div>
         <div className="archive-title-header">DOLLIES NEVER DIE,</div>
       </div>
       <div className="center-box archive-main-header">OUR KICKS JUST GET</div>

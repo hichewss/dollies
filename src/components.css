@@ -380,17 +380,29 @@
   height: max-content;
 }
 
+.quote-icon svg {
+  height: 100%;
+  width: auto;
+}
+
 @media (max-width: 768px) {
   .quote-icon svg {
     height: 4vh;
-    width: auto;
+    width: 4vh;
   }
 }
 
 @media (max-width: 690px) {
   .quote-icon svg {
     height: 2vh;
-    width: auto;
+    width: 2vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-icon svg {
+    height: 30px;
+    width: 30px;
   }
 }
 
@@ -1101,12 +1113,14 @@
 
 /* slideshow */
 .carousel-container {
-  width: 50vw;
-  height: 35vh;
+  width: 60vw;
+  height: 40vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 500px;
+  min-height: 400px;
 }
 
 .slideshow-image {
@@ -1116,13 +1130,44 @@
   display: block;
 }
 
+@media (max-width: 1440px) {
+  .carousel-container {
+    width: 90vw;
+    height: 40vh;
+  }
+
+  .slideshow-image {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    width: 100%;
+    height: 45vh;
+  }
+}
+
 .react-spring-carousel {
   scroll-snap-type: x mandatory;
 }
 
 .slideshow-button-box {
-  width: 100%;
-  gap: 3vw;
+  width: 50%;
+  gap: 2vw;
+}
+
+
+@media (max-width: 1024px) {
+  .slideshow-button-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow-button-box {
+    width: 60%;
+  }
 }
 
 .slideshow-arrow {
