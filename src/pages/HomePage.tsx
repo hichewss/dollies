@@ -49,7 +49,7 @@ function HomePageMainContents() {
           <div className="relative home-text-margin">
             <h1 className="color-red home-layer-up relative">
               SINCE 1953, DOLLIES HAVE APPEARED AT SPORTING EVENTS AND RALLIES
-              WITH THE STANFORD BAND AND TREE
+              WITH THE STANFORD BAND
             </h1>
             <div className="small-bottom-margin" />
             <div className="home-text-margin">

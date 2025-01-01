@@ -213,7 +213,7 @@ function YearPage() {
                           !isWideScreen ||
                           (images && images.length > 0 && images.length <= 3)
                             ? "hide-scrollbar vertical-scroll-box"
-                            : "hide-scrollbar horizontal-scroll-box"
+                            : "hide-scrollbar-red horizontal-scroll-box"
                         }`}
                       >
                         <div

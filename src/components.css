@@ -1823,14 +1823,43 @@ img {
 /* misc */
 
 .hide-scrollbar {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-cream) transparent;
 }
 
 .hide-scrollbar::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+  height: 8px;
+}
+
+.hide-scrollbar::-webkit-scrollbar-track {
+  background: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--color-cream);
+  border-radius: 3px;
+  border: 2px solid transparent;
+}
+
+.hide-scrollbar-red {
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-dark-red) transparent;
+}
+
+.hide-scrollbar-red::-webkit-scrollbar {
+  height: 8px;
+}
+
+.hide-scrollbar-red::-webkit-scrollbar-track {
+  background: none;
+}
+
+.hide-scrollbar-red::-webkit-scrollbar-thumb {
+  background-color: var(--color-dark-red);
+  border-radius: 3px;
+  border: 2px solid transparent;
 }
 
 .absolute {
