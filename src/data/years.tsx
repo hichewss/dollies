@@ -243,7 +243,7 @@ const dollieData: DollieYears = {
         "5": "Katie (Genshlea) Paris",
       },
       "1987-1988": {
-        "1": 'Dierdre "Dee" (Cohen) Katz',
+        "1": 'Diedre "Dee" (Cohen) Katz',
         "2": "(Laura) Ashley McLain",
         "3": "Patty Flam",
         "4": "Shelley (Gin) Lee",
