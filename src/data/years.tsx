@@ -208,11 +208,11 @@ const dollieData: DollieYears = {
         "5": "Mary Lee MacKichan",
       },
       "1982-1983": {
-        "1": "Helene (Duhamel) Duffy",
-        "2": "Karol Watson",
-        "3": "Gina (Davis) Carroll",
-        "4": "Nancy Branch",
-        "5": "Mary Lee MacKichan",
+        "1": "Diana Dobbs Melton",
+        "2": "Melinda Myers Cook",
+        "3": "Gina Moreno John",
+        "4": "Betsy DePalma Sperry",
+        "5": "Sue Cameron McDonald",
       },
       "1983-1984": {
         "1": "Marisa Butler-Brown",
