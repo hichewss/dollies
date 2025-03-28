@@ -1298,7 +1298,7 @@
   transform: translateY(5px);
   overflow-x: hidden;
   position: absolute;
-  top: 30px;
+  top: 25px;
 }
 
 @media (max-width: 1180px) {
@@ -1314,7 +1314,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   .red-background,
   .red-background-future,
@@ -1324,7 +1324,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   .red-triangle,
   .white-triangle {
@@ -1336,9 +1336,6 @@
   bottom: 4%;
 }
 
-.year-top {
-  top: 2%;
-}
 
 .full-container {
   width: 100vw;
