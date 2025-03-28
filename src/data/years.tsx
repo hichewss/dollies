@@ -321,10 +321,10 @@ const dollieData: DollieYears = {
       },
       "1998-1999": {
         "1": "Lizzie (Barnett) Sargeant",
-        "2": "Lynn Chiu",
-        "3": "Helen Lily Huang",
-        "4": 'Glory "Lani" Leilani Ludwick',
-        "5": "Wendy Marinaccio",
+        "2": 'Glory "Lani" Leilani Ludwick',
+        "3": "Lynn Chiu",
+        "4": "Wendy Marinaccio",
+        "5": "Helen Lily Huang",
       },
       "1999-2000": {
         "1": "Maria Reese",
