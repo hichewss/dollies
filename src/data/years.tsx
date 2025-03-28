@@ -435,7 +435,7 @@ const dollieData: DollieYears = {
         "1": "Erika Nguyen",
         "2": "Aubriana Menendez",
         "3": "Martha Collins",
-        "4": "Shelby Mynhier",
+        "4": "Avianna Mynhier",
         "5": "Jordan Huelskamp",
       },
       "2015-2016": {
