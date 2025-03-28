@@ -128,7 +128,7 @@ const dollieData: DollieYears = {
         "2": 'Maria "Mary" Hernandez Gass',
         "3": "Jeannette (Jones) Y.J. Heidrich",
         "4": "Susie Peterson (aka Leef Kedi)",
-        "5": "Susan Taylor",
+        "5": "Susan Taylor Kistler",
       },
       "1971-1972": {
         "1": "Laura (Simon) Rung",
