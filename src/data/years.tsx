@@ -278,11 +278,11 @@ const dollieData: DollieYears = {
         "5": "Julie (Carter) Servoss",
       },
       "1992-1993": {
-        "1": "Michelle Avril",
-        "2": "Erin (Cutler) Clausen",
+        "1": "Felicia Khoja",
+        "2": "Michelle Avril",
         "3": "Vivienne Hsy",
-        "4": "Felicia Khoja",
-        "5": "Sondra Ward",
+        "4": "Sondra Ward",
+        "5": "Erin (Cutler) Clausen",
       },
       "1993-1994": {
         "1": "Heidi Hwong",
