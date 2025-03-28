@@ -131,7 +131,12 @@ function ArchivePage() {
                     <div className="center-box side-margin">
                       <p className="color-white">
                         Photos by Alan Mela, Al Ponce, Robby Beyers, Robert
-                        Siegel, Dominick Hing, and more!
+                        Siegel, Dominick Hing, and mor!
+                      </p>
+                      <p className="color-white">
+                        <a href="https://docs.google.com/document/d/1B8KEUU28b4Ntpfpz5nt5owcWeTL-u1FKIPyU1dSy3dE/edit?usp=sharing">
+                          Memorial Page
+                        </a>
                       </p>
                     </div>
                     <div className="medium-bottom-margin" />

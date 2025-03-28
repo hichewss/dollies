@@ -25,6 +25,7 @@ function NavBar() {
     "2010s",
     "2020s",
     "Reunions",
+    "Memorial",
   ];
 
   const yearsDropdown = {
@@ -93,7 +94,7 @@ function NavBar() {
         <div
           className={
             isWideScreen
-              ? "center-box dropdown-top-margin"
+              ? "center-box dropdown-top-margin smini-left-margin"
               : "center-box small-top-margin dropdown-options-container header-options"
           }
         >
@@ -103,11 +104,27 @@ function NavBar() {
               return (
                 <div
                   key={year}
-                  className="dropdown-top-margin"
+                  className="dropdown-top-margin small-right-margin"
                   style={{ position: "relative" }}
                 >
                   <a
                     href={`${window.location.pathname}?year=Reunions`}
+                    className="color-white dropdown-text"
+                  >
+                    <p className="color-white dropdown-text">{year}</p>
+                  </a>
+                </div>
+              );
+            }
+            if (year === "Memorial") {
+              return (
+                <div
+                  key={year}
+                  className="dropdown-top-margin small-right-margin"
+                  style={{ position: "relative" }}
+                >
+                  <a
+                    href="https://docs.google.com/document/d/1B8KEUU28b4Ntpfpz5nt5owcWeTL-u1FKIPyU1dSy3dE/edit?usp=sharing"
                     className="color-white dropdown-text"
                   >
                     <p className="color-white dropdown-text">{year}</p>
