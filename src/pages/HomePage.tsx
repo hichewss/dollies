@@ -48,23 +48,27 @@ function HomePageMainContents() {
           </div>
           <div className="relative home-text-margin">
             <h1 className="color-red home-layer-up relative">
-              SINCE 1953, DOLLIES HAVE APPEARED AT SPORTING EVENTS AND RALLIES
-              WITH THE STANFORD BAND
+              THE STANFORD DOLLIES ARE A GROUP OF FIVE DANCERS WHO DAZZLE AT
+              SPORTING EVENTS AND RALLIES, AS PART OF THE STANFORD BAND.
             </h1>
             <div className="small-bottom-margin" />
             <div className="home-text-margin">
               <p className="color-red">
-                Dollies dance entirely of their own choreography and past
-                Dollies’ design. Their style ranges from modern to ballet to
-                jazz, but is always unique and impressive.
+                Since 1953, The Dollies have won hearts of Stanford fans and
+                beyond, with their stunning attire, high energy and winning
+                smiles. With each passing year, the five ladies keep history
+                alive, performing beloved dances from the past, while also
+                contributing their own choreography and creativity. Each Dollie
+                brings her own dance experience and background to the group,
+                lending styles like ballet, modern, jazz, hip-hop, and more. The
+                result is always unique and impressive, laced with the legacy of
+                Dollie sisterhood.
               </p>
               <div className="small-bottom-margin" />
               <p className="color-red">
-                They can always be recognized, not only by their stunning
-                attire, but also by their charming smiles and throng of adoring
-                fans. Dollies are often involved in various dance ensembles on
-                campus and off as members of and choreographers for many
-                programs.
+                The doors of dance are wide open for these women, who often go
+                on to perform and choreography professionally—but as they all
+                say, “Once a Dollie, Always a Dollie!"
               </p>
             </div>
             <div className="medium-bottom-margin" />

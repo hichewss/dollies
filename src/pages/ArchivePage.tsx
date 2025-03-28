@@ -13,10 +13,9 @@ export function DolliesNeverDie() {
     <div className="vertical-box full-container">
       <div className="center-box horizontal-box">
         <div className="quote-icon top-box">{QuoteIcon()}</div>
-        <div className="archive-title-header">DOLLIES NEVER DIE,</div>
+        <div className="archive-title-header">DOLLIES ARE FOREVER,</div>
       </div>
-      <div className="center-box archive-main-header">OUR KICKS JUST GET</div>
-      <div className="center-box archive-main-header text-animation">LOWER</div>
+      <div className="center-box archive-main-header">THE BEAT GOES ON</div>
     </div>
   );
 }
