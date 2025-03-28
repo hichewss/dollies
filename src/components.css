@@ -2026,3 +2026,49 @@ img {
   height: 500px;
   min-height: 100vh;
 }
+
+.vibrate-text {
+  display: inline-block;
+  animation: vibrate 0.2s infinite;
+}
+
+.vibrate-text {
+  display: inline-block;
+  animation: ring-pause 3s infinite;
+}
+
+@keyframes ring-pause {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+
+  10% {
+    transform: rotate(1deg) translate(1px, -1px);
+  }
+
+  20% {
+    transform: rotate(-1deg) translate(-1px, 1px);
+  }
+
+  30% {
+    transform: rotate(1deg) translate(1px, -1px);
+  }
+
+  40% {
+    transform: rotate(-1deg) translate(-1px, 1px);
+  }
+
+  50% {
+    transform: rotate(1deg) translate(1px, -1px);
+  }
+
+  60% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+
+  /* rest period */
+}

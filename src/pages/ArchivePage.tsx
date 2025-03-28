@@ -15,7 +15,9 @@ export function DolliesNeverDie() {
         <div className="quote-icon top-box">{QuoteIcon()}</div>
         <div className="archive-title-header">DOLLIES ARE FOREVER,</div>
       </div>
-      <div className="center-box archive-main-header">THE BEAT GOES ON</div>
+      <div className="center-box archive-main-header">
+        THE BEAT GOES&nbsp;<span className="vibrate-text">ON</span>
+      </div>
     </div>
   );
 }
