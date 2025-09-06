@@ -128,7 +128,7 @@ const dollieData: DollieYears = {
         "2": 'Maria "Mary" Hernandez Gass',
         "3": "Jeannette (Jones) Y.J. Heidrich",
         "4": "Susie Peterson (aka Leef Kedi)",
-        "5": "Susan Taylor",
+        "5": "Susan Taylor Kistler",
       },
       "1971-1972": {
         "1": "Laura (Simon) Rung",
@@ -278,11 +278,11 @@ const dollieData: DollieYears = {
         "5": "Julie (Carter) Servoss",
       },
       "1992-1993": {
-        "1": "Michelle Avril",
-        "2": "Erin (Cutler) Clausen",
+        "1": "Felicia Khoja",
+        "2": "Michelle Avril",
         "3": "Vivienne Hsy",
-        "4": "Felicia Khoja",
-        "5": "Sondra Ward",
+        "4": "Sondra Ward",
+        "5": "Erin (Cutler) Clausen",
       },
       "1993-1994": {
         "1": "Heidi Hwong",
@@ -500,6 +500,13 @@ const dollieData: DollieYears = {
         "3": "Yujen Lin",
         "4": "Janae Lindsay",
         "5": "Abigail Lee",
+      },
+      "2025-2026": {
+        "1": "Samantha Lau",
+        "2": "Makyla Cervantes",
+        "3": "Talon Watchman",
+        "4": "Rosalyn Tu",
+        "5": "Corinne Thomas",
       },
     },
   ],

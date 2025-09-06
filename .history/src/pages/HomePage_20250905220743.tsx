@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Dollies from "../images/home/dollies.jpg";
+import Dollies from "../images/home/dollies.png";
 import { DolliesNeverDie } from "./ArchivePage";
 import BlackFooter from "../components/BlackFooter";
 import { BlackRedirectArrow, HomeBoot } from "../components/images";
@@ -32,7 +32,7 @@ function HomePageMainContents() {
             src={Dollies}
             width="100%"
             height="auto"
-            alt="Stanford Dollies 23-24"
+            alt="Stanford Dollies 25-26"
             className="home"
           />
           <div className="home-header-box center-box">
@@ -66,11 +66,9 @@ function HomePageMainContents() {
               </p>
               <div className="small-bottom-margin" />
               <p className="color-red">
-                They can always be recognized, not only by their stunning
-                attire, but also by their charming smiles and throng of adoring
-                fans. Dollies are often involved in various dance ensembles on
-                campus and off as members of and choreographers for many
-                programs.
+                The doors of dance are wide open for these women, who often go
+                on to perform and choreography professionally—but as they all
+                say, “Once a Dollie, Always a Dollie!"
               </p>
             </div>
             <div className="medium-bottom-margin" />

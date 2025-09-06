@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Dollies from "../images/home/dollies.jpg";
+import Dollies from "../images/home/dollies.png";
 import { DolliesNeverDie } from "./ArchivePage";
 import BlackFooter from "../components/BlackFooter";
 import { BlackRedirectArrow, HomeBoot } from "../components/images";
@@ -32,7 +32,7 @@ function HomePageMainContents() {
             src={Dollies}
             width="100%"
             height="auto"
-            alt="Stanford Dollies 23-24"
+            alt="Stanford Dollies 25-26"
             className="home"
           />
           <div className="home-header-box center-box">

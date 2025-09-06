@@ -501,6 +501,13 @@ const dollieData: DollieYears = {
         "4": "Janae Lindsay",
         "5": "Abigail Lee",
       },
+      "2025-2026": {
+        "1": "Samantha Lau",
+        "2": "Makyla Cervantes",
+        "3": "Talon Watchman",
+        "4": "Rosalyn Tu",
+        "5": "Corinne Thomas",
+      },
     },
   ],
 };
