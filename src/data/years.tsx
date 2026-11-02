@@ -508,6 +508,13 @@ const dollieData: DollieYears = {
         "4": "Rosalyn Tu",
         "5": "Corinne Thomas",
       },
+      "2026-2027": {
+        "1": "Shelley Guo",
+        "2": "Lily Poon",
+        "3": "Colette Chang",
+        "4": "Ani Yordanova",
+        "5": "Logan Christopher",
+      },
     },
   ],
 };
