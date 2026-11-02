@@ -5,6 +5,7 @@ import LargeRedBoot from "../images/contact/big_red_boot.png";
 import MenuBar from "../components/MenuBar";
 import { CloseOutIcon } from "../components/images";
 import emailjs from "@emailjs/browser";
+import PageLoader from "../components/PageLoader";
 
 function ContactPage() {
   const [menu, setMenu] = useState(false);
@@ -85,7 +86,8 @@ function ContactPage() {
           <MenuBar />
         </div>
       ) : (
-        <div className="page-container fade-in-content">
+        <PageLoader>
+        <div className="page-container">
           <div className={fadeOutMain ? "fade-out-content" : "fade-in-content"}>
             <div className="end-box small-right-margin">
               <button className="end-box" onClick={handleMenuOpen}>
@@ -182,6 +184,7 @@ function ContactPage() {
             </div>
           </div>
         </div>
+        </PageLoader>
       )}
     </div>
   );

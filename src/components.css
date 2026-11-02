@@ -1900,6 +1900,15 @@ img {
 }
 
 /* transitions */
+
+/* Used by PageLoader while images are still fetching.
+   Children are rendered (so images start downloading) but stay invisible
+   until usePageImagesLoaded flips the class to fade-in-content. */
+.page-loading {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .fade-in-content {
   animation: fadeIn 0.3s ease-in-out forwards;
 }

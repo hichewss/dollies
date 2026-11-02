@@ -7,6 +7,7 @@ import headers from "../data/archive";
 import MenuBar from "../components/MenuBar";
 import { CloseOutIcon } from "../components/images";
 import YearPage from "./YearPage";
+import PageLoader from "../components/PageLoader";
 
 export function DolliesNeverDie() {
   return (
@@ -75,7 +76,8 @@ function ArchivePage() {
               <div
                 className={fadeOutMain ? "fade-out-content" : "fade-in-content"}
               >
-                <div>
+                <PageLoader>
+              <div>
                   <div className="end-box small-right-margin">
                     <button className="end-box" onClick={handleMenuOpen}>
                       <p className="color-white side-button home-layer-up menu">
@@ -139,6 +141,7 @@ function ArchivePage() {
                     <WhiteFooter />
                   </div>
                 </div>
+              </PageLoader>
               </div>
             )}
           </div>

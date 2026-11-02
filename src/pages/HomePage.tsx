@@ -10,6 +10,7 @@ import PhotoAlbum from "../components/HomeAlbum";
 import Slideshow from "../components/Slideshow";
 import MenuBar from "../components/MenuBar";
 import { CloseOutIcon } from "../components/images";
+import PageLoader from "../components/PageLoader";
 
 function HomePageMainContents() {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1024);
@@ -25,7 +26,8 @@ function HomePageMainContents() {
   }, []);
 
   return (
-    <div className="fade-in-content page-container">
+    <PageLoader>
+    <div className="page-container">
       <div className="vertical-box">
         <div className="vertical-box relative">
           <img
@@ -119,6 +121,7 @@ function HomePageMainContents() {
         <BlackFooter />
       </div>
     </div>
+    </PageLoader>
   );
 }
 

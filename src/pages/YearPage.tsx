@@ -9,6 +9,7 @@ import { useLocation } from "react-router-dom";
 import dollieData from "../data/years";
 import headers from "../data/archive";
 import Dress from "../images/dresses/2010.png";
+import PageLoader from "../components/PageLoader";
 
 const allImages = require.context(
   "../images/years",
@@ -86,6 +87,7 @@ function YearPage() {
             </div>
           ) : (
             <div className="page-container">
+              <PageLoader>
               <div
                 className={fadeOutMain ? "fade-out-content" : "fade-in-content"}
               >
@@ -250,6 +252,7 @@ function YearPage() {
                   <PinkFooter />
                 </div>
               </div>
+              </PageLoader>
             </div>
           )}
         </div>

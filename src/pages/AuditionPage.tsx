@@ -7,11 +7,13 @@ import RightBoot from "../images/audition/right.png";
 import WhiteFooter from "../components/WhiteFooter";
 import MenuBar from "../components/MenuBar";
 import { CloseOutIcon } from "../components/images";
+import PageLoader from "../components/PageLoader";
 
 function AuditionPageMainContents() {
   const boots = [DownBoot, UpBoot, RightBoot];
   return (
-    <div className="page-container fade-in-content">
+    <PageLoader>
+    <div className="page-container">
       <div className="vertical-box">
         <AuditionNavBar />
         <div>
@@ -47,6 +49,7 @@ function AuditionPageMainContents() {
         </div>
       </div>
     </div>
+    </PageLoader>
   );
 }
 
